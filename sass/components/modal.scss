@@ -1,0 +1,66 @@
+.modal-dialog {
+  width: 420px !important;
+
+  .modal-content {
+    box-shadow: none;
+    border: none;
+    border-radius: 10px;
+
+    .modal-header {
+      padding: 12px 30px;
+      font-weight: 300;
+      border-radius: 5px 5px 0 0;
+      background: #2E3E4E;
+      height: 40px;
+      line-height: 40px;
+      h4 {
+        font-weight: 400;
+        font-size: 15px;
+        color: white;
+        line-height: 1;
+      }
+
+      .close {
+        color: #f0f0f0;
+        opacity: 1;
+        font-weight: 300;
+        font-size: 15px;
+      }
+    }
+
+    .modal-body {
+      padding: 5px 15px 0;
+
+      .form-group {
+        margin: 15px 0 0;
+        display: inline-block;
+        width: 100%;
+      }
+
+      textarea {
+        height: 100px !important;
+      }
+
+      .text {
+        color: #444;
+        font-size: 13px;
+        font-weight: 400;
+        height: 36px;
+        line-height: 36px;
+        padding-right: 0px;
+      }
+
+      .form-control {
+        height: 36px;
+        box-shadow: none;
+        font-size: 13px;
+        color: #999999;
+      }
+    }
+
+    .modal-footer {
+      padding: 14px 30px 23px;
+      border: none;
+    }
+  }
+}

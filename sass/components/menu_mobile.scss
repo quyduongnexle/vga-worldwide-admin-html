@@ -1,0 +1,23 @@
+.sidebar-overlay {
+  position: absolute;
+  display: none;
+  left: 200vw;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 5;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  z-index: 15;
+  @media (max-width: 991px) {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+@media (max-width: 991px) {
+  .sidebar-open .sidebar-overlay {
+    left: 0;
+    opacity: 1;
+  }
+}

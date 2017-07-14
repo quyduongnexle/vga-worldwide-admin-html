@@ -1,0 +1,391 @@
+<!-- Include Header -->
+<header class="header">
+   <div class="header-block header-block-collapse hidden-lg-up">
+      <button class="collapse-btn" id="sidebar-collapse-btn">
+      <i class="fa fa-bars"></i>
+      </button>
+   </div>
+   <div class="header-block header-block-search hidden-sm-down">
+      <h2>Admin Userss</h2>
+   </div>
+   <div class="header-block header-block-nav">
+      <ul class="nav-profile">
+         <li class="notifications new">
+            <a href="" data-toggle="dropdown">
+            <i class="fa fa-bell-o"></i>
+            <sup>
+            <span class="counter">8</span>
+            </sup>
+            </a>
+         </li>
+         <li class="profile dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+               <div class="img" style="background-image: url('./images/Bitmap.png')"> </div>
+            </a>
+            <div class="dropdown-menu profile-dropdown-menu" aria-labelledby="dropdownMenu1">
+               <a class="dropdown-item" href="#">
+               <i class="fa fa-user icon"></i> Profile </a>
+               <a class="dropdown-item" href="#">
+               <i class="fa fa-bell icon"></i> Notifications </a>
+               <a class="dropdown-item" href="#">
+               <i class="fa fa-gear icon"></i> Settings </a>
+               <div class="dropdown-divider"></div>
+               <a class="dropdown-item" href="login.html">
+               <i class="fa fa-power-off icon"></i> Logout </a>
+            </div>
+         </li>
+      </ul>
+   </div>
+</header>
+
+<!-- Include Sidebar -->
+<div w3-include-html="inc/sidebar.html"></div>
+
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+<article class="content items-list-page">
+   <div class="title-search-block row">
+      <div class="filter col-md-6">
+         <form>
+            <ul>
+               <li class="title">
+                  Filter
+               </li>
+               <li>
+                  <select class="form-control" id="filter">
+                     <option>All</option>
+                     <option>1</option>
+                     <option>2</option>
+                     <option>3</option>
+                     <option>4</option>
+                  </select>
+               </li>
+               <li>
+                  <button type="submit" class="button">APPLY</button>
+               </li>
+            </ul>
+         </form>
+      </div>
+      <div class="search col-md-6">
+         <form>
+            <ul>
+               <li class="title">
+                  Search
+               </li>
+               <li>
+                  <input type="text" class="form-control" placeholder="Name, Location">
+               </li>
+               <li>
+                  <button type="button" class="button" data-toggle="modal" data-target="#modal-add-user">ADD</button>
+               </li>
+            </ul>
+         </form>
+      </div>
+      <!--end .search-->
+   </div>
+   <div class="card items">
+      <ul class="item-list striped">
+         <li class="item item-list-header hidden-sm-down">
+            <div class="item-row">
+               <div class="item-col item-col-header fixed item-col-img md">
+                  <div class="select">
+                     <span>Name</span>
+                  </div>
+               </div>
+               <div class="item-col item-col-header item-col-title">
+               </div>
+               <div class="item-col item-col-header item-col-email">
+                  <div>
+                     <span>Email</span>
+                  </div>
+               </div>
+               <div class="item-col item-col-header item-col-phone">
+                  <div>
+                     <span>Phone</span>
+                  </div>
+               </div>
+               <div class="item-col item-col-header item-col-age">
+                  <div>
+                     <span>Age</span>
+                  </div>
+               </div>
+               <div class="item-col item-col-header item-col-location">
+                  <div class="select">
+                     <span>Location</span>
+                  </div>
+               </div>
+               <div class="item-col item-col-header item-col-date">
+                  <div class="select">
+                     <span>Created</span>
+                  </div>
+               </div>
+               <div class="item-col item-col-header item-col-status">
+                  <div class="select">
+                     <span>Status</span>
+                  </div>
+               </div>
+               <div class="item-col item-col-header item-col-actions">
+                  <div>
+                     <span>Actions</span>
+                  </div>
+               </div>
+            </div>
+         </li>
+         <li class="item">
+            <div class="item-row">
+               <div class="item-col fixed item-col-img md">
+                  <a href="item-editor.html">
+                     <div class="item-img rounded" style="background-image: url(./images/name.png)"></div>
+                  </a>
+               </div>
+               <div class="item-col fixed pull-left item-col-title">
+                  <div class="item-heading">Name</div>
+                  <div>
+                     <a href="item-editor.html" class="">
+                        <h4 class="item-title"> Arthur Bryant </h4>
+                     </a>
+                  </div>
+               </div>
+               <div class="item-col item-col-email">
+                  <div class="item-heading">Email</div>
+                  <div class="no-overflow"> arthur_bryant@eu.vn </div>
+               </div>
+               <div class="item-col item-col-phone no-overflow">
+                  <div class="item-heading">Phone</div>
+                  <div class="no-overflow"> 560-465-915 </div>
+               </div>
+               <div class="item-col item-col-age no-overflow">
+                  <div class="item-heading">Age</div>
+                  <div class="no-overflow">
+                     <a href="">26</a>
+                  </div>
+               </div>
+               <div class="item-col item-col-location">
+                  <div class="item-heading">Location</div>
+                  <div class="no-overflow">
+                     <a href="">Mendoza, Argentina</a>
+                  </div>
+               </div>
+               <div class="item-col item-col-date">
+                  <div class="item-heading">Created</div>
+                  <div class="no-overflow"> 25/05/2015 </div>
+               </div>
+               <div class="item-col item-col-status">
+                  <div class="item-heading">Status</div>
+                  <div class="no-overflow active"> Active </div>
+               </div>
+               <div class="item-col item-col-actions">
+                  <div class="item-heading">Actions</div>
+                  <div class="no-overflow">
+                     <ul>
+                        <li>
+                           <a href="#"><img src="images/ic-close.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
+                        </li>
+                        <li>
+                           <a href="#" data-toggle="modal" data-target="#modal-reset-password"><img src="images/ic-lock.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Reset/Password"></a>
+                        </li>
+                        <li>
+                           <a href="#" data-toggle="modal" data-target="#modal-edit-user"><img src="images/ic-edit.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
+                        </li>
+                        <li>
+                           <a href="#"><img src="images/ic-enable.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Disable/Enable"></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </li>
+         <li class="item">
+            <div class="item-row">
+               <div class="item-col fixed item-col-img md">
+                  <a href="item-editor.html">
+                     <div class="item-img rounded" style="background-image: url(./images/name.png)"></div>
+                  </a>
+               </div>
+               <div class="item-col fixed pull-left item-col-title">
+                  <div class="item-heading">Name</div>
+                  <div>
+                     <a href="item-editor.html" class="">
+                        <h4 class="item-title"> Arthur Bryant </h4>
+                     </a>
+                  </div>
+               </div>
+               <div class="item-col item-col-email">
+                  <div class="item-heading">Email</div>
+                  <div class="no-overflow"> arthur_bryant@eu.vn </div>
+               </div>
+               <div class="item-col item-col-phone no-overflow">
+                  <div class="item-heading">Phone</div>
+                  <div class="no-overflow"> 560-465-915 </div>
+               </div>
+               <div class="item-col item-col-age no-overflow">
+                  <div class="item-heading">Age</div>
+                  <div class="no-overflow">
+                     <a href="">26</a>
+                  </div>
+               </div>
+               <div class="item-col item-col-location">
+                  <div class="item-heading">Location</div>
+                  <div class="no-overflow">
+                     <a href="">Mendoza, Argentina</a>
+                  </div>
+               </div>
+               <div class="item-col item-col-date">
+                  <div class="item-heading">Created</div>
+                  <div class="no-overflow"> 25/05/2015 </div>
+               </div>
+               <div class="item-col item-col-status">
+                  <div class="item-heading">Status</div>
+                  <div class="no-overflow active"> Active </div>
+               </div>
+               <div class="item-col item-col-actions">
+                  <div class="item-heading">Actions</div>
+                  <div class="no-overflow">
+                     <ul>
+                        <li>
+                           <a href="#"><img src="images/ic-close.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
+                        </li>
+                        <li>
+                           <a href="#" data-toggle="modal" data-target="#modal-reset-password"><img src="images/ic-lock.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Reset/Password"></a>
+                        </li>
+                        <li>
+                           <a href="#" data-toggle="modal" data-target="#modal-edit-user"><img src="images/ic-edit.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
+                        </li>
+                        <li>
+                           <a href="#"><img src="images/ic-enable.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Disable/Enable"></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </li>
+         <li class="item">
+            <div class="item-row">
+               <div class="item-col fixed item-col-img md">
+                  <a href="item-editor.html">
+                     <div class="item-img rounded" style="background-image: url(./images/name.png)"></div>
+                  </a>
+               </div>
+               <div class="item-col fixed pull-left item-col-title">
+                  <div class="item-heading">Name</div>
+                  <div>
+                     <a href="item-editor.html" class="">
+                        <h4 class="item-title"> Arthur Bryant </h4>
+                     </a>
+                  </div>
+               </div>
+               <div class="item-col item-col-email">
+                  <div class="item-heading">Email</div>
+                  <div class="no-overflow"> arthur_bryant@eu.vn </div>
+               </div>
+               <div class="item-col item-col-phone no-overflow">
+                  <div class="item-heading">Phone</div>
+                  <div class="no-overflow"> 560-465-915 </div>
+               </div>
+               <div class="item-col item-col-age no-overflow">
+                  <div class="item-heading">Age</div>
+                  <div class="no-overflow">
+                     <a href="">26</a>
+                  </div>
+               </div>
+               <div class="item-col item-col-location">
+                  <div class="item-heading">Location</div>
+                  <div class="no-overflow">
+                     <a href="">Mendoza, Argentina</a>
+                  </div>
+               </div>
+               <div class="item-col item-col-date">
+                  <div class="item-heading">Created</div>
+                  <div class="no-overflow"> 25/05/2015 </div>
+               </div>
+               <div class="item-col item-col-status">
+                  <div class="item-heading">Status</div>
+                  <div class="no-overflow inactive"> Inactive </div>
+               </div>
+               <div class="item-col item-col-actions">
+                  <div class="item-heading">Actions</div>
+                  <div class="no-overflow">
+                     <ul>
+                        <li>
+                           <a href="#"><img src="images/ic-close.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
+                        </li>
+                        <li>
+                           <a href="#" data-toggle="modal" data-target="#modal-reset-password"><img src="images/ic-lock.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Reset/Password"></a>
+                        </li>
+                        <li>
+                           <a href="#" data-toggle="modal" data-target="#modal-edit-user"><img src="images/ic-edit.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
+                        </li>
+                        <li>
+                           <a href="#"><img src="images/ic-disable.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Disable/Enable"></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </li>
+         <li class="item">
+            <div class="item-row">
+               <div class="item-col fixed item-col-img md">
+                  <a href="item-editor.html">
+                     <div class="item-img rounded" style="background-image: url(./images/name.png)"></div>
+                  </a>
+               </div>
+               <div class="item-col fixed pull-left item-col-title">
+                  <div class="item-heading">Name</div>
+                  <div>
+                     <a href="item-editor.html" class="">
+                        <h4 class="item-title"> Arthur Bryant </h4>
+                     </a>
+                  </div>
+               </div>
+               <div class="item-col item-col-email">
+                  <div class="item-heading">Email</div>
+                  <div class="no-overflow"> arthur_bryant@eu.vn </div>
+               </div>
+               <div class="item-col item-col-phone no-overflow">
+                  <div class="item-heading">Phone</div>
+                  <div class="no-overflow"> 560-465-915 </div>
+               </div>
+               <div class="item-col item-col-age no-overflow">
+                  <div class="item-heading">Age</div>
+                  <div class="no-overflow">
+                     <a href="">26</a>
+                  </div>
+               </div>
+               <div class="item-col item-col-location">
+                  <div class="item-heading">Location</div>
+                  <div class="no-overflow">
+                     <a href="">Mendoza, Argentina</a>
+                  </div>
+               </div>
+               <div class="item-col item-col-date">
+                  <div class="item-heading">Created</div>
+                  <div class="no-overflow"> 25/05/2015 </div>
+               </div>
+               <div class="item-col item-col-status">
+                  <div class="item-heading">Status</div>
+                  <div class="no-overflow active"> Active </div>
+               </div>
+               <div class="item-col item-col-actions">
+                  <div class="item-heading">Actions</div>
+                  <div class="no-overflow">
+                     <ul>
+                        <li>
+                           <a href="#"><img src="images/ic-close.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
+                        </li>
+                        <li>
+                           <a href="#" data-toggle="modal" data-target="#modal-reset-password"><img src="images/ic-lock.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Reset/Password"></a>
+                        </li>
+                        <li>
+                           <a href="#" data-toggle="modal" data-target="#modal-edit-user"><img src="images/ic-edit.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
+                        </li>
+                        <li>
+                           <a href="#"><img src="images/ic-enable.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Disable/Enable"></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </li>
+      </ul>
+   </div>
+</article>

@@ -1,0 +1,1 @@
+$(function(){$('[data-toggle="tooltip"]').tooltip()}),w3.includeHTML(),$(function(){$("#sidebar-collapse-btn").on("click",function(o){o.preventDefault(),$("#app").toggleClass("sidebar-open")}),$("#sidebar-overlay").on("click",function(){$("#app").removeClass("sidebar-open")})});

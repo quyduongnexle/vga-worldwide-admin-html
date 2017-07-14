@@ -1,0 +1,102 @@
+.dashboard {
+  .box-card {
+    margin-bottom: 20px;
+  }
+
+  .wrap-info {
+    margin-bottom: 16px;
+
+    .box {
+      width: 20%;
+      float: left;
+      padding: 0 20px 0 15px;
+      @media (max-width: 768px) {
+        width: 25%;
+      }
+      @media (max-width: 580px) {
+        width: 50%;
+        margin-bottom: 15px;
+      }
+
+      .info-box {
+        display: block;
+        min-height: 70px;
+        background: #fff;
+        width: 100%;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+        border-radius: 2px;
+
+        .info-box-icon {
+          float: left;
+          margin-right: 10px;
+          margin-left: 10px;
+          width: 48px;
+          @media (max-width: 1199px) {
+            margin: 15px 0 5px;
+          }
+
+          img {
+            margin-top: 10px;
+            @media (max-width: 1199px) {
+              margin: 0 auto;
+            }
+          }
+          @media (max-width: 1199px) {
+            width: 100%;
+          }
+        }
+
+        .info-box-content {
+          display: inline-block;
+          margin-top: 15px;
+          line-height: 20px;
+          @media (max-width: 1199px) {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 10px;
+          }
+
+          .info-box-number {
+            font-size: 25px;
+            color: #333333;
+            display: inline-block;
+            font-weight: 300;
+          }
+
+          .info-box-text {
+            margin-top: 15px;
+            font-weight: 400;
+            font-size: 13px;
+            color: #ACACAC;
+          }
+        }
+      }
+    }
+  }
+
+  .card-heading {
+    margin-bottom: 13px;
+  }
+
+  .card {
+    margin-top: 0;
+
+    .item-list {
+      .item-col {
+        &.db-col-location,
+        &.db-col-tournament {
+          flex-basis: 0;
+          -webkit-box-flex: 6;
+          -ms-flex-positive: 6;
+          flex-grow: 6;
+          -ms-flex-negative: 6;
+          flex-shrink: 6;
+        }
+
+        &.db-col-register {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.item-list .item-col.db-col-location, .item-list .item-col.db-col-tournament {
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -webkit-box-flex: 6;
+  -ms-flex-positive: 6;
+  -webkit-flex-grow: 6;
+  flex-grow: 6;
+  -ms-flex-negative: 6;
+  -webkit-flex-shrink: 6;
+  flex-shrink: 6; }
+
+.item-list .item-col.db-col-register {
+  text-align: center; }

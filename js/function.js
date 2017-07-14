@@ -1,11 +1,22 @@
-$('.carousel').carousel({
-      interval: 5000 //changes the speed
-  })
-   $(window).scroll(function() {
-  
-  if ($(".navbar").offset().top > 50) {
-    $(".navbar-fixed-top").addClass("top-nav-collapse");
-  } else {
-    $(".navbar-fixed-top").removeClass("top-nav-collapse");
-  }
+/* Tooltip Boostrap */
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+/* Include HTML */
+w3.includeHTML();
+
+/* Add Menu */
+$(function () {
+
+	$('#sidebar-collapse-btn').on('click', function(event){
+		event.preventDefault();
+
+		$("#app").toggleClass("sidebar-open");
+	});
+
+	$("#sidebar-overlay").on('click', function() {
+		$("#app").removeClass("sidebar-open");
+	});
+
 });

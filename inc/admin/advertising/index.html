@@ -1,0 +1,340 @@
+<!-- Include Header -->
+<header class="header">
+   <div class="header-block header-block-collapse hidden-lg-up">
+      <button class="collapse-btn" id="sidebar-collapse-btn">
+      <i class="fa fa-bars"></i>
+      </button>
+   </div>
+   <div class="header-block header-block-search hidden-sm-down">
+      <h2>Advertising</h2>
+   </div>
+   <div class="header-block header-block-nav">
+      <ul class="nav-profile">
+         <li class="notifications new">
+            <a href="" data-toggle="dropdown">
+            <i class="fa fa-bell-o"></i>
+            <sup>
+            <span class="counter">8</span>
+            </sup>
+            </a>
+         </li>
+         <li class="profile dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+               <div class="img" style="background-image: url('./images/Bitmap.png')"> </div>
+            </a>
+            <div class="dropdown-menu profile-dropdown-menu" aria-labelledby="dropdownMenu1">
+               <a class="dropdown-item" href="#">
+               <i class="fa fa-user icon"></i> Profile </a>
+               <a class="dropdown-item" href="#">
+               <i class="fa fa-bell icon"></i> Notifications </a>
+               <a class="dropdown-item" href="#">
+               <i class="fa fa-gear icon"></i> Settings </a>
+               <div class="dropdown-divider"></div>
+               <a class="dropdown-item" href="login.html">
+               <i class="fa fa-power-off icon"></i> Logout </a>
+            </div>
+         </li>
+      </ul>
+   </div>
+</header>
+
+<!-- Include Sidebar -->
+<div w3-include-html="inc/sidebar.html"></div>
+
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+<article class="content items-list-page advertising">
+   <div class="header-filter-input row">
+      <div class="filter-search col-md-12">
+         <form>
+            <ul>
+               <li class="title">
+                  Filter
+               </li>
+               <li>
+                  <select class="form-control" id="filter">
+                     <option>All</option>
+                     <option>1</option>
+                     <option>2</option>
+                     <option>3</option>
+                     <option>4</option>
+                  </select>
+               </li>
+               <li class="title">
+                  Search
+               </li>
+               <li>
+                  <input type="text" class="form-control" placeholder="Name, Location">
+               </li>
+               <li>
+                  <button type="submit" class="button">APPLY</button>
+               </li>
+            </ul>
+         </form>
+      </div>
+   </div>
+   <div class="card items">
+      <ul class="item-list striped">
+         <li class="item item-list-header hidden-sm-down">
+            <div class="item-row">
+               <div class="item-col item-col-header ad-col-member">
+                  <div class="select">
+                     <span>Member</span>
+                  </div>
+               </div>
+
+               <div class="item-col item-col-header center">
+                  <div>
+                     <span>Packages</span>
+                  </div>
+               </div>
+               <div class="item-col item-col-header center">
+                  <div class="select">
+                     <span>Duration</span>
+                  </div>
+               </div>
+               <div class="item-col item-col-header center">
+                  <div>
+                     <span>Featured Adv</span>
+                  </div>
+               </div>
+               <div class="item-col item-col-header center">
+                  <div class="select">
+                     <span>Created</span>
+                  </div>
+               </div>
+               <div class="item-col item-col-header center">
+                  <div class="select">
+                     <span>Exprired</span>
+                  </div>
+               </div>
+               <div class="item-col item-col-header center">
+                  <div>
+                     <span>Amount</span>
+                  </div>
+               </div>
+               <div class="item-col item-col-header center">
+                  <div>
+                     <span>Payment Method</span>
+                  </div>
+               </div>
+               <div class="item-col item-col-header center">
+                  <div>
+                     <span>Paid</span>
+                  </div>
+               </div>
+               <div class="item-col item-col-header center">
+                  <div>
+                     <span>Status</span>
+                  </div>
+               </div>
+               <div class="item-col item-col-header ad-col-actions">
+                  <div>
+                     <span>Actions</span>
+                  </div>
+               </div>
+            </div>
+         </li>
+         <li class="item">
+            <div class="item-row">
+
+               <div class="item-col ad-col-member">
+                  <div class="item-heading">Member</div>
+                  <div class="no-overflow">
+                    Aiden Morrision
+                  </div>
+               </div>
+               <div class="item-col center">
+                  <div class="item-heading">Packages</div>
+                  <div class="no-overflow"> 2 items</div>
+               </div>
+               <div class="item-col center">
+                  <div class="item-heading">Duration</div>
+                  <div class="no-overflow"> 30 </div>
+               </div>
+               <div class="item-col center">
+                  <div class="item-heading">Featured Adv</div>
+                  <div class="no-overflow">
+                     Yes
+                  </div>
+               </div>
+               <div class="item-col center">
+                  <div class="item-heading">Created</div>
+                  <div class="no-overflow">
+                    31/01/2010
+                  </div>
+               </div>
+               <div class="item-col center">
+                  <div class="item-heading">Expired</div>
+                  <div class="no-overflow"> 25/05/2015 </div>
+               </div>
+               <div class="item-col center">
+                  <div class="item-heading">Amount</div>
+                  <div class="no-overflow"> $123 </div>
+               </div>
+               <div class="item-col center">
+                  <div class="item-heading">Payment Method</div>
+                  <div class="no-overflow"> Wire transfer </div>
+               </div>
+               <div class="item-col center">
+                  <div class="item-heading">Paid</div>
+                  <div class="no-overflow"> Yes</div>
+               </div>
+               <div class="item-col center ad-col-status">
+                  <div class="item-heading">Status</div>
+                  <div class="no-overflow active"> Active</div>
+               </div>
+               <div class="item-col ad-col-actions">
+                  <div class="item-heading">Actions</div>
+                  <div class="no-overflow">
+                     <ul>
+                        <li>
+                           <a href="#"><img src="images/ic-close.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
+                        </li>
+
+                        <li>
+                           <a href="#" data-toggle="modal" data-target="#modal-edit-user"><img src="images/ic-edit.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
+                        </li>
+
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </li>
+
+         <li class="item">
+            <div class="item-row">
+
+               <div class="item-col ad-col-member">
+                  <div class="item-heading">Member</div>
+                  <div class="no-overflow">
+                    Aiden Morrision
+                  </div>
+               </div>
+               <div class="item-col center">
+                  <div class="item-heading">Packages</div>
+                  <div class="no-overflow"> 2 items</div>
+               </div>
+               <div class="item-col center">
+                  <div class="item-heading">Duration</div>
+                  <div class="no-overflow"> 30 </div>
+               </div>
+               <div class="item-col center">
+                  <div class="item-heading">Featured Adv</div>
+                  <div class="no-overflow">
+                     Yes
+                  </div>
+               </div>
+               <div class="item-col center">
+                  <div class="item-heading">Created</div>
+                  <div class="no-overflow">
+                    31/01/2010
+                  </div>
+               </div>
+               <div class="item-col center">
+                  <div class="item-heading">Expired</div>
+                  <div class="no-overflow"> 25/05/2015 </div>
+               </div>
+               <div class="item-col center">
+                  <div class="item-heading">Amount</div>
+                  <div class="no-overflow"> $123 </div>
+               </div>
+               <div class="item-col center">
+                  <div class="item-heading">Payment Method</div>
+                  <div class="no-overflow"> Wire transfer </div>
+               </div>
+               <div class="item-col center">
+                  <div class="item-heading">Paid</div>
+                  <div class="no-overflow"> Yes</div>
+               </div>
+               <div class="item-col center ad-col-status">
+                  <div class="item-heading">Status</div>
+                  <div class="no-overflow expired"> Expired</div>
+               </div>
+               <div class="item-col ad-col-actions">
+                  <div class="item-heading">Actions</div>
+                  <div class="no-overflow">
+                     <ul>
+                        <li>
+                           <a href="#"><img src="images/ic-close.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
+                        </li>
+
+                        <li>
+                           <a href="#" data-toggle="modal" data-target="#modal-edit-user"><img src="images/ic-edit.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
+                        </li>
+
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </li>
+
+         <li class="item">
+            <div class="item-row">
+
+               <div class="item-col ad-col-member">
+                  <div class="item-heading">Member</div>
+                  <div class="no-overflow">
+                    Aiden Morrision
+                  </div>
+               </div>
+               <div class="item-col center">
+                  <div class="item-heading">Packages</div>
+                  <div class="no-overflow"> 2 items</div>
+               </div>
+               <div class="item-col center">
+                  <div class="item-heading">Duration</div>
+                  <div class="no-overflow"> 30 </div>
+               </div>
+               <div class="item-col center">
+                  <div class="item-heading">Featured Adv</div>
+                  <div class="no-overflow">
+                     Yes
+                  </div>
+               </div>
+               <div class="item-col center">
+                  <div class="item-heading">Created</div>
+                  <div class="no-overflow">
+                    31/01/2010
+                  </div>
+               </div>
+               <div class="item-col center">
+                  <div class="item-heading">Expired</div>
+                  <div class="no-overflow"> 25/05/2015 </div>
+               </div>
+               <div class="item-col center">
+                  <div class="item-heading">Amount</div>
+                  <div class="no-overflow"> $123 </div>
+               </div>
+               <div class="item-col center">
+                  <div class="item-heading">Payment Method</div>
+                  <div class="no-overflow"> Wire transfer </div>
+               </div>
+               <div class="item-col center">
+                  <div class="item-heading">Paid</div>
+                  <div class="no-overflow"> Yes</div>
+               </div>
+               <div class="item-col center ad-col-status">
+                  <div class="item-heading">Status</div>
+                  <div class="no-overflow approved"> Wait for Approved</div>
+               </div>
+               <div class="item-col ad-col-actions">
+                  <div class="item-heading">Actions</div>
+                  <div class="no-overflow">
+                     <ul>
+                        <li>
+                           <a href="#"><img src="images/ic-close.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
+                        </li>
+
+                        <li>
+                           <a href="#" data-toggle="modal" data-target="#modal-edit-user"><img src="images/ic-edit.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
+                        </li>
+
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </li>
+
+      </ul>
+   </div>
+</article>
