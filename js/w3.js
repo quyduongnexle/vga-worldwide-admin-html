@@ -49,16 +49,16 @@ w3.toggleShow = function (sel) {
     }
   }
 };
-w3.addClass = function (sel, name) {
-  w3.addClassElements(w3.getElements(sel), name);
+w3.addclass = function (sel, name) {
+  w3.addclassElements(w3.getElements(sel), name);
 };
-w3.addClassElements = function (elements, name) {
+w3.addclassElements = function (elements, name) {
   var i, l = elements.length;
   for (i = 0; i < l; i++) {
-    w3.addClassElement(elements[i], name);
+    w3.addclassElement(elements[i], name);
   }
 };
-w3.addClassElement = function (element, name) {
+w3.addclassElement = function (element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
@@ -66,16 +66,16 @@ w3.addClassElement = function (element, name) {
     if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
   }
 };
-w3.removeClass = function (sel, name) {
-  w3.removeClassElements(w3.getElements(sel), name);
+w3.removeclass = function (sel, name) {
+  w3.removeclassElements(w3.getElements(sel), name);
 };
-w3.removeClassElements = function (elements, name) {
+w3.removeclassElements = function (elements, name) {
   var i, l = elements.length, arr1, arr2, j;
   for (i = 0; i < l; i++) {
-    w3.removeClassElement(elements[i], name);
+    w3.removeclassElement(elements[i], name);
   }
 };
-w3.removeClassElement = function (element, name) {
+w3.removeclassElement = function (element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
@@ -86,16 +86,16 @@ w3.removeClassElement = function (element, name) {
   }
   element.className = arr1.join(" ");
 };
-w3.toggleClass = function (sel, c1, c2) {
-  w3.toggleClassElements(w3.getElements(sel), c1, c2);
+w3.toggleclass = function (sel, c1, c2) {
+  w3.toggleclassElements(w3.getElements(sel), c1, c2);
 };
-w3.toggleClassElements = function (elements, c1, c2) {
+w3.toggleclassElements = function (elements, c1, c2) {
   var i, l = elements.length;
   for (i = 0; i < l; i++) {    
-    w3.toggleClassElement(elements[i], c1, c2);
+    w3.toggleclassElement(elements[i], c1, c2);
   }
 };
-w3.toggleClassElement = function (element, c1, c2) {
+w3.toggleclassElement = function (element, c1, c2) {
   var t1, t2, t1Arr, t2Arr, j, arr, allPresent;
   t1 = (c1 || "");
   t2 = (c2 || "");
@@ -108,9 +108,9 @@ w3.toggleClassElement = function (element, c1, c2) {
       if (arr.indexOf(t1Arr[j]) == -1) {allPresent = false;}
     }
     if (allPresent) {
-      w3.removeClassElement(element, t1);
+      w3.removeclassElement(element, t1);
     } else {
-      w3.addClassElement(element, t1);
+      w3.addclassElement(element, t1);
     }
   } else {
     allPresent = true;
@@ -118,11 +118,11 @@ w3.toggleClassElement = function (element, c1, c2) {
       if (arr.indexOf(t1Arr[j]) == -1) {allPresent = false;}
     }
     if (allPresent) {
-      w3.removeClassElement(element, t1);
-      w3.addClassElement(element, t2);          
+      w3.removeclassElement(element, t1);
+      w3.addclassElement(element, t2);          
     } else {
-      w3.removeClassElement(element, t2);        
-      w3.addClassElement(element, t1);
+      w3.removeclassElement(element, t2);        
+      w3.addclassElement(element, t1);
     }
   }
 };
