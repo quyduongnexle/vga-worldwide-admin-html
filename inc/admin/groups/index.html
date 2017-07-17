@@ -42,9 +42,9 @@
 <div w3-include-html="inc/sidebar.html"></div>
 
 <div class="sidebar-overlay" id="sidebar-overlay"></div>
-<article class="content items-list-page advertising">
-   <div class="header-filter-input row">
-      <div class="filter-search col-md-12">
+<article class="content items-list-page">
+   <div class="title-search-block row">
+      <div class="filter col-md-6">
          <form>
             <ul>
                <li class="title">
@@ -59,6 +59,15 @@
                      <option>4</option>
                   </select>
                </li>
+               <li>
+                  <button type="submit" class="button">APPLY</button>
+               </li>
+            </ul>
+         </form>
+      </div>
+      <div class="search col-md-6">
+         <form>
+            <ul>
                <li class="title">
                   Search
                </li>
@@ -66,43 +75,46 @@
                   <input type="text" class="form-control" placeholder="Name, Location">
                </li>
                <li>
-                  <button type="submit" class="button">APPLY</button>
+                  <button type="button" class="button" data-toggle="modal" data-target="#modal-edit-group">ADD</button>
                </li>
             </ul>
          </form>
       </div>
+      <!--end .search-->
    </div>
    <div class="card items">
       <ul class="item-list striped">
          <li class="item item-list-header hidden-sm-down">
             <div class="item-row">
-               <div class="item-col item-col-header ad-col-member">
+               <div class="item-col item-col-header">
                   <div class="select">
                      <span>Name</span>
                   </div>
                </div>
 
-               <div class="item-col item-col-header center">
+               <div class="item-col item-col-header">
                   <div>
                      <span>Owner</span>
                   </div>
                </div>
+
                <div class="item-col item-col-header center">
-                  <div class="select">
+                  <div>
                      <span>No. of Member</span>
                   </div>
                </div>
+
                <div class="item-col item-col-header center">
                   <div class="select">
                      <span>Created</span>
                   </div>
                </div>
                <div class="item-col item-col-header center">
-                  <div>
+                  <div class="select">
                      <span>Status</span>
                   </div>
                </div>
-               <div class="item-col item-col-header ad-col-actions">
+               <div class="item-col item-col-header right item-col-actions">
                   <div>
                      <span>Actions</span>
                   </div>
@@ -111,34 +123,40 @@
          </li>
          <li class="item">
             <div class="item-row">
+               <div class="item-col">
+                 <div class="item-heading">Name</div>
+                 <div>
+                   <ul class="name-images">
 
-               <div class="item-col ad-col-member">
-                  <div class="item-heading">Name</div>
-                  <div class="no-overflow">
-                    Nexle Group
+                     <li class="name">
+                       Arthur Bryant
+                     </li>
+                   </ul>
+
+                 </div>
+               </div>
+
+               <div class="item-col">
+                  <div class="item-heading">Owner</div>
+                  <div class="no-overflow"> arthur_bryant@eu.vn </div>
+               </div>
+
+               <div class="item-col center">
+                  <div class="item-heading">No. of Member</div>
+                  <div class="no-overflow bold color-main">
+                     <div>26</div>
                   </div>
                </div>
-               <div class="item-col center">
-                  <div class="item-heading">Owner</div>
-                  <div class="no-overflow"> Nexle</div>
-               </div>
-               <div class="item-col center no-of-member">
-                  <div class="item-heading">No. of Member</div>
-                  <div class="no-overflow"> 32 </div>
-               </div>
+
                <div class="item-col center">
                   <div class="item-heading">Created</div>
-                  <div class="no-overflow">
-                     31/04/2016
-                  </div>
+                  <div class="no-overflow"> 25/05/2015 </div>
                </div>
                <div class="item-col center">
                   <div class="item-heading">Status</div>
-                  <div class="no-overflow">
-                    Active
-                  </div>
+                  <div class="no-overflow active"> Active </div>
                </div>
-               <div class="item-col ad-col-actions">
+               <div class="item-col right item-col-actions">
                   <div class="item-heading">Actions</div>
                   <div class="no-overflow">
                      <ul>
@@ -146,10 +164,13 @@
                            <a href="#"><img src="images/ic-close.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
                         </li>
                         <li>
+                           <a href="#" data-toggle="modal" data-target="#modal-reset-password"><img src="images/ic-lock.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Reset/Password"></a>
+                        </li>
+                        <li>
                            <a href="#" data-toggle="modal" data-target="#modal-edit-user"><img src="images/ic-edit.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
                         </li>
-                         <li>
-                           <a href="#"><img src="images/ic-enable.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
+                        <li>
+                           <a href="#"><img src="images/ic-enable.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Disable/Enable"></a>
                         </li>
                      </ul>
                   </div>
@@ -159,53 +180,60 @@
 
          <li class="item">
             <div class="item-row">
+               <div class="item-col">
+                 <div class="item-heading">Name</div>
+                 <div>
+                   <ul class="name-images">
 
-               <div class="item-col ad-col-member">
-                  <div class="item-heading">Name</div>
-                  <div class="no-overflow">
-                    Nexle Group
+                     <li class="name">
+                       Arthur Bryant
+                     </li>
+                   </ul>
+
+                 </div>
+               </div>
+
+               <div class="item-col">
+                  <div class="item-heading">Owner</div>
+                  <div class="no-overflow"> arthur_bryant@eu.vn </div>
+               </div>
+
+               <div class="item-col center">
+                  <div class="item-heading">No. of Member</div>
+                  <div class="no-overflow bold color-main">
+                     <a href="">26</a>
                   </div>
                </div>
-               <div class="item-col center">
-                  <div class="item-heading">Owner</div>
-                  <div class="no-overflow"> Nexle</div>
-               </div>
-               <div class="item-col center no-of-member">
-                  <div class="item-heading">No. of Member</div>
-                  <div class="no-overflow"> 32 </div>
-               </div>
+
                <div class="item-col center">
                   <div class="item-heading">Created</div>
-                  <div class="no-overflow">
-                     31/04/2016
-                  </div>
+                  <div class="no-overflow"> 25/05/2015 </div>
                </div>
-               <div class="item-col center ">
+               <div class="item-col center">
                   <div class="item-heading">Status</div>
-                  <div class="no-overflow inactive">
-                    Inactive
-                  </div>
+                  <div class="no-overflow inactive"> Inactive </div>
                </div>
-               <div class="item-col ad-col-actions">
-                  <div class="item-heading">Actions</div>
+               <div class="item-col right item-col-actions">
+                  <div class="item-heading inactive">Actions</div>
                   <div class="no-overflow">
                      <ul>
                         <li>
                            <a href="#"><img src="images/ic-close.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
                         </li>
                         <li>
+                           <a href="#" data-toggle="modal" data-target="#modal-reset-password"><img src="images/ic-lock.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Reset/Password"></a>
+                        </li>
+                        <li>
                            <a href="#" data-toggle="modal" data-target="#modal-edit-user"><img src="images/ic-edit.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
                         </li>
-                         <li>
-                           <a href="#"><img src="images/ic-disable.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
+                        <li>
+                           <a href="#"><img src="images/ic-disable.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Disable/Enable"></a>
                         </li>
                      </ul>
                   </div>
                </div>
             </div>
          </li>
-
-
 
       </ul>
    </div>

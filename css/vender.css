@@ -15,6 +15,12 @@ Copyright (c) 2015 Daniel Eden
 .left {
   text-align: left;
 }
+.color-main {
+  color: #35A211;
+}
+.bold {
+  font-weight: bold !important;
+}
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;

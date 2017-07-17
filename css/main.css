@@ -221,8 +221,22 @@ select.form-control:focus::-ms-value {
         margin: 15px 0 0;
         display: inline-block;
         width: 100%; }
+        .modal-dialog .modal-content .modal-body .form-group ul.lists-member li {
+          float: left;
+          margin-right: 10px; }
+          .modal-dialog .modal-content .modal-body .form-group ul.lists-member li a {
+            background: #35A211;
+            color: white;
+            border-radius: 10px;
+            font-size: 12px;
+            padding: 5px 8px;
+            display: inline-block;
+            margin-top: 10px; }
+            .modal-dialog .modal-content .modal-body .form-group ul.lists-member li a:hover {
+              text-decoration: none;
+              background: #30930F; }
       .modal-dialog .modal-content .modal-body textarea {
-        height: 100px !important; }
+        min-height: 100px !important; }
       .modal-dialog .modal-content .modal-body .text {
         color: #444;
         font-size: 13px;
@@ -239,6 +253,23 @@ select.form-control:focus::-ms-value {
     .modal-dialog .modal-content .modal-footer {
       padding: 14px 30px 23px;
       border: none; }
+  .modal-dialog.lg {
+    width: 760px !important; }
+    .modal-dialog.lg .modal-content .text {
+      width: 100px;
+      float: left; }
+    .modal-dialog.lg .modal-content .value {
+      width: 470px;
+      float: left; }
+    .modal-dialog.lg .modal-content ul {
+      display: inline-block;
+      width: 100%; }
+      .modal-dialog.lg .modal-content ul li {
+        width: 50%;
+        float: left; }
+        .modal-dialog.lg .modal-content ul li .value {
+          width: 185px;
+          float: left; }
 
 button {
   height: 37px;
@@ -686,30 +717,18 @@ button {
     background-position: center;
     background-repeat: no-repeat; }
 
-.dropdown-menu {
-  float: left;
-  -webkit-box-shadow: 2px 3px 6px rgba(126, 142, 159, 0.1);
-  box-shadow: 2px 3px 6px rgba(126, 142, 159, 0.1);
-  border: 1px solid rgba(126, 142, 159, 0.1);
-  border-top-left-radius: 0;
-  border-top-right-radius: 0; }
+.profile-dropdown-menu .info ul {
+  display: inline-block;
+  width: 100%; }
+  .profile-dropdown-menu .info ul li {
+    float: left; }
 
-.dropdown-item {
-  display: block;
-  padding: 0 15px;
-  clear: both;
-  font-weight: normal;
-  color: #4f5f6f;
-  white-space: nowrap;
-  -webkit-transition: none;
-  -o-transition: none;
-  transition: none; }
-  .dropdown-item i {
-    margin-right: 2px; }
-  .dropdown-item:hover {
-    color: #85CE36 !important;
-    background: none;
-    background-color: whitesmoke; }
+.profile-dropdown-menu .control ul {
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 10px 0px; }
+  .profile-dropdown-menu .control ul li {
+    padding: 5px 0px; }
 
 .sidebar-overlay {
   position: absolute;

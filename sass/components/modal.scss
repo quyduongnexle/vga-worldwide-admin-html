@@ -35,10 +35,31 @@
         margin: 15px 0 0;
         display: inline-block;
         width: 100%;
+        ul {
+          &.lists-member {
+            li {
+              float: left;
+              margin-right: 10px;
+              a {
+                background: #35A211;
+                color: white;
+                border-radius: 10px;
+                font-size: 12px;
+                padding: 5px 8px;
+                display: inline-block;
+                margin-top: 10px;
+                &:hover {
+                  text-decoration: none;
+                  background: #30930F;
+                }
+              }
+            }
+          }
+        }
       }
 
       textarea {
-        height: 100px !important;
+        min-height: 100px !important;
       }
 
       .text {
@@ -61,6 +82,32 @@
     .modal-footer {
       padding: 14px 30px 23px;
       border: none;
+    }
+  }
+  &.lg {
+    width: 760px !important;
+    .modal-content {
+      .text {
+        width: 100px;
+        float: left;
+      }
+      .value {
+        width: 470px;
+        float: left;
+      }
+      ul {
+        display: inline-block;
+        width: 100%;
+        li {
+          width: 50%;
+          float: left;
+
+          .value {
+            width: 185px;
+            float: left;
+          }
+        }
+      }
     }
   }
 }
