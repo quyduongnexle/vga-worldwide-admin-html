@@ -1,0 +1,54 @@
+.app{
+  .setting-member {
+    padding: 70px 0px 0px 0px;
+    ul.wrap-tabs {
+      margin: 12px 0px;
+      display: inline-block;
+      width: 100%;
+      background: #f0f0f0;
+      padding: 13px 40px;
+      li {
+        float: left;
+        margin-right: 10px;
+        a {
+          background: #2E3E4E;
+          padding: 9px 20px;
+          color: white;
+          text-transform: uppercase;
+          font-weight: 300;
+          font-size: 13px;
+          display: inline-block;
+          border-radius: 5px;
+          &:hover {
+            background: #35A211;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .main {
+      padding: 20px 40px;
+      display: inline-block;
+      width: 100%;
+      .wrap-list {
+        padding: 0px;
+        .box-table {
+          width: 33.33%;
+          float: left;
+          .title {
+            background: white;
+            li {
+              &:first-child {
+                float: left;
+              }
+              &:last-child {
+                float: right;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
