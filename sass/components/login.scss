@@ -1,0 +1,125 @@
+#login {
+    background-color: white;
+    width: 480px;
+    padding: 20px 30px 20px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    -moz-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+    .profile-img-card {
+        margin: 19px auto;
+        display: block;
+    }
+    h2 {
+      font-size: 20px;
+      color: #757575;
+    }
+    h4 {
+      font-size: 13px;
+      color: #A1A1A1;
+      margin-top: 10px;
+      margin-bottom: 26px;
+    }
+    .form-signin {
+      .form-group {
+        label {
+          font-size: 12px;
+          font-weight: 400;
+          color: #A1A1A1;
+        }
+        input {
+          border-top: none;
+          border-right: none;
+          border-left: none;
+          box-shadow: none;
+          border-radius: 0px;
+          padding-left: 0px;
+          font-size: 14px;
+          color: #757575;
+          font-weight: 300;
+        }
+      }
+      .form-group.password {
+          position: relative;
+          span {
+            position: absolute;
+            bottom: 7px;
+            right: 0px;
+          }
+      }
+
+      #remember {
+        font-size: 14px;
+        color: #A1A1A1;
+        font-weight: 300;
+        label {
+          font-size: 14px;
+          color: #A1A1A1;
+        }
+
+        input[type=checkbox]:not(old){
+          width     : 2em;
+          margin    : 0;
+          padding   : 0;
+          font-size : 1em;
+          opacity   : 0;
+        }
+
+        input[type=checkbox]:not(old) + label{
+          float: left;
+          padding-left: 0px;
+          line-height: 1;
+        }
+
+        input[type=checkbox]:not(old) + label > span{
+          display          : inline-block;
+          width            : 16px;
+          height           : 16px;
+          margin           : 0px 10px 0px 0px;
+          border           : 2px solid #979797;
+          border-radius    : 0.25em;
+          background       : white;
+          vertical-align   : bottom;
+        }
+
+        input[type=checkbox]:not(old):checked + label > span:before{
+          content: '✓';
+          display: block;
+          width: 16px;
+          color: white;
+          font-size: 11px;
+          line-height: 17px;
+          text-align: center;
+          text-shadow: 0 0 0.0714em #73994d;
+          font-weight: bold;
+          background: #35A211;
+          height: 16px;
+          border-radius: 3px;
+          position: relative;
+          top: -2px;
+          left: -2px;
+        }
+
+      }
+
+      .button {
+        text-align: right;
+      }
+
+      .forgot-password {
+          color: rgb(104, 145, 162);
+      }
+
+      .forgot-password:hover,
+      .forgot-password:active,
+      .forgot-password:focus{
+          color: rgb(12, 97, 33);
+      }
+
+    }
+
+}

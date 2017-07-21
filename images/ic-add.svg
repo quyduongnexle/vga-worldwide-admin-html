@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>ic-add</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="09-0-setting" transform="translate(-968.000000, -165.000000)">
+            <g id="ic-add" transform="translate(968.000000, 165.000000)">
+                <rect id="Rectangle-8" stroke="#35A211" stroke-width="2" x="1" y="1" width="34" height="34" rx="17"></rect>
+                <path d="M17,17 L9,17 L9,19 L17,19 L17,27 L19,27 L19,19 L27,19 L27,17 L19,17 L19,9 L17,9 L17,17 Z" id="Combined-Shape" fill="#35A211" fill-rule="evenodd"></path>
+            </g>
+        </g>
+    </g>
+</svg>

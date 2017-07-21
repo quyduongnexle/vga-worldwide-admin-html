@@ -60,54 +60,50 @@
             }
           }
 
+          input[type=checkbox]:not(old){
+            width     : 2em;
+            margin    : 0;
+            padding   : 0;
+            font-size : 1em;
+            opacity   : 0;
+          }
 
+          input[type=checkbox]:not(old) + label{
+            display      : inline-block;
+            margin-left  : -2em;
+            line-height  : 1.5em;
+          }
+
+          input[type=checkbox]:not(old) + label > span{
+            display          : inline-block;
+            width            : 16px;
+            height           : 16px;
+            margin           : 0.25em 0.5em 0.25em 0.25em;
+            border           : 2px solid #979797;
+            border-radius    : 0.25em;
+            background       : white;
+            vertical-align   : bottom;
+          }
+
+          input[type=checkbox]:not(old):checked + label > span:before{
+            content: '✓';
+            display: block;
+            width: 16px;
+            color: white;
+            font-size: 11px;
+            line-height: 17px;
+            text-align: center;
+            text-shadow: 0 0 0.0714em #73994d;
+            font-weight: bold;
+            background: #35A211;
+            height: 16px;
+            border-radius: 3px;
+            position: relative;
+            top: -2px;
+            left: -2px;
+          }
         }
       }
     }
   }
-}
-
-
-
-input[type=checkbox]:not(old){
-  width     : 2em;
-  margin    : 0;
-  padding   : 0;
-  font-size : 1em;
-  opacity   : 0;
-}
-
-input[type=checkbox]:not(old) + label{
-  display      : inline-block;
-  margin-left  : -2em;
-  line-height  : 1.5em;
-}
-
-input[type=checkbox]:not(old) + label > span{
-  display          : inline-block;
-  width            : 16px;
-  height           : 16px;
-  margin           : 0.25em 0.5em 0.25em 0.25em;
-  border           : 2px solid #979797;
-  border-radius    : 0.25em;
-  background       : white;
-  vertical-align   : bottom;
-}
-
-input[type=checkbox]:not(old):checked + label > span:before{
-  content: '✓';
-  display: block;
-  width: 16px;
-  color: white;
-  font-size: 11px;
-  line-height: 17px;
-  text-align: center;
-  text-shadow: 0 0 0.0714em #73994d;
-  font-weight: bold;
-  background: #35A211;
-  height: 16px;
-  border-radius: 3px;
-  position: relative;
-  top: -2px;
-  left: -2px;
 }
