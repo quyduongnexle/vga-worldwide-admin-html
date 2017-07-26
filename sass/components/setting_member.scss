@@ -1,45 +1,6 @@
 .app{
   .setting-member {
     padding: 70px 0px 0px 0px;
-    ul.wrap-tabs {
-      margin: 0px;
-      display: inline-block;
-      width: 100%;
-      background: #f0f0f0;
-      padding: 13px 40px;
-      border-bottom: none;
-      li {
-        float: left;
-        margin-right: 10px;
-        @media (max-width: 680px) {
-          width: 100%;
-        }
-        a {
-          background: #2E3E4E;
-          padding: 9px 20px;
-          color: white;
-          text-transform: uppercase;
-          font-weight: 300;
-          font-size: 13px;
-          display: inline-block;
-          border-radius: 5px;
-          &:hover {
-            background: #35A211;
-            text-decoration: none;
-          }
-          @media (max-width: 680px) {
-            width: 100%;
-            margin: 5px 0px;
-          }
-        }
-        &.active {
-          a {
-            background: #35A211;
-          }
-        }
-      }
-    }
-
     .main {
       padding: 20px 20px;
       display: inline-block;

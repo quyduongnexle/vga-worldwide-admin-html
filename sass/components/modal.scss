@@ -30,7 +30,12 @@
 
     .modal-body {
       padding: 5px 15px 0;
-
+      .alert {
+        text-align: left;
+        font-size: 14px;
+        padding: 15px;
+        font-weight: 300;
+      }
       .form-group {
         margin: 15px 0 0;
         display: inline-block;
@@ -94,6 +99,50 @@
       .value {
         width: 470px;
         float: left;
+      }
+      .imgs {
+        padding: 0px 7.5px;
+        ul {
+          li {
+            position: relative;
+            padding: 7.5px;
+            .close-photo {
+              background-color: rgba(0, 0, 0, 0.3);
+              position: absolute;
+              top: 10px;
+              right: 8px;
+              color: white;
+              display: none;
+            }
+            .active-text {
+              position: absolute;
+              left: 0px;
+              top: 0px;
+              height: 100%;
+              width: 100%;
+              padding: 7.5px;
+              text-align: center;
+              p {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                background-color: rgba(0, 0, 0, 0.3);
+                height: 100%;
+                color: white;
+              }
+            }
+            &:hover {
+              .close-photo {
+                display: block;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+              }
+            }
+          }
+        }
       }
       ul {
         display: inline-block;

@@ -218,6 +218,11 @@ select.form-control:focus::-ms-value {
         font-size: 15px; }
     .modal-dialog .modal-content .modal-body {
       padding: 5px 15px 0; }
+      .modal-dialog .modal-content .modal-body .alert {
+        text-align: left;
+        font-size: 14px;
+        padding: 15px;
+        font-weight: 300; }
       .modal-dialog .modal-content .modal-body .form-group {
         margin: 15px 0 0;
         display: inline-block;
@@ -262,6 +267,52 @@ select.form-control:focus::-ms-value {
     .modal-dialog.lg .modal-content .value {
       width: 470px;
       float: left; }
+    .modal-dialog.lg .modal-content .imgs {
+      padding: 0px 7.5px; }
+      .modal-dialog.lg .modal-content .imgs ul li {
+        position: relative;
+        padding: 7.5px; }
+        .modal-dialog.lg .modal-content .imgs ul li .close-photo {
+          background-color: rgba(0, 0, 0, 0.3);
+          position: absolute;
+          top: 10px;
+          right: 8px;
+          color: white;
+          display: none; }
+        .modal-dialog.lg .modal-content .imgs ul li .active-text {
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          height: 100%;
+          width: 100%;
+          padding: 7.5px;
+          text-align: center; }
+          .modal-dialog.lg .modal-content .imgs ul li .active-text p {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-align-content: center;
+            -ms-flex-line-pack: center;
+            align-content: center;
+            background-color: rgba(0, 0, 0, 0.3);
+            height: 100%;
+            color: white; }
+        .modal-dialog.lg .modal-content .imgs ul li:hover .close-photo {
+          display: block;
+          width: 30px;
+          height: 30px;
+          text-align: center;
+          line-height: 30px; }
     .modal-dialog.lg .modal-content ul {
       display: inline-block;
       width: 100%; }
@@ -272,7 +323,7 @@ select.form-control:focus::-ms-value {
           width: 185px;
           float: left; }
 
-button {
+button, .button {
   height: 37px;
   background: #35A211;
   border: none;
@@ -280,18 +331,258 @@ button {
   font-size: 14px;
   padding: 0 25px;
   line-height: 37px;
-  border-radius: 5px; }
-  button:hover {
-    background: #30930F; }
-  button:focus {
+  border-radius: 5px;
+  display: inline-block; }
+  button:hover, .button:hover {
+    background: #30930F;
+    cursor: pointer; }
+  button:focus, .button:focus {
     outline: none; }
-  button:active {
+  button:active, .button:active {
     outline: none; }
-  button.cancel {
+  button.cancel, .button.cancel {
     background: #23303D;
     margin-right: 10px; }
-    button.cancel:hover {
+    button.cancel:hover, .button.cancel:hover {
       background: #1C2732; }
+
+.header {
+  background-color: #fff;
+  height: 70px;
+  position: absolute;
+  left: 230px;
+  right: 0;
+  -webkit-transition: left 0.3s ease;
+  -o-transition: left 0.3s ease;
+  transition: left 0.3s ease;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between; }
+  @media (max-width: 991px) {
+    .header {
+      left: 0; } }
+  @media (max-width: 767px) {
+    .header {
+      left: 0;
+      height: 50px; } }
+  .header h2 {
+    font-size: 18px;
+    font-weight: 300px;
+    color: #212121; }
+
+.header-fixed .header {
+  position: fixed; }
+
+@media (max-width: 767px) {
+  .header .header-block {
+    padding: 5px; } }
+
+.header .header-block-buttons {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: nowrap; }
+
+.header .header-block-buttons .btn.header-btn {
+  background-color: transparent;
+  border: 1px solid #64798d;
+  color: #64798d;
+  margin: 0 5px;
+  border-radius: 0.2rem; }
+
+.header .header-block-buttons .btn.header-btn:hover,
+.header .header-block-buttons .btn.header-btn:focus {
+  border: 1px solid #3a4651;
+  color: #3a4651; }
+
+@media (max-width: 767px) {
+  .header .header-block-buttons .btn.header-btn span {
+    display: none; } }
+
+.header .header-block-collapse {
+  padding-right: 5px; }
+
+@media (max-width: 767px) {
+  .header .header-block-collapse {
+    width: 155px; } }
+
+.header .header-block-collapse .collapse-btn {
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #85CE36;
+  font-size: 24px;
+  line-height: 40px;
+  border-radius: 0;
+  outline: none;
+  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: initial; }
+
+.header .header-block-nav {
+  margin-left: auto;
+  white-space: nowrap;
+  padding-right: 15px; }
+
+@media (max-width: 767px) {
+  .header .header-block-nav {
+    padding-right: 25px; } }
+
+.header .header-block-nav::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.header .header-block-nav a {
+  text-decoration: none; }
+
+.header .header-block-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.header .header-block-nav > ul {
+  display: table; }
+
+.header .header-block-nav > ul > li {
+  display: table-cell;
+  position: relative; }
+
+.header .header-block-nav > ul > li:first-child:before {
+  display: none; }
+
+.header .header-block-nav > ul > li > a {
+  padding: 0 15px;
+  color: #4f5f6f; }
+
+.header .header-block-nav > ul > li > a:hover {
+  color: #85CE36; }
+
+.header .header-block-nav .dropdown-menu {
+  margin-top: 15px; }
+
+.header .header-block-search {
+  margin-right: auto;
+  padding-left: 20px; }
+
+@media (max-width: 767px) {
+  .header .header-block-search {
+    padding-left: 10px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .header .header-block-search {
+    padding-left: 20px; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .header .header-block-search {
+    padding-left: 20px; } }
+
+@media (min-width: 1200px) {
+  .header .header-block-search {
+    padding-left: 35px; } }
+
+.header .header-block-search > form {
+  float: right; }
+
+@media (max-width: 767px) {
+  .header .header-block-search > form {
+    padding-left: 0; } }
+
+.header .header-block-search .input-container {
+  position: relative;
+  color: #7e8e9f; }
+
+.header .header-block-search .input-container i {
+  position: absolute;
+  pointer-events: none;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  left: 0; }
+
+.header .header-block-search .input-container input {
+  background-color: transparent;
+  border: none;
+  padding-left: 25px;
+  height: 40px;
+  max-width: 150px; }
+
+@media (max-width: 767px) {
+  .header .header-block-search .input-container input {
+    max-width: 140px; } }
+
+.header .header-block-search .input-container input:focus + .underline {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1); }
+
+.header .header-block-nav .profile .img {
+  display: inline-block;
+  width: 42px;
+  height: 44px;
+  line-height: 30px;
+  border-radius: 4px;
+  background-color: #8b9cb1;
+  color: #ffffff;
+  text-align: center;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle; }
+
+.header .header-block-nav > ul > li > a sup {
+  background: #FF5A18;
+  color: white;
+  font-size: 10px;
+  border-radius: 50%;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  top: 0px;
+  right: 2px; }
+
+.header .header-block-nav > ul > li.notifications i {
+  position: relative;
+  top: 5px; }
+
+.filter-search ul {
+  display: inline-block;
+  width: 100%; }
+  .filter-search ul li {
+    float: left;
+    height: 37px;
+    line-height: 37px;
+    margin-right: 15px; }
+    .filter-search ul li input,
+    .filter-search ul li select {
+      border-radius: 5px;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      font-size: 12px;
+      color: #9b9b9b;
+      min-width: 170px;
+      height: 37px; }
+    .filter-search ul li.title {
+      font-size: 12px;
+      color: #4a4a4a; }
+    .filter-search ul li:last-child {
+      margin-right: 0px;
+      float: right; }
 
 .inactive {
   color: #F44455; }
@@ -719,6 +1010,39 @@ button {
     background-position: center;
     background-repeat: no-repeat; }
 
+ul.wrap-tabs {
+  margin: 0px;
+  display: inline-block;
+  width: 100%;
+  background: #E1E1E1;
+  padding: 13px 40px;
+  border-bottom: none; }
+  ul.wrap-tabs li {
+    float: left;
+    margin-right: 10px; }
+    @media (max-width: 680px) {
+      ul.wrap-tabs li {
+        width: 100%; } }
+    ul.wrap-tabs li a {
+      background: #2E3E4E;
+      padding: 9px 20px;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 13px;
+      display: inline-block;
+      border-radius: 5px; }
+      ul.wrap-tabs li a:hover {
+        background: #35A211;
+        text-decoration: none; }
+      @media (max-width: 680px) {
+        ul.wrap-tabs li a {
+          width: 100%;
+          margin: 5px 0px; } }
+    ul.wrap-tabs li.active a {
+      background: #35A211;
+      color: white; }
+
 .profile-dropdown-menu {
   left: auto;
   right: 0;
@@ -889,30 +1213,6 @@ button {
   .dashboard .card .item-list .item-col.db-col-register {
     text-align: center; }
 
-.advertising .filter-search ul {
-  display: inline-block;
-  width: 100%; }
-  .advertising .filter-search ul li {
-    float: left;
-    height: 37px;
-    line-height: 37px;
-    margin-right: 15px; }
-    .advertising .filter-search ul li input,
-    .advertising .filter-search ul li select {
-      border-radius: 5px;
-      -webkit-box-shadow: none;
-      box-shadow: none;
-      font-size: 12px;
-      color: #9b9b9b;
-      min-width: 170px;
-      height: 37px; }
-    .advertising .filter-search ul li.title {
-      font-size: 12px;
-      color: #4a4a4a; }
-    .advertising .filter-search ul li:last-child {
-      margin-right: 0px;
-      float: right; }
-
 .advertising .item-list .item-col.ad-col-member {
   -webkit-box-flex: 5;
   -ms-flex-positive: 5;
@@ -936,22 +1236,149 @@ button {
     .advertising .ad-col-actions ul li:first-child {
       padding-right: 0 !important; }
 
-footer {
+.tournament .item-list .item-list-content {
+  padding: 10px 15px; }
+  .tournament .item-list .item-list-content .item-col {
+    height: auto; }
+
+#modal-add-tournament .modal-dialog.lg .modal-content .text, #modal-copy-tournament .modal-dialog.lg .modal-content .text {
+  width: 115px; }
+
+#modal-add-tournament .modal-dialog.lg .modal-content .value, #modal-copy-tournament .modal-dialog.lg .modal-content .value {
+  width: 455px; }
+
+#modal-add-tournament .modal-dialog.lg .modal-content ul li .value, #modal-copy-tournament .modal-dialog.lg .modal-content ul li .value {
+  width: 170px; }
+
+#tournament-detail {
+  padding: 70px 0px 0px 0px; }
+  #tournament-detail .header-title {
+    background: #F0F0F0;
+    padding: 20px 20px;
+    display: inline-block;
+    width: 100%; }
+    #tournament-detail .header-title .text h3 {
+      color: #000000;
+      font-size: 22px;
+      font-weight: 300;
+      margin-bottom: 5px; }
+    #tournament-detail .header-title .text span {
+      font-size: 16px;
+      color: #444444; }
+      #tournament-detail .header-title .text span img {
+        position: relative;
+        top: 3px;
+        margin-right: 5px; }
+    #tournament-detail .header-title .price ul {
+      display: inline-block;
+      float: right; }
+      #tournament-detail .header-title .price ul li {
+        display: inline-block;
+        width: 100%;
+        text-align: center; }
+        #tournament-detail .header-title .price ul li.text {
+          background: #35A211;
+          font-size: 18px;
+          color: white;
+          height: 30px;
+          line-height: 30px;
+          border-radius: 5px 5px 0px 0px; }
+        #tournament-detail .header-title .price ul li.number {
+          background: #2D3D4D;
+          font-weight: 300;
+          font-size: 22px;
+          color: white;
+          line-height: 50px;
+          height: 50px;
+          border-radius: 0px 0px 5px 5px; }
+  #tournament-detail .wrap-list {
+    padding: 20px; }
+    #tournament-detail .wrap-list .box-table {
+      width: 33.33%;
+      float: left; }
+      #tournament-detail .wrap-list .box-table .title {
+        background: white; }
+        #tournament-detail .wrap-list .box-table .title li:first-child {
+          float: left; }
+        #tournament-detail .wrap-list .box-table .title li:last-child {
+          float: right; }
+    #tournament-detail .wrap-list li.box {
+      width: 33.33%;
+      float: left;
+      padding: 10px 20px; }
+      @media (max-width: 768px) {
+        #tournament-detail .wrap-list li.box {
+          width: 50%; } }
+      @media (max-width: 660px) {
+        #tournament-detail .wrap-list li.box {
+          width: 100%; } }
+      #tournament-detail .wrap-list li.box .table {
+        display: inline-block; }
+        #tournament-detail .wrap-list li.box .table .title {
+          min-height: 40px;
+          background: white;
+          line-height: 40px;
+          padding: 0px 20px;
+          border-radius: 5px 5px 0px 0px; }
+          #tournament-detail .wrap-list li.box .table .title h4 {
+            color: #444444;
+            font-weight: bold;
+            font-size: 15px;
+            text-transform: uppercase;
+            float: left;
+            line-height: 40px;
+            background: white; }
+          #tournament-detail .wrap-list li.box .table .title span {
+            float: right; }
+            #tournament-detail .wrap-list li.box .table .title span a {
+              margin-left: 5px; }
+        #tournament-detail .wrap-list li.box .table .input {
+          background: #F3F5F5;
+          border-radius: 0px 0px 5px 5px;
+          border-bottom: 2px solid #E1E2E2;
+          padding: 7px 0px;
+          display: inline-block;
+          width: 100%; }
+          #tournament-detail .wrap-list li.box .table .input .form {
+            padding: 0px 10px; }
+            #tournament-detail .wrap-list li.box .table .input .form li {
+              width: 50%;
+              float: left;
+              padding: 0px 10px; }
+              #tournament-detail .wrap-list li.box .table .input .form li .text {
+                float: left;
+                width: 20%;
+                text-align: center; }
+                #tournament-detail .wrap-list li.box .table .input .form li .text p {
+                  line-height: 34px;
+                  color: #444444;
+                  font-size: 13px; }
+              #tournament-detail .wrap-list li.box .table .input .form li .value {
+                width: 50%;
+                float: right; }
+                #tournament-detail .wrap-list li.box .table .input .form li .value input {
+                  text-align: center;
+                  padding: 5px;
+                  font-size: 13px; }
+
+#wrap-pagination {
   padding: 0 40px 15px 40px;
   font-size: 12px;
   color: #4A4A4A;
-  font-weight: 400; }
-  footer .show {
+  font-weight: 400;
+  background: #F0F3F6; }
+  #wrap-pagination .show {
     height: 32px;
-    line-height: 32px; }
-  footer .pagination {
+    line-height: 32px;
+    margin: 20px 0px; }
+  #wrap-pagination .button-pagination {
     text-align: right;
     margin: 0; }
-    footer .pagination ul {
+    #wrap-pagination .button-pagination ul {
       display: inline-block; }
-      footer .pagination ul li {
+      #wrap-pagination .button-pagination ul li {
         float: left; }
-        footer .pagination ul li a {
+        #wrap-pagination .button-pagination ul li a {
           color: #000;
           font-size: 12px;
           height: 32px;
@@ -962,10 +1389,17 @@ footer {
           padding: 0 11px;
           text-align: center;
           border-right: 1px solid #f0f0f0; }
-          footer .pagination ul li a:hover {
+          #wrap-pagination .button-pagination ul li a:hover {
             background: #35A211;
             text-decoration: none;
             color: white; }
+        #wrap-pagination .button-pagination ul li.active a {
+          background: #35A211;
+          text-decoration: none;
+          color: white;
+          border-color: white; }
+        #wrap-pagination .button-pagination ul li.disabled {
+          cursor: no-drop; }
 
 #login {
   background-color: white;
@@ -1179,37 +1613,6 @@ footer {
 
 .app .setting-member {
   padding: 70px 0px 0px 0px; }
-  .app .setting-member ul.wrap-tabs {
-    margin: 0px;
-    display: inline-block;
-    width: 100%;
-    background: #f0f0f0;
-    padding: 13px 40px;
-    border-bottom: none; }
-    .app .setting-member ul.wrap-tabs li {
-      float: left;
-      margin-right: 10px; }
-      @media (max-width: 680px) {
-        .app .setting-member ul.wrap-tabs li {
-          width: 100%; } }
-      .app .setting-member ul.wrap-tabs li a {
-        background: #2E3E4E;
-        padding: 9px 20px;
-        color: white;
-        text-transform: uppercase;
-        font-weight: 300;
-        font-size: 13px;
-        display: inline-block;
-        border-radius: 5px; }
-        .app .setting-member ul.wrap-tabs li a:hover {
-          background: #35A211;
-          text-decoration: none; }
-        @media (max-width: 680px) {
-          .app .setting-member ul.wrap-tabs li a {
-            width: 100%;
-            margin: 5px 0px; } }
-      .app .setting-member ul.wrap-tabs li.active a {
-        background: #35A211; }
   .app .setting-member .main {
     padding: 20px 20px;
     display: inline-block;

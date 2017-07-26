@@ -21,6 +21,29 @@ Copyright (c) 2015 Daniel Eden
 .bold {
   font-weight: bold !important;
 }
+.alert-confirm {
+  padding: 18px 15px 7px 15px;
+}
+.alert-confirm p {
+  font-size: 14px;
+font-weight: 300;
+}
+.change-password .value {
+  position: relative;
+}
+.change-password .value span {
+     position: absolute;
+    top: 11px;
+    right: 22px;
+}
+.success {
+  color: #35A211;
+  font-size: 14px;
+}
+.error {
+  color: red;
+  font-size: 14px;
+}
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;

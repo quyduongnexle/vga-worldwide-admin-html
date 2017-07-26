@@ -1,0 +1,216 @@
+<header class="header">
+   <div class="header-block header-block-collapse hidden-lg-up">
+      <button class="collapse-btn" id="sidebar-collapse-btn">
+      <i class="fa fa-bars"></i>
+      </button>
+   </div>
+   <div class="header-block header-block-search hidden-sm-down">
+      <h2>Tournament</h2>
+   </div>
+   <div w3-include-html="inc/profile.html"></div>
+</header>
+
+
+<div w3-include-html="inc/sidebar.html"></div>
+
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+<article class="content items-list-page tournament">
+  <div class="header-filter-input row">
+     <div class="filter-search col-md-12">
+        <form>
+           <ul>
+              <li class="title">
+                 Filter
+              </li>
+              <li>
+                 <select class="form-control" id="filter">
+                    <option>All</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                 </select>
+              </li>
+              <li class="title">
+                 Search
+              </li>
+              <li>
+                 <input type="text" class="form-control" placeholder="Name, Location">
+              </li>
+              <li>
+                 <span class="button" data-toggle="modal" data-target="#modal-add-tournament">APPLY</span>
+              </li>
+           </ul>
+        </form>
+     </div>
+  </div>
+
+   <div class="card items">
+      <ul class="item-list striped">
+         <li class="item item-list-header hidden-sm-down">
+            <div class="item-row">
+               <div class="item-col item-col-header">
+                  <div class="select">
+                     <span>Tourmament</span>
+                  </div>
+               </div>
+               <div class="item-col item-col-header">
+                  <div>
+                     <span></span>
+                  </div>
+               </div>
+               <div class="item-col item-col-header">
+                  <div class="select">
+                     <span>Location</span>
+                  </div>
+               </div>
+               <div class="item-col item-col-header center">
+                  <div>
+                     <span>Date</span>
+                  </div>
+               </div>
+               <div class="item-col item-col-header center">
+                  <div>
+                     <span>Register</span>
+                  </div>
+               </div>
+               <div class="item-col item-col-header center">
+                  <div class="select">
+                     <span>Prize Fund</span>
+                  </div>
+               </div>
+               <div class="item-col item-col-header center">
+                  <div class="select">
+                     <span>Status</span>
+                  </div>
+               </div>
+               <div class="item-col item-col-header right item-col-actions">
+                  <div>
+                     <span>Actions</span>
+                  </div>
+               </div>
+            </div>
+         </li>
+         <li class="item item-list-content">
+            <div class="item-row">
+               <div class="item-col">
+                 <div class="item-heading">Tourmament</div>
+                 <div class="no-overflow"> Dubai Duty Free Irish Open Hosted by the Rory Foundation</div>
+               </div>
+
+               <div class="item-col">
+                  <div class="item-heading"></div>
+                  <div class="no-overflow">
+                     <img src="images/photo.png" alt="" class="img-responsive">
+                  </div>
+
+               </div>
+               <div class="item-col">
+                  <div class="item-heading">Location</div>
+                  <div class="no-overflow"> Green Eagle Golf Course, Hamburg, Germany </div>
+               </div>
+               <div class="item-col center">
+                  <div class="item-heading">Date</div>
+                  <div class="no-overflow">
+                     <a href="">July 6-8</a>
+                  </div>
+               </div>
+               <div class="item-col center">
+                  <div class="item-heading">Register</div>
+                  <div class="no-overflow">
+                     <a href="">32</a>
+                  </div>
+               </div>
+               <div class="item-col center">
+                  <div class="item-heading">Prize Fund</div>
+                  <div class="no-overflow"> $7,000,000 </div>
+               </div>
+               <div class="item-col center">
+                  <div class="item-heading">Status</div>
+                  <div class="no-overflow active"> Active </div>
+               </div>
+               <div class="item-col right item-col-actions">
+                  <div class="item-heading">Actions</div>
+                  <div class="no-overflow">
+                     <ul>
+                        <li>
+                           <a href="#"><img src="images/ic-close.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
+                        </li>
+                        <li>
+                           <a href="#" data-toggle="modal" data-target="#modal-reset-password"><img src="images/ic-lock.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Reset/Password"></a>
+                        </li>
+                        <li>
+                           <a href="#" data-toggle="modal" data-target="#modal-edit-user"><img src="images/ic-edit.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
+                        </li>
+                        <li>
+                           <a href="#"><img src="images/ic-enable.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Disable/Enable"></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </li>
+         <li class="item item-list-content">
+            <div class="item-row">
+               <div class="item-col">
+                 <div class="item-heading">Tourmament</div>
+                 <div class="no-overflow"> Dubai Duty Free Irish Open Hosted by the Rory Foundation</div>
+               </div>
+
+               <div class="item-col">
+                  <div class="item-heading"></div>
+                  <div class="no-overflow">
+                     <img src="images/photo.png" alt="" class="img-responsive">
+                  </div>
+
+               </div>
+               <div class="item-col">
+                  <div class="item-heading">Location</div>
+                  <div class="no-overflow"> Green Eagle Golf Course, Hamburg, Germany </div>
+               </div>
+               <div class="item-col center">
+                  <div class="item-heading">Date</div>
+                  <div class="no-overflow">
+                     <a href="">July 6-8</a>
+                  </div>
+               </div>
+               <div class="item-col">
+                  <div class="item-heading">Register</div>
+                  <div class="no-overflow">
+                     <a href="">32</a>
+                  </div>
+               </div>
+               <div class="item-col center">
+                  <div class="item-heading">Prize Fund</div>
+                  <div class="no-overflow"> $7,000,000 </div>
+               </div>
+               <div class="item-col center">
+                  <div class="item-heading">Status</div>
+                  <div class="no-overflow active"> Active </div>
+               </div>
+               <div class="item-col right item-col-actions">
+                  <div class="item-heading">Actions</div>
+                  <div class="no-overflow">
+                     <ul>
+                        <li>
+                           <a href="#"><img src="images/ic-close.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
+                        </li>
+                        <li>
+                           <a href="#" data-toggle="modal" data-target="#modal-reset-password"><img src="images/ic-lock.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Reset/Password"></a>
+                        </li>
+                        <li>
+                           <a href="#" data-toggle="modal" data-target="#modal-copy-tournament"><img src="images/ic-edit.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
+                        </li>
+                        <li>
+                           <a href="#"><img src="images/ic-enable.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Disable/Enable"></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </li>
+
+
+      </ul>
+   </div>
+</article>

@@ -1,0 +1,29 @@
+.tournament {
+  .item-list {
+    .item-list-content {
+      padding: 10px 15px;
+      .item-col {
+        height: auto;
+      }
+    }
+  }
+}
+#modal-add-tournament, #modal-copy-tournament {
+  .modal-dialog.lg {
+    .modal-content {
+      .text {
+        width: 115px;
+      }
+      .value {
+        width: 455px;
+      }
+      ul {
+        li {
+          .value {
+            width: 170px
+          }
+        }
+      }
+    }
+  }
+}

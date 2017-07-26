@@ -1,0 +1,23 @@
+.filter-search ul {
+  display: inline-block;
+  width: 100%; }
+  .filter-search ul li {
+    float: left;
+    height: 37px;
+    line-height: 37px;
+    margin-right: 15px; }
+    .filter-search ul li input,
+    .filter-search ul li select {
+      border-radius: 5px;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      font-size: 12px;
+      color: #9b9b9b;
+      min-width: 170px;
+      height: 37px; }
+    .filter-search ul li.title {
+      font-size: 12px;
+      color: #4a4a4a; }
+    .filter-search ul li:last-child {
+      margin-right: 0px;
+      float: right; }

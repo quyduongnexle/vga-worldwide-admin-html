@@ -20,10 +20,12 @@
   <div class="main-wrapper">
     <div class="app" id="app">
 
-      <div w3-include-html="inc/admin/setting/member.html"></div>
+
+      <div w3-include-html="inc/admin/tournament/index.html"></div>
 
       <!-- Admin User -->
       <!--
+
         <div w3-include-html="inc/admin/admin_user/admin_profile.html"></div>
         <div w3-include-html="inc/admin/admin_user/index.html"></div>
         <div w3-include-html="inc/admin/groups/index.html"></div>
@@ -31,38 +33,34 @@
         <div w3-include-html="inc/admin/advertising/index.html"></div>
         <div w3-include-html="inc/admin/dashboard/index.html"></div>
         <div w3-include-html="inc/admin/admin_user/index.html"></div>
-
+        <div w3-include-html="inc/admin/tournament/index.html"></div>
         <div w3-include-html="inc/admin/setting/member.html"></div>
 -->
-      <footer class="row">
+      <div id="wrap-pagination" class="row">
         <div class="show col-md-4 col-xs-12">
-          <p>
-            Show <span>1</span> to <span>10</span> of <span>532</span> admins
-          </p>
+          <p>Show 1 to 10 of 11</p>
         </div>
-        <!--end .show-->
-        <div class="pagination col-md-8 col-xs-12">
-          <ul>
-            <li>
-              <a href="#">Previous</a>
+        <div class="button-pagination col-md-8 col-xs-12">
+          <ul class="pagination pagination-md">
+            <li class="disabled">
+              <a role="button" href="#" tabindex="-1" style="pointer-events: none;">
+                <span aria-label="Previous">Previous</span>
+              </a>
             </li>
-            <li>
-              <a href="#">1</a>
+            <li class="active">
+              <a role="button" href="#">1</a>
             </li>
-            <li>
-              <a href="#">2</a>
+            <li class="">
+              <a role="button" href="#">2</a>
             </li>
-            <li>
-              <a href="#">3</a>
-            </li>
-            <li>
-              <a href="#">Next</a>
+            <li class="">
+              <a role="button" href="#">
+                <span aria-label="Next">Next</span>
+              </a>
             </li>
           </ul>
         </div>
-      </footer>
-      <!--end #pagination -->
-    </div>
+      </div>
     <!--end .app-->
   </div>
   <!--end .main-wrapper-->
@@ -73,7 +71,8 @@
   <div w3-include-html="inc/modal/modal_reset_password.html"></div>
   <div w3-include-html="inc/modal/modal_add_member.html"></div>
   <div w3-include-html="inc/modal/modal_edit_group.html"></div>
-
+  <div w3-include-html="inc/modal/modal_add_tournament.html"></div>
+    <div w3-include-html="inc/modal/modal_copy_tournament.html"></div>
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
   <!-- Bootstrap Core JavaScript -->

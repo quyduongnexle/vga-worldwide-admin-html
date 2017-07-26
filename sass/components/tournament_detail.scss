@@ -1,0 +1,143 @@
+#tournament-detail {
+  padding: 70px 0px 0px 0px;
+  .header-title {
+    background: #F0F0F0;
+    padding: 20px 20px;
+    display: inline-block;
+    width: 100%;
+    .text {
+      h3 {
+        color: #000000;
+        font-size: 22px;
+        font-weight: 300;
+        margin-bottom: 5px;
+      }
+      span {
+        font-size: 16px;
+        color: #444444;
+        img {
+          position: relative;
+          top: 3px;
+          margin-right: 5px;
+        }
+      }
+    }
+    .price {
+      ul {
+        display: inline-block;
+        float: right;
+        li {
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+          &.text {
+            background: #35A211;
+            font-size: 18px;
+            color: white;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 5px 5px 0px 0px;
+          }
+          &.number {
+            background: #2D3D4D;
+            font-weight: 300;
+            font-size: 22px;
+            color: white;
+            line-height: 50px;
+            height: 50px;
+            border-radius: 0px 0px 5px 5px;
+          }
+        }
+      }
+    }
+  }
+  .wrap-list {
+    padding: 20px;
+    .box-table {
+      width: 33.33%;
+      float: left;
+      .title {
+        background: white;
+        li {
+          &:first-child {
+            float: left;
+          }
+          &:last-child {
+            float: right;
+          }
+        }
+      }
+    }
+    li.box {
+      width: 33.33%;
+      float: left;
+      padding: 10px 20px;
+      @media (max-width: 768px) {
+        width: 50%;
+      }
+      @media (max-width: 660px) {
+        width: 100%;
+      }
+      .table {
+        display: inline-block;
+        .title {
+          min-height: 40px;
+          background: white;
+          line-height: 40px;
+          padding: 0px 20px;
+          border-radius: 5px 5px 0px 0px;
+          h4 {
+            color: #444444;
+            font-weight: bold;
+            font-size: 15px;
+            text-transform: uppercase;
+            float: left;
+            line-height: 40px;
+            background: white;
+          }
+          span {
+            float: right;
+            a {
+              margin-left: 5px;
+            }
+          }
+        }
+        .input {
+          background: #F3F5F5;
+          border-radius: 0px 0px 5px 5px;
+          border-bottom: 2px solid #E1E2E2;
+          padding: 7px 0px;
+          display: inline-block;
+          width: 100%;
+          .form {
+            padding: 0px 10px;
+            li {
+              width: 50%;
+              float: left;
+              padding: 0px 10px;
+              .text {
+                float: left;
+                width: 20%;
+                text-align: center;
+                p {
+                  line-height: 34px;
+                  color: #444444;
+                  font-size: 13px;
+                }
+              }
+              .value {
+                width: 50%;
+                float: right;
+                input {
+                  text-align: center;
+                  padding: 5px;
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
