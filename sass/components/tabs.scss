@@ -34,6 +34,10 @@ ul.wrap-tabs {
       a {
         background: #35A211;
         color: white;
+        &:hover,&:focus,&:visited {
+          background: #35A211;
+          color: white;
+        }
       }
     }
   }

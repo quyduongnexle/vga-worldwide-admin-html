@@ -1,10 +1,12 @@
 #tournament-detail {
-  padding: 70px 0px 0px 0px;
+  padding: 70px 0 0;
+
   .header-title {
     background: #F0F0F0;
-    padding: 20px 20px;
+    padding: 20px;
     display: inline-block;
     width: 100%;
+
     .text {
       h3 {
         color: #000000;
@@ -12,9 +14,11 @@
         font-weight: 300;
         margin-bottom: 5px;
       }
+
       span {
         font-size: 16px;
         color: #444444;
+
         img {
           position: relative;
           top: 3px;
@@ -22,22 +26,26 @@
         }
       }
     }
+
     .price {
       ul {
         display: inline-block;
         float: right;
+
         li {
           display: inline-block;
           width: 100%;
           text-align: center;
+
           &.text {
             background: #35A211;
             font-size: 18px;
             color: white;
             height: 30px;
             line-height: 30px;
-            border-radius: 5px 5px 0px 0px;
+            border-radius: 5px 5px 0 0;
           }
+
           &.number {
             background: #2D3D4D;
             font-weight: 300;
@@ -45,96 +53,297 @@
             color: white;
             line-height: 50px;
             height: 50px;
-            border-radius: 0px 0px 5px 5px;
+            border-radius: 0 0 5px 5px;
           }
         }
       }
     }
   }
-  .wrap-list {
-    padding: 20px;
-    .box-table {
-      width: 33.33%;
-      float: left;
-      .title {
-        background: white;
-        li {
-          &:first-child {
-            float: left;
+
+  #tournament-table {
+    .wrap-list {
+      padding: 20px;
+
+      li.box {
+        width: 33.33%;
+        float: left;
+        padding: 10px 20px;
+        @media (max-width: 768px) {
+          width: 50%;
+        }
+        @media (max-width: 660px) {
+          width: 100%;
+        }
+
+        .table {
+          display: inline-block;
+          border-top: 1px solid #ddd;
+          border-bottom: 1px solid #CECECE;
+          border-left: 1px solid #ddd;
+          border-right: 1px solid #ddd;
+          box-shadow: 0 0 1px #ddd;
+          border-radius: 5px;
+          width: 100%;
+          float: left;
+          background: white;
+
+          .title {
+            min-height: 40px;
+            background: white;
+            line-height: 40px;
+            padding: 0 20px;
+            border-radius: 5px 5px 0 0;
+
+            h4 {
+              color: #444444;
+              font-weight: bold;
+              font-size: 15px;
+              text-transform: uppercase;
+              float: left;
+              line-height: 40px;
+              background: white;
+            }
+
+            span {
+              float: right;
+              background: #35A211;
+              color: white;
+              font-size: 12px;
+              padding: 0 5px;
+              display: inline-block;
+              height: 20px;
+              line-height: 20px;
+              border-radius: 5px;
+              margin-top: 10px;
+              font-weight: 300;
+
+              a {
+                margin-left: 5px;
+              }
+            }
           }
-          &:last-child {
-            float: right;
+
+          .list-item {
+            overflow: scroll;
+            height: 265px;
+            overflow-x: hidden;
+
+            .item {
+              padding: 5px 15px;
+              display: inline-block;
+              width: 100%;
+
+              &:nth-child(odd) {
+                background: #F9F9F9;
+              }
+
+              &:nth-child(even) {
+                background: white;
+              }
+
+              .span {
+                float: right;
+              }
+
+              span {
+                background: #2E3E4E;
+                display: block;
+                color: white;
+                font-size: 12px;
+                padding: 5px 10px;
+                border-radius: 5px;
+                position: relative;
+                top: 3px;
+              }
+            }
+
+            .img {
+              float: left;
+              margin-right: 10px;
+              width: 34px;
+              height: 34px;
+              border-radius: 50%;
+              background: white;
+
+              img {
+                height: 100%;
+                border-radius: 50%;
+              }
+            }
+
+            .text {
+              display: inline-block;
+              position: relative;
+              top: 3px;
+
+              h5 {
+                color: #4A4A4A;
+                font-size: 13px;
+                font-weight: 400;
+                margin-bottom: 5px;
+              }
+
+              p {
+                color: #9B9B9B;
+                font-size: 10px;
+              }
+            }
+          }
+
+          .input {
+            background: #F3F5F5;
+            border-radius: 0 0 5px 5px;
+            border-bottom: 2px solid #E1E2E2;
+            padding: 7px 0;
+            display: inline-block;
+            width: 100%;
+
+            .form {
+              padding: 0 10px;
+
+              li {
+                width: 50%;
+                float: left;
+                padding: 0 10px;
+
+                .text {
+                  float: left;
+                  width: 20%;
+                  text-align: center;
+
+                  p {
+                    line-height: 34px;
+                    color: #444444;
+                    font-size: 13px;
+                  }
+                }
+
+                .value {
+                  width: 50%;
+                  float: right;
+
+                  input {
+                    text-align: center;
+                    padding: 5px;
+                    font-size: 13px;
+                  }
+                }
+              }
+            }
           }
         }
       }
     }
-    li.box {
-      width: 33.33%;
-      float: left;
-      padding: 10px 20px;
-      @media (max-width: 768px) {
-        width: 50%;
+  }
+
+  #tournament-match {
+    padding: 20px 40px;
+
+    form {
+      display: inline-block;
+      width: 100%;
+      border: 1px solid #9B9B9B;
+      padding: 10px 0;
+
+      .form-group {
+        padding: 0;
+        margin: 10px 0;
+        width: 46%;
+        float: left;
       }
-      @media (max-width: 660px) {
-        width: 100%;
+
+      .btn-add {
+        float: right;
+        width: 8%;
+        margin: 10px 0;
+        position: relative;
+        right: 15px;
+        text-align: right;
       }
-      .table {
+
+      .text {
+        color: #4A4A4A;
+        font-size: 12px;
+        font-weight: 400;
+        height: 36px;
+        line-height: 36px;
+        padding-right: 0;
+      }
+
+      .value {
+        position: relative;
+
+        .form-control {
+          height: 36px;
+          box-shadow: none;
+          font-size: 13px;
+          color: #999999;
+          border: 1px solid #E4E6E8;
+        }
+
+        span {
+          position: absolute;
+          right: 25px;
+          top: 10px;
+        }
+      }
+    }
+  }
+}
+
+#modal-edit-tournament-match.modal.in {
+  .modal-dialog {
+    width: 820px !important;
+  }
+
+  .modal-content {
+    form {
+      display: block;
+      width: 360px;
+      margin: 17px auto;
+
+      .value {
+        position: relative;
+        span {
+          position: absolute;
+          right: 25px;
+          top: 10px;
+        }
+      }
+    }
+
+    .modal-body {
+      padding: 0;
+
+      .banner {
         display: inline-block;
-        .title {
-          min-height: 40px;
-          background: white;
-          line-height: 40px;
-          padding: 0px 20px;
-          border-radius: 5px 5px 0px 0px;
-          h4 {
-            color: #444444;
-            font-weight: bold;
-            font-size: 15px;
-            text-transform: uppercase;
-            float: left;
-            line-height: 40px;
-            background: white;
-          }
-          span {
+        width: 100%;
+        background: url('../images/header-profile.png') no-repeat top left;
+        background-size: cover;
+        padding: 13px 20px;
+
+        li {
+          float: left;
+
+          &.ic-hdcp-course {
             float: right;
-            a {
-              margin-left: 5px;
-            }
           }
         }
-        .input {
-          background: #F3F5F5;
-          border-radius: 0px 0px 5px 5px;
-          border-bottom: 2px solid #E1E2E2;
-          padding: 7px 0px;
-          display: inline-block;
-          width: 100%;
-          .form {
-            padding: 0px 10px;
-            li {
-              width: 50%;
-              float: left;
-              padding: 0px 10px;
-              .text {
-                float: left;
-                width: 20%;
-                text-align: center;
-                p {
-                  line-height: 34px;
-                  color: #444444;
-                  font-size: 13px;
-                }
-              }
-              .value {
-                width: 50%;
-                float: right;
-                input {
-                  text-align: center;
-                  padding: 5px;
-                  font-size: 13px;
-                }
-              }
-            }
+
+        .content {
+          margin-left: 20px;
+          margin-top: 15px;
+
+          span {
+            color: #000000;
+            font-size: 22px;
+            margin-bottom: 5px;
+            display: block;
+          }
+
+          p {
+            font-size: 13px;
+            color: #444444;
           }
         }
       }
