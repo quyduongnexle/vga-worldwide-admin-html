@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="nav-left" transform="translate(0.000000, -314.000000)">
+            <g id="Group" transform="translate(1.000000, 315.000000)">
+                <rect id="Rectangle-2" stroke="#FFFFFF" x="0" y="0" width="16" height="16" rx="4"></rect>
+                <circle id="Oval" stroke="#35A211" cx="4.8" cy="4.8" r="1.6"></circle>
+                <path d="M9.6,4.5 L12.8,4.5" id="Line" stroke="#35A211"></path>
+                <path d="M9.6,11.5 L12.8,11.5" id="Line-Copy" stroke="#35A211"></path>
+                <circle id="Oval-Copy" stroke="#35A211" cx="4.8" cy="11.2" r="1.6"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

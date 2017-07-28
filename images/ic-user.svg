@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="17px" viewBox="0 0 16 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>ic-user</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="nav-left" transform="translate(0.000000, -47.000000)">
+            <g id="ic-user" transform="translate(1.000000, 48.000000)">
+                <g>
+                    <path d="M4.6669,9.79986 L0.6797,12.19246 C0.2583,12.44516 0,12.90086 0,13.39296 L0,15.39986 L14,15.39986 L14,13.39296 C14,12.90086 13.7417,12.44516 13.3203,12.19246 L9.3296,9.79776" id="Stroke-5834" stroke="#FFFFFF"></path>
+                    <path d="M2.80868,4.72661 C3.47298,5.27191 4.32348,5.60021 5.24958,5.60021 C6.80568,5.60021 8.14268,4.67551 8.74958,3.34691 C9.21438,4.36401 10.10898,5.14031 11.19958,5.44971" id="Stroke-5835" stroke="#35A211"></path>
+                    <path d="M6.99993,10.5 L6.99993,10.5 C4.68013,10.5 2.79993,8.6198 2.79993,6.3 L2.79993,4.2 C2.79993,1.8802 4.68013,0 6.99993,0 L6.99993,0 C9.31973,0 11.19993,1.8802 11.19993,4.2 L11.19993,6.3 C11.19993,8.6198 9.31973,10.5 6.99993,10.5 L6.99993,10.5 Z" id="Stroke-5836" stroke="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

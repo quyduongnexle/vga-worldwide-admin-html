@@ -1,3 +1,4 @@
+
 /* Sidebar */
 
 .sidebar {
@@ -10,7 +11,7 @@
     bottom: 0;
     -webkit-transition: left 0.3s ease;
     transition: left 0.3s ease;
-    z-index: 20;
+    z-index: 3;
 }
 @media (max-width: 991px) {
     .sidebar {
@@ -177,6 +178,7 @@
     margin-bottom: 15px;
     right: 0;
     top: 0;
+    float: right;
 }
 @media (max-width: 767px) {
     .items-list-page .items-search {
@@ -224,5 +226,118 @@
 }
 .content.items-list-page .search {
     padding-right: 0px;
+}
+.modalApp {
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    z-index: 100;
+    position: fixed;
+}
+.deActive{
+    pointer-events: none;
+}
+
+.avatar {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  text-align: center;
+  border-radius: 500px;
+  overflow: hidden;
+  vertical-align: middle;
+  background: #EFEFEF;
+  color: #134545;
+}
+
+.avatar img {
+  width: auto !important;
+  height: 100% !important;
+}
+
+.w-34 {
+  width: 34px;
+  height: 34px;
+  line-height: 32px;
+}
+
+.modalBackdrop{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #000;
+    opacity: 0.5
+}
+
+.w-full {
+    width: 100%;
+}
+
+.alert-warning {
+  color: #FE5A1D;
+  font-size: 13px;
+  font-weight: 400;
+  background: url("../images/ic_warning.png") right no-repeat transparent;
+  border: none;
+  text-align: left;
+  padding-right: 20px;
+  /*width: 100%;*/
+  margin-top: 6px;
+}
+
+.alert-success {
+  color: #07CED1;
+  font-size: 13px;
+  font-weight: 400;
+   background: url("../images/ic_success_alert.png") right no-repeat transparent;
+  border: none;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.footer-list {
+    display: table;
+    width: 100%
+}
+
+.show-text {
+    display: table-cell;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.paging {
+    display: table-cell;
+    font-size: 12px;
+    vertical-align: middle;
+    float: right;
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #35A211;
+    border-color: #337ab7;
+}
+
+.pagination>li>a, .pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #000000;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.forgot {
+    font-size: 12px;
+    float: right;
+    color: #35A211;
 }
 /* Item */
