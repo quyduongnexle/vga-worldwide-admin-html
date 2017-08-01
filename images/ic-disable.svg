@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="15px" viewBox="0 0 17 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>ic-disable</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="02-0-admin-user" transform="translate(-906.000000, -246.000000)" stroke="#ABABAB">
+            <g id="ic-disable" transform="translate(906.000000, 246.000000)">
+                <g>
+                    <path d="M0.690653872,7.5 C1.42899097,3.83211377 4.64478583,1.07142857 8.5,1.07142857 C12.3552142,1.07142857 15.571009,3.83211377 16.3093461,7.5 C15.571009,11.1678862 12.3552142,13.9285714 8.5,13.9285714 C4.64478583,13.9285714 1.42899097,11.1678862 0.690653872,7.5 Z" id="Combined-Shape"></path>
+                    <ellipse id="Oval" fill="#ABABAB" cx="8.5" cy="7.5" rx="2.390625" ry="2.41071429"></ellipse>
+                    <path d="M1.328125,14.7321429 L15.671875,0.267857143" id="Line"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -15,117 +15,49 @@
 
 <div class="sidebar-overlay" id="sidebar-overlay"></div>
 <article id="admin-profile">
-    <ul class="banner">
-      <li class="img">
-        <a href="#"><img src="images/avatar.png" alt=""/></a>
-      </li>
-      <li class="text">
-        <span>Antony Stephan</span>
-      </li>
-      <li class="button">
-        <button>ACTIVE</button>
-      </li>
-    </ul>
+  <ul class="banner">
+    <li class="img">
+      <a href="#"><img src="images/avatar.png" alt=""/></a>
+    </li>
+    <li class="text">
+      <span>Antony Stephan</span>
+    </li>
+    <li class="button">
+      <button>ACTIVE</button>
+    </li>
+  </ul>
+  <div class="content">
 
-    <div class="wrap-card">
-      <div class="card items">
-         <ul class="item-list striped">
-            <li class="item item-list-header hidden-sm-down">
-               <div class="item-row">
-                  <div class="item-col item-col-header">
-                     <div class="select">
-                        <span>Module</span>
-                     </div>
-                  </div>
+    <table class="table table-striped dataTable no-footer" cellspacing="0" width="100%">
+      <thead>
+        <tr role="row">
+          <th rowspan="1" colspan="1">Module</th>
+          <th rowspan="1" colspan="1">Read</th>
+          <th rowspan="1" colspan="1">Write</th>
+          <th rowspan="1" colspan="1">Access all Data only</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="odd">
 
-                  <div class="item-col item-col-header">
-                     <div>
-                        <span>Read</span>
-                     </div>
-                  </div>
+          <td>Dashboard</td>
+          <td>
+            <input id="option" type="checkbox" name="field" value="option">
+            <label for="option"><span><span></span></span></label>
+          </td>
+          <td>
+            <input id="option2" type="checkbox" name="field" value="option2">
+            <label for="option2"><span><span></span></span></label>
+          </td>
+          <td>
+            <input id="option3" type="checkbox" name="field" value="option3">
+            <label for="option3"><span><span></span></span></label>
+          </td>
 
-                  <div class="item-col item-col-header">
-                     <div>
-                        <span>Write</span>
-                     </div>
-                  </div>
+        </tr>
 
-                  <div class="item-col item-col-header">
-                     <div>
-                        <span>Access all Data only</span>
-                     </div>
-                  </div>
+      </tbody>
+    </table>
 
-               </div>
-            </li>
-            <li class="item">
-               <div class="item-row">
-                  <div class="item-col">
-                     <div class="no-overflow"> Dashboard</div>
-                  </div>
-
-                  <div class="item-col read center">
-                        <input type="checkbox" name="" value=""><br>
-                  </div>
-
-                  <div class="item-col write center">
-                        <input type="checkbox" name="" value=""><br>
-                  </div>
-
-                  <div class="item-col access center">
-                        <input type="checkbox" name="" value=""><br>
-                  </div>
-
-               </div>
-            </li>
-
-            <li class="item">
-               <div class="item-row">
-                  <div class="item-col">
-                     <div class="no-overflow"> Dashboard</div>
-                  </div>
-
-                  <div class="item-col read center">
-                        <input type="checkbox" name="" value=""><br>
-                  </div>
-
-                  <div class="item-col write center">
-                        <input type="checkbox" name="" value=""><br>
-                  </div>
-
-                  <div class="item-col access center">
-                        <input type="checkbox" name="" value=""><br>
-                  </div>
-
-               </div>
-            </li>
-
-            <li class="item">
-               <div class="item-row">
-                  <div class="item-col">
-                     <div class="no-overflow"> Dashboard</div>
-                  </div>
-
-                  <div class="item-col read center">
-                    <input id="option" type="checkbox" name="field" value="option">
-                    <label for="option"><span><span></span></span></label>
-                  </div>
-
-                  <div class="item-col write center">
-                    <input id="option2" type="checkbox" name="field" value="option2">
-                    <label for="option2"><span><span></span></span></label>
-                  </div>
-
-                  <div class="item-col access center">
-                    <input id="option3" type="checkbox" name="field" value="option3">
-                    <label for="option3"><span><span></span></span></label>
-                  </div>
-
-               </div>
-            </li>
-
-         </ul>
-      </div>
-    </div>
-
+  </div>
 </article>

@@ -133,13 +133,9 @@
     overflow: hidden;
 }
 .app .content {
-    padding: 95px 20px 75px 20px;
+    padding: 0px 20px 75px 20px;
 }
-@media (min-width: 1200px) {
-    .app .content {
-        padding: 95px 40px 22px 40px;
-    }
-}
+
 @media (min-width: 992px) and (max-width: 1199px) {
     .app .content {
         padding: 100px 35px 80px 35px;

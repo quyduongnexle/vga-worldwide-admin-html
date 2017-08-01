@@ -14,7 +14,7 @@
 <div w3-include-html="inc/sidebar.html"></div>
 
 <div class="sidebar-overlay" id="sidebar-overlay"></div>
-<article id="tournament-detail" class="content items-list-page">
+<article id="tournament-detail">
 
   <div class="header-title">
     <div class="col-md-8 col-xs-12 text">
@@ -520,230 +520,80 @@
       </form>
 
 
-      <div class="card items">
-         <ul class="item-list striped">
-            <li class="item item-list-header hidden-sm-down">
-               <div class="item-row">
-                  <div class="item-col item-col-header">
-                     <div class="select">
-                        <span>Match</span>
-                     </div>
-                  </div>
+      <table class="table table-striped dataTable no-footer" cellspacing="0" width="100%">
+        <thead>
+          <tr role="row">
+            <th rowspan="1" colspan="1">Match</th>
+            <th rowspan="1" colspan="1">Table</th>
+            <th rowspan="1" colspan="1">Date</th>
+            <th rowspan="1" colspan="1">Time</th>
+            <th class="sorting" rowspan="1" colspan="1">Grouss Scrore</th>
+            <th class="sorting" rowspan="1" colspan="1">New Scrore</th>
+            <th rowspan="1" colspan="1">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="odd">
+            <td class="sorting_1">
+              <ul class="name-images">
+                <li class="avatart">
+                  <img src="images/name.png" alt="">
+                </li>
+                <li class="name">
+                  Arthur Bryant
+                </li>
+              </ul>
+            </td>
+            <td>A</td>
+            <td>Mar 21, 2017</td>
+            <td>12:12 PM</td>
+            <td>80</td>
+            <td>-3</td>
+            <td>
+              <ul>
 
-                  <div class="item-col item-col-header">
-                     <div>
-                        <span>Table</span>
-                     </div>
-                  </div>
-                  <div class="item-col item-col-header">
-                     <div>
-                        <span>Data</span>
-                     </div>
-                  </div>
-                  <div class="item-col item-col-header center">
-                     <div>
-                        <span>Time</span>
-                     </div>
-                  </div>
-                  <div class="item-col item-col-header">
-                     <div class="select">
-                        <span>Gross Scrore</span>
-                     </div>
-                  </div>
-                  <div class="item-col item-col-header center">
-                     <div class="select">
-                        <span>Net Scrore</span>
-                     </div>
-                  </div>
-                  <div class="item-col item-col-header right item-col-actions">
-                     <div>
-                        <span>Actions</span>
-                     </div>
-                  </div>
-               </div>
-            </li>
-            <li class="item">
-               <div class="item-row">
-                  <div class="item-col">
-                    <div class="item-heading">Match</div>
-                    <div>
-                      <ul class="name-images">
-                        <li class="images">
-                          <img src="images/name.png" alt="">
-                        </li>
-                        <li class="name">
-                          Arthur Bryant
-                        </li>
-                      </ul>
+                <li>
+                  <a href="#" data-toggle="modal" data-target="#modal-edit-tournament-match"><img src="images/ic-edit.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/ic-close.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
+                </li>
+              </ul>
+            </td>
+          </tr>
 
-                    </div>
-                  </div>
+          <tr class="even">
+            <td class="sorting_1">
+              <ul class="name-images">
+                <li class="avatart">
+                  <img src="images/name.png" alt="">
+                </li>
+                <li class="name">
+                  Arthur Bryant
+                </li>
+              </ul>
+            </td>
+            <td>A</td>
+            <td>Mar 21, 2017</td>
+            <td>12:12 PM</td>
+            <td>80</td>
+            <td>-3</td>
+            <td>
+              <ul>
 
-                  <div class="item-col">
-                     <div class="item-heading">Table</div>
-                     <div class="no-overflow"> A </div>
-                  </div>
-                  <div class="item-col">
-                     <div class="item-heading">Date</div>
-                     <div class="no-overflow"> Mar 21, 2017 </div>
-                  </div>
-                  <div class="item-col center">
-                     <div class="item-heading">Time</div>
-                     <div class="no-overflow">
-                        <a href="">12:12 AM</a>
-                     </div>
-                  </div>
-                  <div class="item-col">
-                     <div class="item-heading">Gross Scrore</div>
-                     <div class="no-overflow">
-                        <a href="">80</a>
-                     </div>
-                  </div>
-                  <div class="item-col center">
-                     <div class="item-heading">Net Scrore</div>
-                     <div class="no-overflow"> -3 </div>
-                  </div>
+                <li>
+                  <a href="#" data-toggle="modal" data-target="#modal-edit-tournament-match"><img src="images/ic-edit.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/ic-close.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
+                </li>
+              </ul>
+            </td>
+          </tr>
 
-                  <div class="item-col right item-col-actions">
-                     <div class="item-heading">Actions</div>
-                     <div class="no-overflow">
-                        <ul>
-                           <li>
-                              <a href="#"><img src="images/ic-close.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
-                           </li>
 
-                           <li>
-                              <a href="#" data-toggle="modal" data-target="#modal-edit-tournament-match"><img src="images/ic-edit.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
-                           </li>
-
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </li>
-
-            <li class="item">
-               <div class="item-row">
-                  <div class="item-col">
-                    <div class="item-heading">Match</div>
-                    <div>
-                      <ul class="name-images">
-                        <li class="images">
-                          <img src="images/name.png" alt="">
-                        </li>
-                        <li class="name">
-                          Arthur Bryant
-                        </li>
-                      </ul>
-
-                    </div>
-                  </div>
-
-                  <div class="item-col">
-                     <div class="item-heading">Table</div>
-                     <div class="no-overflow"> A </div>
-                  </div>
-                  <div class="item-col">
-                     <div class="item-heading">Date</div>
-                     <div class="no-overflow"> Mar 21, 2017 </div>
-                  </div>
-                  <div class="item-col center">
-                     <div class="item-heading">Time</div>
-                     <div class="no-overflow">
-                        <a href="">12:12 AM</a>
-                     </div>
-                  </div>
-                  <div class="item-col">
-                     <div class="item-heading">Gross Scrore</div>
-                     <div class="no-overflow">
-                        <a href="">80</a>
-                     </div>
-                  </div>
-                  <div class="item-col center">
-                     <div class="item-heading">Net Scrore</div>
-                     <div class="no-overflow"> -3 </div>
-                  </div>
-
-                  <div class="item-col right item-col-actions">
-                     <div class="item-heading">Actions</div>
-                     <div class="no-overflow">
-                        <ul>
-                           <li>
-                              <a href="#"><img src="images/ic-close.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
-                           </li>
-
-                           <li>
-                              <a href="#" data-toggle="modal" data-target="#modal-edit-tournament-match"><img src="images/ic-edit.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
-                           </li>
-
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </li>
-
-            <li class="item">
-               <div class="item-row">
-                  <div class="item-col">
-                    <div class="item-heading">Match</div>
-                    <div>
-                      <ul class="name-images">
-                        <li class="images">
-                          <img src="images/name.png" alt="">
-                        </li>
-                        <li class="name">
-                          Arthur Bryant
-                        </li>
-                      </ul>
-
-                    </div>
-                  </div>
-
-                  <div class="item-col">
-                     <div class="item-heading">Table</div>
-                     <div class="no-overflow"> A </div>
-                  </div>
-                  <div class="item-col">
-                     <div class="item-heading">Date</div>
-                     <div class="no-overflow"> Mar 21, 2017 </div>
-                  </div>
-                  <div class="item-col center">
-                     <div class="item-heading">Time</div>
-                     <div class="no-overflow">
-                        <a href="">12:12 AM</a>
-                     </div>
-                  </div>
-                  <div class="item-col">
-                     <div class="item-heading">Gross Scrore</div>
-                     <div class="no-overflow">
-                        <a href="">80</a>
-                     </div>
-                  </div>
-                  <div class="item-col center">
-                     <div class="item-heading">Net Scrore</div>
-                     <div class="no-overflow"> -3 </div>
-                  </div>
-
-                  <div class="item-col right item-col-actions">
-                     <div class="item-heading">Actions</div>
-                     <div class="no-overflow">
-                        <ul>
-                           <li>
-                              <a href="#"><img src="images/ic-close.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
-                           </li>
-
-                           <li>
-                              <a href="#" data-toggle="modal" data-target="#modal-edit-tournament-match"><img src="images/ic-edit.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
-                           </li>
-
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </li>
-
-         </ul>
-      </div>
+        </tbody>
+      </table>
 
 
     </div>

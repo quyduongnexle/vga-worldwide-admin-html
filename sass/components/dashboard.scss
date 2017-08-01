@@ -1,11 +1,7 @@
 .dashboard {
-  .box-card {
-    margin-bottom: 20px;
-  }
-
   .wrap-info {
-    margin-bottom: 16px;
-
+    margin-bottom: 15px;
+    margin-top: 15px;
     .box {
       width: 20%;
       float: left;
@@ -75,28 +71,9 @@
   }
 
   .card-heading {
-    margin-bottom: 13px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: inline-block;
   }
 
-  .card {
-    margin-top: 0;
-
-    .item-list {
-      .item-col {
-        &.db-col-location,
-        &.db-col-tournament {
-          flex-basis: 0;
-          -webkit-box-flex: 6;
-          -ms-flex-positive: 6;
-          flex-grow: 6;
-          -ms-flex-negative: 6;
-          flex-shrink: 6;
-        }
-
-        &.db-col-register {
-          text-align: center;
-        }
-      }
-    }
-  }
 }

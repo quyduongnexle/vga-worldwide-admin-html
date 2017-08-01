@@ -1,9 +1,7 @@
 #tournament-detail {
-  padding: 70px 0 0;
-
   .header-title {
     background: #F0F0F0;
-    padding: 20px;
+    padding: 20px 0px;
     display: inline-block;
     width: 100%;
 
@@ -62,12 +60,11 @@
 
   #tournament-table {
     .wrap-list {
-      padding: 20px;
-
+      padding: 10px 10px;
       li.box {
         width: 33.33%;
         float: left;
-        padding: 10px 20px;
+        padding: 10px 10px 0px 10px;
         @media (max-width: 768px) {
           width: 50%;
         }
@@ -86,6 +83,7 @@
           width: 100%;
           float: left;
           background: white;
+          margin-bottom: 10px;
 
           .title {
             min-height: 40px;
@@ -237,13 +235,14 @@
   }
 
   #tournament-match {
-    padding: 20px 40px;
+    padding: 20px 20px;
 
     form {
       display: inline-block;
       width: 100%;
       border: 1px solid #9B9B9B;
       padding: 10px 0;
+      margin-bottom: 20px;
 
       .form-group {
         padding: 0;

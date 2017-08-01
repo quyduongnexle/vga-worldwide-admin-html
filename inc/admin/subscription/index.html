@@ -6,7 +6,7 @@
       </button>
    </div>
    <div class="header-block header-block-search hidden-sm-down">
-      <h2>Member</h2>
+      <h2>Subscription</h2>
    </div>
    <div class="header-block header-block-nav">
       <ul class="nav-profile">
@@ -44,81 +44,70 @@
 <div class="sidebar-overlay" id="sidebar-overlay"></div>
 
 <div class="header-filter-input">
-  <div class="filter-search col-md-12">
-    <form>
-      <ul>
-        <li class="title">
-          Filter
-        </li>
-        <li>
-          <select class="form-control" id="filter">
+   <div class="filter-search col-md-12">
+      <form>
+         <ul>
+            <li class="title">
+               Filter
+            </li>
+            <li>
+               <select class="form-control" id="filter">
                   <option>All</option>
                   <option>1</option>
                   <option>2</option>
                   <option>3</option>
                   <option>4</option>
                </select>
-        </li>
-        <li class="title">
-          Search
-        </li>
-        <li>
-          <input type="text" class="form-control" placeholder="Name, Location">
-        </li>
-        <li>
-          <span class="button" data-toggle="modal" data-target="#modal-add-member">ADD</span>
-        </li>
-      </ul>
-    </form>
-  </div>
+            </li>
+            <li class="title">
+               Search
+            </li>
+            <li>
+               <input type="text" class="form-control" placeholder="Name, Location">
+            </li>
+            <li>
+               <span class="button" data-toggle="modal" data-target="#modal-add-subscription">ADD</span>
+            </li>
+         </ul>
+      </form>
+   </div>
 </div>
+
 
 <article class="content">
 
   <table class="table table-striped dataTable no-footer" cellspacing="0" width="100%">
     <thead>
       <tr role="row">
-        <th class="sorting_asc" rowspan="1" colspan="1">Name</th>
-        <th rowspan="1" colspan="1">Email</th>
-        <th rowspan="1" colspan="1">Phone</th>
-        <th rowspan="1" colspan="1">Age</th>
-        <th class="sorting" rowspan="1" colspan="1">Location</th>
+        <th class="sorting_asc" rowspan="1" colspan="1">Member</th>
+        <th rowspan="1" colspan="1">Paackages</th>
+        <th class="sorting" rowspan="1" colspan="1">Duration</th>
+        <th rowspan="1" colspan="1">Reatured Adv</th>
         <th class="sorting" rowspan="1" colspan="1">Created</th>
-        <th class="sorting" rowspan="1" colspan="1">Status</th>
+        <th class="sorting" rowspan="1" colspan="1">Exprired</th>
+        <th rowspan="1" colspan="1">Amount</th>
+        <th rowspan="1" colspan="1">Payment Method</th>
+        <th rowspan="1" colspan="1">Paid</th>
+        <th rowspan="1" colspan="1">Status</th>
         <th rowspan="1" colspan="1">Actions</th>
       </tr>
     </thead>
     <tbody>
       <tr class="odd">
-        <td class="sorting_1">
-          <ul class="name-images">
-            <li class="avatart">
-              <img src="images/name.png" alt="">
-            </li>
-            <li class="name">
-              Arthur Bryant
-            </li>
-          </ul>
-        </td>
-        <td>balbaba@gmail.com</td>
-        <td>090909123</td>
+        <td>Aiden Morrision</td>
+        <td>1 item</td>
         <td>33</td>
-        <td>Melbum, australia</td>
+        <td>Yes</td>
         <td>31/04/2016</td>
+        <td>31/04/2016</td>
+        <td>$60</td>
+        <td>Cash</td>
+        <td>Yes</td>
         <td class="active">Active</td>
         <td>
           <ul>
             <li>
-              <a href="#"><img src="images/ic-permission.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Disable/Enable"></a>
-            </li>
-            <li>
-              <a href="#"><img src="images/ic-enable.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Disable/Enable"></a>
-            </li>
-            <li>
               <a href="#" data-toggle="modal" data-target="#modal-edit-user"><img src="images/ic-edit.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
-            </li>
-            <li>
-              <a href="#" data-toggle="modal" data-target="#modal-reset-password"><img src="images/ic-lock.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Reset/Password"></a>
             </li>
             <li>
               <a href="#"><img src="images/ic-close.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
@@ -128,35 +117,20 @@
       </tr>
 
       <tr class="even">
-        <td class="sorting_1">
-          <ul class="name-images">
-            <li class="avatart">
-              <img src="images/name.png" alt="">
-            </li>
-            <li class="name">
-              Arthur Bryant
-            </li>
-          </ul>
-        </td>
-        <td>balbaba@gmail.com</td>
-        <td>090909123</td>
+        <td>Aiden Morrision</td>
+        <td>1 item</td>
         <td>33</td>
-        <td>Melbum, australia</td>
+        <td>Yes</td>
         <td>31/04/2016</td>
-        <td class="inactive">Inactive</td>
+        <td>31/04/2016</td>
+        <td>$60</td>
+        <td>Cash</td>
+        <td>Yes</td>
+        <td class="expired">Expired</td>
         <td>
           <ul>
             <li>
-              <a href="#"><img src="images/ic-permission.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Disable/Enable"></a>
-            </li>
-            <li>
-              <a href="#"><img src="images/ic-disable.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Disable/Enable"></a>
-            </li>
-            <li>
               <a href="#" data-toggle="modal" data-target="#modal-edit-user"><img src="images/ic-edit.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
-            </li>
-            <li>
-              <a href="#" data-toggle="modal" data-target="#modal-reset-password"><img src="images/ic-lock.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Reset/Password"></a>
             </li>
             <li>
               <a href="#"><img src="images/ic-close.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
@@ -165,8 +139,29 @@
         </td>
       </tr>
 
+      <tr class="odd">
+        <td>Aiden Morrision</td>
+        <td>1 item</td>
+        <td>33</td>
+        <td>Yes</td>
+        <td>31/04/2016</td>
+        <td>31/04/2016</td>
+        <td>$60</td>
+        <td>Cash</td>
+        <td>Yes</td>
+        <td class="approved">Wait for Approved</td>
+        <td>
+          <ul>
+            <li>
+              <a href="#" data-toggle="modal" data-target="#modal-edit-user"><img src="images/ic-edit.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/ic-close.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
+            </li>
+          </ul>
+        </td>
+      </tr>
 
     </tbody>
   </table>
-
 </article>
