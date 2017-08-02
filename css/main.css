@@ -1751,15 +1751,12 @@ ul.wrap-tabs {
                   padding: 5px;
                   font-size: 13px; }
   #setting .main #member .add {
-    position: fixed;
-    right: 0;
-    top: 185px;
-    text-align: center; }
-    @media (max-width: 680px) {
-      #setting .main #member .add {
-        position: absolute;
-        right: 15px;
-        top: 0; } }
+    height: 95px;
+    border: 1px dashed;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 95px;
+    font-size: 30px; }
   #setting .main #subscription {
     padding: 10px; }
     #setting .main #subscription form {

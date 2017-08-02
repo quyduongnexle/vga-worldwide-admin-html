@@ -45,6 +45,9 @@
             .table {
               display: inline-block;
               margin-bottom: 0px;
+              &.add {
+
+              }
               .title {
                 min-height: 40px;
                 background: white;
@@ -117,15 +120,12 @@
         }
 
         .add {
-          position: fixed;
-          right: 0;
-          top: 185px;
+          height: 95px;
+          border: 1px dashed;
+          border-radius: 5px;
           text-align: center;
-          @media (max-width: 680px) {
-            position: absolute;
-            right: 15px;
-            top: 0;
-          }
+          line-height: 95px;
+          font-size: 30px;
         }
       }
       #subscription {
@@ -228,7 +228,7 @@
               padding: 7.5px;
               width: 25%;
               float: left;
-              
+
               .close-photo {
                 background-color: rgba(0, 0, 0, 0.3);
                 position: absolute;
