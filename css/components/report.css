@@ -1,0 +1,53 @@
+.report .nav-tabs.wrap-tabs {
+  padding: 13px 10px; }
+  .report .nav-tabs.wrap-tabs li {
+    width: 25%;
+    margin-right: 0;
+    padding: 0 10px; }
+    .report .nav-tabs.wrap-tabs li .info-box-icon span {
+      width: 48px;
+      height: 48px;
+      display: block;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 55px;
+      margin-right: 15px; }
+    .report .nav-tabs.wrap-tabs li a {
+      width: 100%;
+      background: white;
+      border-radius: 0; }
+    .report .nav-tabs.wrap-tabs li:active .info-box-icon .img-first, .report .nav-tabs.wrap-tabs li:hover .info-box-icon .img-first {
+      display: none; }
+    .report .nav-tabs.wrap-tabs li:active .info-box-icon .img-active, .report .nav-tabs.wrap-tabs li:hover .info-box-icon .img-active {
+      display: block; }
+    .report .nav-tabs.wrap-tabs li:active span, .report .nav-tabs.wrap-tabs li:hover span {
+      color: white !important; }
+  .report .nav-tabs.wrap-tabs .info-box .info-box-icon {
+    float: left; }
+    .report .nav-tabs.wrap-tabs .info-box .info-box-icon .img-first {
+      float: left;
+      margin-right: 15px; }
+    .report .nav-tabs.wrap-tabs .info-box .info-box-icon .img-active {
+      background: white;
+      display: none; }
+    .report .nav-tabs.wrap-tabs .info-box .info-box-icon img {
+      display: inline-block; }
+  .report .nav-tabs.wrap-tabs .info-box .info-box-content {
+    float: left; }
+    .report .nav-tabs.wrap-tabs .info-box .info-box-content span {
+      display: block; }
+    .report .nav-tabs.wrap-tabs .info-box .info-box-content .info-box-number {
+      font-size: 25px;
+      font-weight: 300;
+      display: inline-block;
+      color: #333333; }
+    .report .nav-tabs.wrap-tabs .info-box .info-box-content .info-box-text {
+      color: #ACACAC; }
+  .report .nav-tabs.wrap-tabs .report .img-first {
+    background: #B8E986; }
+  .report .nav-tabs.wrap-tabs .donate .img-first {
+    background: #77CC50; }
+  .report .nav-tabs.wrap-tabs .ribbon .img-first {
+    background: #35A211; }
+  .report .nav-tabs.wrap-tabs .users .img-first {
+    background: #007030; }

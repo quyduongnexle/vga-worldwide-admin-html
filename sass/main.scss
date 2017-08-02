@@ -1,12 +1,12 @@
 @import "components/reset.scss";
 @import "components/dataTables.scss";
 @import "components/modal.scss";
+@import "components/modal_subscription.scss";
 @import "components/button.scss";
 @import "components/header.scss";
 @import "components/filter_search.scss";
-
+@import "components/sidebar.scss";
 @import "components/tabs.scss";
-
 @import "components/dropdown_profile.scss";
 @import "components/menu_mobile.scss";
 @import "components/dashboard.scss";
@@ -15,9 +15,11 @@
 @import "components/tournament.scss";
 @import "components/tournament_detail.scss";
 @import "components/media.scss";
+@import "components/setting.scss";
+@import "components/report.scss";
+@import "components/canvas.scss";
 @import "components/pagination.scss";
 
 @import "components/login.scss";
 @import "components/my_profile.scss";
 @import "components/admin_profile.scss";
-@import "components/setting_member.scss";

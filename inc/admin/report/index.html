@@ -1,0 +1,388 @@
+<header class="header">
+  <div class="header-block header-block-collapse hidden-lg-up">
+    <button class="collapse-btn" id="sidebar-collapse-btn">
+      <i class="fa fa-bars"></i>
+      </button>
+  </div>
+  <div class="header-block header-block-search hidden-sm-down">
+    <h2>Report</h2>
+  </div>
+  <div w3-include-html="inc/profile.html"></div>
+</header>
+
+
+<div w3-include-html="inc/sidebar.html"></div>
+
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+<article id="report">
+
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs wrap-tabs" role="tablist">
+    <li role="presentation" class="active report">
+      <a href="#report-revenue" aria-controls="table" role="tab" data-toggle="tab">
+        <div class="box">
+          <div class="info-box">
+            <div class="info-box-icon">
+              <span class="img-first"><img src="images/ic-report.png" alt="Revenue" class="img-responsive"></span>
+              <span class="img-active"><img src="images/ic-report-active.png" alt="Revenue" class="img-responsive"></span>
+            </div>
+
+            <div class="info-box-content">
+              <span class="info-box-number">56</span>
+              <span class="info-box-text">Revenue</span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+      </a>
+    </li>
+
+    <li role="presentation" class="donate">
+      <a href="#report-donation" aria-controls="table" role="tab" data-toggle="tab">
+        <div class="box">
+          <div class="info-box">
+            <div class="info-box-icon">
+              <span class="img-first"><img src="images/ic-donate.png" alt="Donation" class="img-responsive"></span>
+              <span class="img-active"><img src="images/ic-donate-active.png" alt="Donation" class="img-responsive"></span>
+            </div>
+
+            <div class="info-box-content">
+              <span class="info-box-number">1,243</span><br/>
+              <span class="info-box-text">Donation</span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+      </a>
+    </li>
+
+    <li role="presentation" class="ribbon">
+      <a href="#report-tournaments" aria-controls="table" role="tab" data-toggle="tab">
+        <div class="box">
+          <div class="info-box">
+            <div class="info-box-icon">
+              <span class="img-first"><img src="images/ic-ribbon.png" alt="ribbon" class="img-responsive"></span>
+              <span class="img-active"><img src="images/ic-ribbon-active.png" alt="ribbon" class="img-responsive"></span>
+            </div>
+
+            <div class="info-box-content">
+              <span class="info-box-number">4,212</span><br/>
+              <span class="info-box-text">Tournaments</span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+      </a>
+    </li>
+
+    <li role="presentation" class="users">
+      <a href="#report-members" aria-controls="table" role="tab" data-toggle="tab">
+        <div class="box">
+          <div class="info-box">
+
+            <div class="info-box-icon">
+              <span class="img-first"><img src="images/ic-user.png" alt="Members" class="img-responsive"></span>
+              <span class="img-active"><img src="images/ic-user-active.png" alt="Members" class="img-responsive"></span>
+            </div>
+
+            <div class="info-box-content">
+              <span class="info-box-number">342</span><br/>
+              <span class="info-box-text">Members</span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+      </a>
+    </li>
+
+  </ul>
+
+  <div class="date-range">
+    <form>
+      <div class="form-group">
+        <div class="col-md-3 col-xs-12 text">
+          <p>
+            Date range
+          </p>
+        </div>
+        <!--end .text-->
+        <div class="col-md-9 col-xs-12 value">
+          <input type="text" class="form-control" name="" placeholder="">
+          <span><img src="images/ic-calendar.svg" alt=""></span>
+        </div>
+        <!--end .input-->
+      </div>
+      <!-- form-group -->
+
+      <div class="form-group">
+        <div class="col-md-3 col-xs-12 text">
+          <p>
+            Date upload
+          </p>
+        </div>
+        <!--end .text-->
+        <div class="col-md-9 col-xs-12 value">
+          <input type="text" class="form-control" name="" placeholder="">
+          <span><img src="images/ic-calendar.svg" alt=""></span>
+        </div>
+        <!--end .input-->
+      </div>
+      <!-- form-group -->
+
+      <div class="btn-add">
+        <button type="button">VIEW</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="line-chart">
+    <canvas id="canvas" height="100"></canvas>
+  </div>
+  <!-- Tab panes -->
+
+  <div class="tab-content main">
+    <div role="tabpanel" class="tab-pane active" id="report-revenue">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs wrap-tabs" role="tablist">
+        <li role="presentation">
+          <div class="box">
+            <div class="info-box">
+              <div class="info-box-icon">
+                <span class="img-first"><img src="images/ic-report.png" alt="Revenue" class="img-responsive"></span>
+              </div>
+
+              <div class="info-box-content">
+                <span class="info-box-number">Total Revenue</span>
+                <span class="info-box-text">$42,000,000</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+        </li>
+        <li role="presentation">
+          <div class="box">
+            <div class="info-box">
+              <div class="info-box-icon">
+                <span class="img-first"><img src="images/ic-ribbon.png" alt="Revenue" class="img-responsive"></span>
+              </div>
+
+              <div class="info-box-content">
+                <span class="info-box-number">Revenue from Advertising</span>
+                <span class="info-box-text">$2,000,000</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+        </li>
+        <li role="presentation">
+          <div class="box">
+            <div class="info-box">
+              <div class="info-box-icon">
+                <span class="img-first"><img src="images/ic-ball.png" alt="Revenue" class="img-responsive"></span>
+              </div>
+
+              <div class="info-box-content">
+                <span class="info-box-number">Revenue from Tournament</span>
+                <span class="info-box-text">$4,000,000</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+        </li>
+
+        <li role="presentation">
+          <div class="box">
+            <div class="info-box">
+              <div class="info-box-icon">
+                <span class="img-first"><img src="images/ic-ball.png" alt="Revenue" class="img-responsive"></span>
+              </div>
+
+              <div class="info-box-content">
+                <span class="info-box-number">Revenue from Tournament</span>
+                <span class="info-box-text">$4,000,000</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="report-donation">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs wrap-tabs" role="tablist">
+        <li role="presentation">
+          <div class="box">
+            <div class="info-box">
+              <div class="info-box-icon">
+                <span class="img-first"><img src="images/ic-report.png" alt="Revenue" class="img-responsive"></span>
+              </div>
+
+              <div class="info-box-content">
+                <span class="info-box-number">Revenue</span>
+                <span class="info-box-text">$2,000,000</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+        </li>
+        <li role="presentation">
+          <div class="box">
+            <div class="info-box">
+              <div class="info-box-icon">
+                <span class="img-first"><img src="images/ic-ribbon.png" alt="Revenue" class="img-responsive"></span>
+              </div>
+
+              <div class="info-box-content">
+                <span class="info-box-number">Total Revenue</span>
+                <span class="info-box-text">$42,000,000</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="report-tournaments">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs wrap-tabs" role="tablist">
+        <li role="presentation">
+          <div class="box">
+            <div class="info-box">
+              <div class="info-box-icon">
+                <span class="img-first"><img src="images/ic-report.png" alt="Revenue" class="img-responsive"></span>
+              </div>
+
+              <div class="info-box-content">
+                <span class="info-box-number">Total Revenue</span>
+                <span class="info-box-text">$42,000,000</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+        </li>
+        <li role="presentation">
+          <div class="box">
+            <div class="info-box">
+              <div class="info-box-icon">
+                <span class="img-first"><img src="images/ic-ribbon.png" alt="Revenue" class="img-responsive"></span>
+              </div>
+
+              <div class="info-box-content">
+                <span class="info-box-number">Total Revenue</span>
+                <span class="info-box-text">$42,000,000</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+        </li>
+
+        <li role="presentation">
+          <div class="box">
+            <div class="info-box">
+              <div class="info-box-icon">
+                <span class="img-first"><img src="images/ic-ribbon.png" alt="Revenue" class="img-responsive"></span>
+              </div>
+
+              <div class="info-box-content">
+                <span class="info-box-number">Total Revenue</span>
+                <span class="info-box-text">$42,000,000</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="report-members">
+
+
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs wrap-tabs" role="tablist">
+        <li role="presentation">
+          <div class="box">
+            <div class="info-box">
+              <div class="info-box-icon">
+                <span class="img-first"><img src="images/ic-report.png" alt="Revenue" class="img-responsive"></span>
+              </div>
+
+              <div class="info-box-content">
+                <span class="info-box-number">Total Revenue</span>
+                <span class="info-box-text">$42,000,000</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+        </li>
+        <li role="presentation">
+          <div class="box">
+            <div class="info-box">
+              <div class="info-box-icon">
+                <span class="img-first"><img src="images/ic-ribbon.png" alt="Revenue" class="img-responsive"></span>
+              </div>
+
+              <div class="info-box-content">
+                <span class="info-box-number">Total Revenue</span>
+                <span class="info-box-text">$42,000,000</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+        </li>
+
+        <li role="presentation">
+          <div class="box">
+            <div class="info-box">
+              <div class="info-box-icon">
+                <span class="img-first"><img src="images/ic-ribbon.png" alt="Revenue" class="img-responsive"></span>
+              </div>
+
+              <div class="info-box-content">
+                <span class="info-box-number">Total Revenue</span>
+                <span class="info-box-text">$42,000,000</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+        </li>
+
+        <li role="presentation">
+          <div class="box">
+            <div class="info-box">
+              <div class="info-box-icon">
+                <span class="img-first"><img src="images/ic-ribbon.png" alt="Revenue" class="img-responsive"></span>
+              </div>
+
+              <div class="info-box-content">
+                <span class="info-box-number">Total Revenue</span>
+                <span class="info-box-text">$42,000,000</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</article>

@@ -1,0 +1,8 @@
+.line-chart {
+  padding: 20px; }
+  .line-chart canvas {
+    display: block;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 100%;
+    background: white; }

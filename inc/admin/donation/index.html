@@ -6,7 +6,7 @@
       </button>
    </div>
    <div class="header-block header-block-search hidden-sm-down">
-      <h2>Subscription</h2>
+      <h2>Donation</h2>
    </div>
    <div class="header-block header-block-nav">
       <ul class="nav-profile">
@@ -44,35 +44,34 @@
 <div class="sidebar-overlay" id="sidebar-overlay"></div>
 
 <div class="header-filter-input">
-   <div class="filter-search col-md-12">
-      <form>
-         <ul>
-            <li class="title">
-               Filter
-            </li>
-            <li>
-               <select class="form-control" id="filter">
+  <div class="filter-search col-md-12">
+    <form>
+      <ul>
+        <li class="title">
+          Filter
+        </li>
+        <li>
+          <select class="form-control" id="filter">
                   <option>All</option>
                   <option>1</option>
                   <option>2</option>
                   <option>3</option>
                   <option>4</option>
                </select>
-            </li>
-            <li class="title">
-               Search
-            </li>
-            <li>
-               <input type="text" class="form-control" placeholder="Name, Location">
-            </li>
-            <li>
-               <span class="button" data-toggle="modal" data-target="#modal-add-subscription">ADD</span>
-            </li>
-         </ul>
-      </form>
-   </div>
+        </li>
+        <li class="title">
+          Search
+        </li>
+        <li>
+          <input type="text" class="form-control" placeholder="Name, Location">
+        </li>
+        <li>
+          <span class="button" data-toggle="modal" data-target="#modal-add-donation">ADD</span>
+        </li>
+      </ul>
+    </form>
+  </div>
 </div>
-
 
 <article class="content">
 
@@ -80,35 +79,34 @@
     <thead>
       <tr role="row">
         <th class="sorting_asc" rowspan="1" colspan="1">Member</th>
-        <th rowspan="1" colspan="1">Paackages</th>
-        <th class="sorting" rowspan="1" colspan="1">Duration</th>
-        <th rowspan="1" colspan="1">Reatured Adv</th>
-        <th class="sorting" rowspan="1" colspan="1">Created</th>
-        <th class="sorting" rowspan="1" colspan="1">Exprired</th>
-        <th rowspan="1" colspan="1">Amount</th>
-        <th rowspan="1" colspan="1">Payment Method</th>
-        <th rowspan="1" colspan="1">Paid</th>
-        <th rowspan="1" colspan="1">Status</th>
+        <th class="sorting"  rowspan="1" colspan="1">Date</th>
+        <th class="sorting"  rowspan="1" colspan="1">Donated</th>
+        <th rowspan="1" colspan="1">Charity Event</th>
         <th rowspan="1" colspan="1">Actions</th>
       </tr>
     </thead>
     <tbody>
       <tr class="odd">
-        <td>Aiden Morrision</td>
-        <td>1 item</td>
-        <td>33</td>
-        <td>Yes</td>
-        <td>31/04/2016</td>
-        <td>31/04/2016</td>
-        <td>$60</td>
-        <td>Cash</td>
-        <td>Yes</td>
-        <td class="active">Active</td>
+        <td class="sorting_1">
+          <ul class="name-images">
+            <li class="avatart">
+              <img src="images/name.png" alt="">
+            </li>
+            <li class="name">
+              Arthur Bryant
+            </li>
+          </ul>
+        </td>
+        <td>Jul 01, 2017</td>
+        <td>$700,000</td>
+        <td>Dubai Duty Free Irish Open Hosted</td>
         <td>
           <ul>
+
             <li>
-              <a href="#" data-toggle="modal" data-target="#modal-edit-subscription"><img src="images/ic-edit.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
+              <a href="#" data-toggle="modal" data-target="#modal-edit-donation"><img src="images/ic-edit.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
             </li>
+
             <li>
               <a href="#"><img src="images/ic-close.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
             </li>
@@ -117,21 +115,26 @@
       </tr>
 
       <tr class="even">
-        <td>Aiden Morrision</td>
-        <td>1 item</td>
-        <td>33</td>
-        <td>Yes</td>
-        <td>31/04/2016</td>
-        <td>31/04/2016</td>
-        <td>$60</td>
-        <td>Cash</td>
-        <td>Yes</td>
-        <td class="expired">Expired</td>
+        <td class="sorting_1">
+          <ul class="name-images">
+            <li class="avatart">
+              <img src="images/name.png" alt="">
+            </li>
+            <li class="name">
+              Arthur Bryant
+            </li>
+          </ul>
+        </td>
+        <td>Jul 01, 2017</td>
+        <td>$700,000</td>
+        <td>Dubai Duty Free Irish Open Hosted</td>
         <td>
           <ul>
+
             <li>
-              <a href="#" data-toggle="modal" data-target="#modal-edit-subscription"><img src="images/ic-edit.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
+              <a href="#" data-toggle="modal" data-target="#modal-edit-donation"><img src="images/ic-edit.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
             </li>
+
             <li>
               <a href="#"><img src="images/ic-close.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
             </li>
@@ -139,29 +142,8 @@
         </td>
       </tr>
 
-      <tr class="odd">
-        <td>Aiden Morrision</td>
-        <td>1 item</td>
-        <td>33</td>
-        <td>Yes</td>
-        <td>31/04/2016</td>
-        <td>31/04/2016</td>
-        <td>$60</td>
-        <td>Cash</td>
-        <td>Yes</td>
-        <td class="approved">Wait for Approved</td>
-        <td>
-          <ul>
-            <li>
-              <a href="#" data-toggle="modal" data-target="#modal-edit-subscription"><img src="images/ic-edit.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
-            </li>
-            <li>
-              <a href="#"><img src="images/ic-close.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
-            </li>
-          </ul>
-        </td>
-      </tr>
 
     </tbody>
   </table>
+
 </article>
