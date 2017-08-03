@@ -1,0 +1,130 @@
+#setting .main {
+  padding: 10px;
+  display: inline-block;
+  width: 100%; }
+  #setting .main #member .wrap-list {
+    padding: 0; }
+    #setting .main #member .wrap-list .box-table {
+      width: 33.33%;
+      float: left; }
+      #setting .main #member .wrap-list .box-table .title {
+        background: white; }
+        #setting .main #member .wrap-list .box-table .title li:first-child {
+          float: left; }
+        #setting .main #member .wrap-list .box-table .title li:last-child {
+          float: right; }
+    #setting .main #member .wrap-list li.box {
+      width: 33.33%;
+      float: left;
+      padding: 10px; }
+      @media (max-width: 768px) {
+        #setting .main #member .wrap-list li.box {
+          width: 50%; } }
+      @media (max-width: 660px) {
+        #setting .main #member .wrap-list li.box {
+          width: 100%; } }
+      #setting .main #member .wrap-list li.box .table {
+        display: inline-block;
+        margin-bottom: 0px; }
+        #setting .main #member .wrap-list li.box .table .title {
+          min-height: 40px;
+          background: white;
+          line-height: 40px;
+          padding: 0 20px;
+          border-radius: 5px 5px 0 0; }
+          #setting .main #member .wrap-list li.box .table .title h4 {
+            color: #444444;
+            font-weight: bold;
+            font-size: 15px;
+            text-transform: uppercase;
+            float: left;
+            line-height: 40px;
+            background: white; }
+          #setting .main #member .wrap-list li.box .table .title span {
+            float: right; }
+            #setting .main #member .wrap-list li.box .table .title span a {
+              margin-left: 5px; }
+        #setting .main #member .wrap-list li.box .table .input {
+          background: #F3F5F5;
+          border-radius: 0 0 5px 5px;
+          border-bottom: 2px solid #E1E2E2;
+          padding: 10px 0;
+          display: inline-block;
+          width: 100%; }
+          #setting .main #member .wrap-list li.box .table .input .form {
+            padding: 0 10px; }
+            #setting .main #member .wrap-list li.box .table .input .form li {
+              width: 50%;
+              float: left;
+              padding: 0 10px; }
+              #setting .main #member .wrap-list li.box .table .input .form li .text {
+                float: left;
+                width: 20%;
+                text-align: center; }
+                #setting .main #member .wrap-list li.box .table .input .form li .text p {
+                  line-height: 34px;
+                  color: #444444;
+                  font-size: 13px; }
+              #setting .main #member .wrap-list li.box .table .input .form li .value {
+                width: 50%;
+                float: right; }
+                #setting .main #member .wrap-list li.box .table .input .form li .value input {
+                  text-align: center;
+                  padding: 5px;
+                  font-size: 13px; }
+  #setting .main #member .add {
+    position: fixed;
+    right: 0;
+    top: 185px;
+    text-align: center; }
+    @media (max-width: 680px) {
+      #setting .main #member .add {
+        position: relative;
+        right: 15px;
+        top: 0; } }
+  #setting .main #subscription {
+    padding: 10px; }
+    #setting .main #subscription form {
+      display: inline-block;
+      width: 100%;
+      border: 1px solid #9B9B9B;
+      padding: 10px 0;
+      margin-bottom: 20px; }
+      #setting .main #subscription form .form-group {
+        padding: 0;
+        margin: 10px 0;
+        width: 33.33%;
+        float: left; }
+        #setting .main #subscription form .form-group .lengthy {
+          line-height: 15px;
+          margin-top: 5px; }
+      #setting .main #subscription form .btn-add button {
+        width: 100%; }
+      #setting .main #subscription form .text {
+        color: #4A4A4A;
+        font-size: 12px;
+        font-weight: 400;
+        height: 36px;
+        line-height: 36px;
+        padding-right: 0; }
+        @media (max-width: 991px) {
+          #setting .main #subscription form .text {
+            line-height: 25px; } }
+      #setting .main #subscription form .value {
+        position: relative; }
+        #setting .main #subscription form .value .form-control {
+          height: 36px;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          font-size: 13px;
+          color: #999999;
+          border: 1px solid #E4E6E8; }
+        #setting .main #subscription form .value span {
+          position: absolute;
+          right: 25px;
+          top: 10px; }
+      #setting .main #subscription form .unit {
+        font-size: 13px;
+        color: #9B9B9B;
+        height: 36px;
+        line-height: 36px; }

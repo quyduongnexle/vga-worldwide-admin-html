@@ -1,5 +1,5 @@
 
-  <div class="modal fade" id="modal-add-user" tabindex="-1" role="dialog">
+  <div class="modal fade" id="modal-add-subscription" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <form>
@@ -8,112 +8,118 @@
             <h4 class="modal-title" id="myModalLabel">ADD SUBSCRIPTION</h4>
           </div>
           <div class="modal-body">
-            <div class="form-group">
-              <div class="col-md-4 col-xs-12 text">
-                <p>
-                  Member
-                </p>
-              </div><!--end .text-->
-              <div class="col-md-8 col-xs-12 value">
-                <select class="form-control" >
-                  <option value="">Autho select member</option>
-                </select>
-              </div><!--end .input-->
-            </div><!-- form-group -->
+            <div class="form">
+              <div class="form-group">
+                <div class="col-md-4 col-xs-12 text">
+                  <p>
+                    Member
+                  </p>
+                </div><!--end .text-->
+                <div class="col-md-8 col-xs-12 value">
+                  <select class="form-control" >
+                    <option value="">Autho select member</option>
+                  </select>
+                </div><!--end .input-->
+              </div><!-- form-group -->
 
-            <div class="form-group">
-              <div class="col-md-4 col-xs-12 text">
-                <p>
-                  Package
-                </p>
-              </div><!--end .text-->
-              <div class="col-md-8 col-xs-12 value">
-                <select class="form-control" >
-                  <option value="">1 item</option>
-                </select>
-              </div><!--end .input-->
-            </div><!-- form-group -->
+              <div class="form-group">
+                <div class="col-md-4 col-xs-12 text">
+                  <p>
+                    Package ID
+                  </p>
+                </div><!--end .text-->
+                <div class="col-md-8 col-xs-12 value">
+                  <select class="form-control" >
+                    <option value="">Placeholder</option>
+                  </select>
+                </div><!--end .input-->
+              </div><!-- form-group -->
 
-            <div class="form-group">
-              <div class="col-md-4 col-xs-12 text">
-                <p>
-                  Duration
-                </p>
-              </div><!--end .text-->
-              <div class="col-md-8 col-xs-12 value">
-                <select class="form-control" >
-                  <option value="">Select days</option>
-                </select>
-              </div><!--end .input-->
-            </div><!-- form-group -->
+              <div class="form-group">
+                <div class="col-md-4 col-xs-12 text"></div>
+                <div class="col-md-8 col-xs-12 value">
+                  <input id="featuredid" type="checkbox" name="field" value="featuredid">
+                  <label for="featuredid"><span><span></span></span> Featured Adv</label>
+                </div>
+              </div>
 
-            <div class="form-group">
-              <div class="col-md-4 col-xs-12 text">
-                <p>
-                  Amount
-                </p>
-              </div><!--end .text-->
-              <div class="col-md-8 col-xs-12 value">
-                <input type="text" class="form-control" name="" placeholder="">
-              </div><!--end .input-->
-            </div><!-- form-group -->
+              <div class="line"></div>
 
-            <div class="form-group">
-              <div class="col-md-4 col-xs-12 text">
-                <p>
-                  Total
-                </p>
-              </div><!--end .text-->
-              <div class="col-md-8 col-xs-12 value">
-                <input type="text" class="form-control" name="" placeholder="">
-              </div><!--end .input-->
-            </div><!-- form-group -->
+              <div class="form-group">
+                <div class="col-md-4 col-xs-12 text">
+                  <p>
+                    Payment Method
+                  </p>
+                </div><!--end .text-->
+                <div class="col-md-8 col-xs-12 value payment-method">
+                  <ul>
+                    <li>
+                      <input type="radio" id="cash-option" name="selector" checked>
+                      <label for="cash-option"><span>Cash</span></label>
+                    </li>
 
-            <div class="form-group">
-              <div class="col-md-4 col-xs-12 text">
-                <p>
-                  Payment Method
-                </p>
-              </div><!--end .text-->
-              <div class="col-md-8 col-xs-12 value">
-                <ul>
-                  <li>
-                    <input type="radio" id="cash-option" name="selector">
-                    <label for="cash-option">Cash</label>
+                    <li>
+                      <input type="radio" id="wire-transfer-option" name="selector">
+                      <label for="wire-transfer-option"><span>Wire transfer</span></label>
+                    </li>
 
-                    <div class="check"></div>
-                  </li>
+                    <li>
+                      <input type="radio" id="credit-card-option" name="selector">
+                      <label for="credit-card-option"><span>Credit card</span></label>
+                    </li>
 
-                  <li>
-                    <input type="radio" id="wire-transfer-option" name="selector">
-                    <label for="wire-transfer-option">Wire transfer</label>
+                  </ul>
+                </div><!--end .input-->
+              </div><!-- form-group -->
 
-                    <div class="check"></div>
-                  </li>
+            </div>
+            <div class="box">
+              <div class="wrap-box">
+                <div class="title">
+                  <ul>
+                    <li class="text">
+                      Package ID
+                    </li>
+                    <li class="value">
+                      <span>p0-00</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="content">
+                  <ul>
+                    <li class="text">
+                      No. of advertising
+                    </li>
+                    <li class="value">
+                      0
+                    </li>
+                    <li class="text">
+                      Duration
+                    </li>
+                    <li class="value">
+                      0 days
+                    </li>
+                    <li class="text">
+                      Featured Adv
+                    </li>
+                    <li class="value">
+                      $0
+                    </li>
+                  </ul>
+                </div>
+                <div class="total">
+                  <ul>
+                    <li class="text">
+                      Total
+                    </li>
+                    <li class="value">
+                      $0
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
-                  <li>
-                    <input type="radio" id="credit-card-option" name="selector">
-                    <label for="credit-card-option">Credit card</label>
-
-                    <div class="check"></div>
-                  </li>
-
-                </ul>
-              </div><!--end .input-->
-            </div><!-- form-group -->
-
-            <div class="form-group">
-              <div class="col-md-4 col-xs-12 text">
-                <p>
-                  Description
-                </p>
-              </div><!--end .text-->
-              <div class="col-md-8 col-xs-12 value">
-                <textarea class="form-control" rows="4" name="" placeholder="Type a content">
-
-                </textarea>
-              </div><!--end .input-->
-            </div><!-- form-group -->
 
 
           </div>

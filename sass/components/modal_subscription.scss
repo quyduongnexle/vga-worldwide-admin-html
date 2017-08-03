@@ -1,0 +1,230 @@
+#modal-add-subscription,
+#modal-edit-subscription {
+  .modal-dialog {
+    width: 670px !important;
+
+    .modal-body {
+      .form {
+        float: left;
+        width: 335px;
+
+        .line {
+          height: 2px;
+          background: #F3F5F5;
+          width: 90%;
+          margin: 0 auto;
+        }
+
+        .value {
+          label {
+            font-size: 13px;
+            color: #444444;
+            font-weight: 400;
+            line-height: 15px;
+          }
+
+          &.payment-method {
+            ul {
+              position: relative;
+              left: -4px;
+
+              li {
+                position: relative;
+                margin-bottom: 5px;
+
+                label {
+                  width: 18px;
+                  height: 18px;
+                  cursor: pointer;
+                  position: absolute;
+                  left: 4px;
+                  top: 4px;
+                  border-radius: 50px;
+                  border: 2px solid #979797;
+
+                  span {
+                    margin-left: 25px;
+                    width: 100px;
+                    display: block;
+                  }
+
+                  &:after {
+                    content: '';
+                    width: 18px;
+                    height: 18px;
+                    position: absolute;
+                    top: -2px;
+                    left: -2px;
+                    background: #35A211;
+                    opacity: 0;
+                    border-radius: 50px;
+                  }
+
+                  &:hover::after {
+                    opacity: 1;
+                    content: '✓';
+                    color: white;
+                    text-align: center;
+                    line-height: 19px;
+                  }
+                }
+
+                input[type=radio] {
+                  visibility: hidden;
+
+                  &:checked + label:after {
+                    opacity: 1;
+                    content: '✓';
+                    color: white;
+                    text-align: center;
+                    line-height: 19px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .box {
+        float: right;
+        text-align: left;
+        width: 220px;
+        border: 2px solid #35A211;
+        border-radius: 5px;
+        margin-top: 15px;
+        margin-right: 10px;
+
+        ul {
+          display: inline-block;
+          width: 100%;
+
+          li {
+            float: left;
+            height: 20px;
+            line-height: 20px;
+            margin: 5px 0;
+
+            &.text {
+              width: 130px;
+            }
+
+            &.value {
+              width: 55px;
+            }
+          }
+        }
+
+        .title {
+          padding: 10px 15px;
+          border-bottom: 2px solid #F9F9F9;
+
+          ul {
+            li {
+              &.text {
+                color: #212121;
+                font-size: 16px;
+              }
+
+              &.value {
+                span {
+                  display: inline-block;
+                  background: #35A211;
+                  color: white;
+                  padding: 0 7px;
+                  font-size: 12px;
+                  position: relative;
+                  top: -2px;
+                  border-radius: 5px;
+                }
+              }
+            }
+          }
+        }
+
+        .content {
+          padding: 10px 15px;
+
+          ul {
+            li {
+              &.text {
+                color: #A0AAB3;
+                font-size: 13px;
+                font-weight: 300;
+              }
+
+              &.value {
+                font-size: 13px;
+                color: #4A4A4A;
+                font-weight: 300;
+              }
+            }
+          }
+        }
+
+        .total {
+          padding: 10px 15px;
+          background: #F9F9F9;
+
+          li {
+            &.value {
+              color: #35A211;
+            }
+          }
+        }
+      }
+
+      input {
+        border: 2px solid #979797;
+      }
+
+      input[type=checkbox]:not(old) {
+        width: 2em;
+        margin: 0;
+        padding: 0;
+        font-size: 1em;
+        opacity: 0;
+      }
+
+      input[type=checkbox]:not(old) + label {
+        display: inline-block;
+        margin-left: -2.2em;
+        line-height: 1.5em;
+      }
+
+      input[type=checkbox]:not(old) + label > span {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        border: 2px solid #979797;
+        border-radius: 0.25em;
+        background: white;
+        vertical-align: bottom;
+        position: relative;
+        left: -6px;
+      }
+
+      input[type=checkbox]:not(old):checked + label > span:before {
+        content: '✓';
+        display: block;
+        width: 16px;
+        color: white;
+        font-size: 11px;
+        line-height: 17px;
+        text-align: center;
+        text-shadow: 0 0 0.0714em #73994d;
+        font-weight: bold;
+        background: #35A211;
+        height: 16px;
+        border-radius: 3px;
+        position: relative;
+        top: -2px;
+        left: -2px;
+      }
+    }
+
+    .modal-footer {
+      clear: both;
+    }
+  }
+}

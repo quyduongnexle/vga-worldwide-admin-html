@@ -42,227 +42,131 @@
 <div w3-include-html="inc/sidebar.html"></div>
 
 <div class="sidebar-overlay" id="sidebar-overlay"></div>
-<article class="content items-list-page">
-   <div class="title-search-block row">
-      <div class="filter col-md-6">
-         <form>
-            <ul>
-               <li class="title">
-                  Filter
-               </li>
-               <li>
-                  <select class="form-control" id="filter">
-                     <option>All</option>
-                     <option>1</option>
-                     <option>2</option>
-                     <option>3</option>
-                     <option>4</option>
-                  </select>
-               </li>
-               <li>
-                  <button type="submit" class="button">APPLY</button>
-               </li>
-            </ul>
-         </form>
-      </div>
-      <div class="search col-md-6">
-         <form>
-            <ul>
-               <li class="title">
-                  Search
-               </li>
-               <li>
-                  <input type="text" class="form-control" placeholder="Name, Location">
-               </li>
-               <li>
-                  <button type="button" class="button" data-toggle="modal" data-target="#modal-add-member">ADD</button>
-               </li>
-            </ul>
-         </form>
-      </div>
-      <!--end .search-->
-   </div>
-   <div class="card items">
-      <ul class="item-list striped">
-         <li class="item item-list-header hidden-sm-down">
-            <div class="item-row">
-               <div class="item-col item-col-header">
-                  <div class="select">
-                     <span>Name</span>
-                  </div>
-               </div>
 
-               <div class="item-col item-col-header">
-                  <div>
-                     <span>Email</span>
-                  </div>
-               </div>
-               <div class="item-col item-col-header">
-                  <div>
-                     <span>Phone</span>
-                  </div>
-               </div>
-               <div class="item-col item-col-header center">
-                  <div>
-                     <span>Age</span>
-                  </div>
-               </div>
-               <div class="item-col item-col-header">
-                  <div class="select">
-                     <span>Location</span>
-                  </div>
-               </div>
-               <div class="item-col item-col-header center">
-                  <div class="select">
-                     <span>Created</span>
-                  </div>
-               </div>
-               <div class="item-col item-col-header center">
-                  <div class="select">
-                     <span>Status</span>
-                  </div>
-               </div>
-               <div class="item-col item-col-header right item-col-actions">
-                  <div>
-                     <span>Actions</span>
-                  </div>
-               </div>
-            </div>
-         </li>
-         <li class="item">
-            <div class="item-row">
-               <div class="item-col">
-                 <div class="item-heading">Name</div>
-                 <div>
-                   <ul class="name-images">
-                     <li class="images">
-                       <img src="images/name.png" alt="">
-                     </li>
-                     <li class="name">
-                       Arthur Bryant
-                     </li>
-                   </ul>
-
-                 </div>
-               </div>
-
-               <div class="item-col">
-                  <div class="item-heading">Email</div>
-                  <div class="no-overflow"> arthur_bryant@eu.vn </div>
-               </div>
-               <div class="item-col">
-                  <div class="item-heading">Phone</div>
-                  <div class="no-overflow"> 560-465-915 </div>
-               </div>
-               <div class="item-col center">
-                  <div class="item-heading">Age</div>
-                  <div class="no-overflow">
-                     <a href="">26</a>
-                  </div>
-               </div>
-               <div class="item-col">
-                  <div class="item-heading">Location</div>
-                  <div class="no-overflow">
-                     <a href="">Mendoza, Argentina</a>
-                  </div>
-               </div>
-               <div class="item-col center">
-                  <div class="item-heading">Created</div>
-                  <div class="no-overflow"> 25/05/2015 </div>
-               </div>
-               <div class="item-col center">
-                  <div class="item-heading">Status</div>
-                  <div class="no-overflow active"> Active </div>
-               </div>
-               <div class="item-col right item-col-actions">
-                  <div class="item-heading">Actions</div>
-                  <div class="no-overflow">
-                     <ul>
-                        <li>
-                           <a href="#"><img src="images/ic-close.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
-                        </li>
-                        <li>
-                           <a href="#" data-toggle="modal" data-target="#modal-reset-password"><img src="images/ic-lock.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Reset/Password"></a>
-                        </li>
-                        <li>
-                           <a href="#" data-toggle="modal" data-target="#modal-edit-user"><img src="images/ic-edit.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
-                        </li>
-                        <li>
-                           <a href="#"><img src="images/ic-enable.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Disable/Enable"></a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </li>
-
-         <li class="item">
-            <div class="item-row">
-               <div class="item-col">
-                 <div class="item-heading">Name</div>
-                 <div>
-                   <ul class="name-images">
-                     <li class="images">
-                       <img src="images/name.png" alt="">
-                     </li>
-                     <li class="name">
-                       Arthur Bryant
-                     </li>
-                   </ul>
-
-                 </div>
-               </div>
-
-               <div class="item-col">
-                  <div class="item-heading">Email</div>
-                  <div class="no-overflow"> arthur_bryant@eu.vn </div>
-               </div>
-               <div class="item-col">
-                  <div class="item-heading">Phone</div>
-                  <div class="no-overflow"> 560-465-915 </div>
-               </div>
-               <div class="item-col center">
-                  <div class="item-heading">Age</div>
-                  <div class="no-overflow">
-                     <a href="">26</a>
-                  </div>
-               </div>
-               <div class="item-col">
-                  <div class="item-heading">Location</div>
-                  <div class="no-overflow">
-                     <a href="">Mendoza, Argentina</a>
-                  </div>
-               </div>
-               <div class="item-col center">
-                  <div class="item-heading">Created</div>
-                  <div class="no-overflow"> 25/05/2015 </div>
-               </div>
-               <div class="item-col center">
-                  <div class="item-heading">Status</div>
-                  <div class="no-overflow inactive"> Inactive </div>
-               </div>
-               <div class="item-col right item-col-actions">
-                  <div class="item-heading">Actions</div>
-                  <div class="no-overflow">
-                     <ul>
-                        <li>
-                           <a href="#"><img src="images/ic-close.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
-                        </li>
-                        <li>
-                           <a href="#" data-toggle="modal" data-target="#modal-reset-password"><img src="images/ic-lock.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Reset/Password"></a>
-                        </li>
-                        <li>
-                           <a href="#" data-toggle="modal" data-target="#modal-edit-user"><img src="images/ic-edit.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
-                        </li>
-                        <li>
-                           <a href="#"><img src="images/ic-disable.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Disable/Enable"></a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </li>
-
+<div class="header-filter-input">
+  <div class="filter-search col-md-12">
+    <form>
+      <ul>
+        <li class="title">
+          Filter
+        </li>
+        <li>
+          <select class="form-control" id="filter">
+                  <option>All</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+               </select>
+        </li>
+        <li class="title">
+          Search
+        </li>
+        <li>
+          <input type="text" class="form-control" placeholder="Name, Location">
+        </li>
+        <li>
+          <span class="button" data-toggle="modal" data-target="#modal-add-member">ADD</span>
+        </li>
       </ul>
-   </div>
+    </form>
+  </div>
+</div>
+
+<article class="content">
+
+  <table class="table table-striped dataTable no-footer" cellspacing="0" width="100%">
+    <thead>
+      <tr role="row">
+        <th class="sorting_asc" rowspan="1" colspan="1">Name</th>
+        <th rowspan="1" colspan="1">Email</th>
+        <th rowspan="1" colspan="1">Phone</th>
+        <th rowspan="1" colspan="1">Age</th>
+        <th class="sorting" rowspan="1" colspan="1">Location</th>
+        <th class="sorting" rowspan="1" colspan="1">Created</th>
+        <th class="sorting" rowspan="1" colspan="1">Status</th>
+        <th rowspan="1" colspan="1">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="odd">
+        <td class="sorting_1">
+          <ul class="name-images">
+            <li class="avatart">
+              <img src="images/name.png" alt="">
+            </li>
+            <li class="name">
+              Arthur Bryant
+            </li>
+          </ul>
+        </td>
+        <td>balbaba@gmail.com</td>
+        <td>090909123</td>
+        <td>33</td>
+        <td>Melbum, australia</td>
+        <td>31/04/2016</td>
+        <td class="active">Active</td>
+        <td>
+          <ul>
+            <li>
+              <a href="#"><img src="images/ic-permission.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Disable/Enable"></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/ic-enable.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Disable/Enable"></a>
+            </li>
+            <li>
+              <a href="#" data-toggle="modal" data-target="#modal-edit-user"><img src="images/ic-edit.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
+            </li>
+            <li>
+              <a href="#" data-toggle="modal" data-target="#modal-reset-password"><img src="images/ic-lock.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Reset/Password"></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/ic-close.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
+            </li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr class="even">
+        <td class="sorting_1">
+          <ul class="name-images">
+            <li class="avatart">
+              <img src="images/name.png" alt="">
+            </li>
+            <li class="name">
+              Arthur Bryant
+            </li>
+          </ul>
+        </td>
+        <td>balbaba@gmail.com</td>
+        <td>090909123</td>
+        <td>33</td>
+        <td>Melbum, australia</td>
+        <td>31/04/2016</td>
+        <td class="inactive">Inactive</td>
+        <td>
+          <ul>
+            <li>
+              <a href="#"><img src="images/ic-permission.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Disable/Enable"></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/ic-disable.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Disable/Enable"></a>
+            </li>
+            <li>
+              <a href="#" data-toggle="modal" data-target="#modal-edit-user"><img src="images/ic-edit.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
+            </li>
+            <li>
+              <a href="#" data-toggle="modal" data-target="#modal-reset-password"><img src="images/ic-lock.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Reset/Password"></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/ic-close.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
+            </li>
+          </ul>
+        </td>
+      </tr>
+
+
+    </tbody>
+  </table>
+
 </article>

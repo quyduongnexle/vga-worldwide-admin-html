@@ -1,0 +1,81 @@
+<header class="header">
+  <div class="header-block header-block-collapse hidden-lg-up">
+    <button class="collapse-btn" id="sidebar-collapse-btn">
+      <i class="fa fa-bars"></i>
+      </button>
+  </div>
+  <div class="header-block header-block-search hidden-sm-down">
+    <h2>Admin Users</h2>
+  </div>
+  <div w3-include-html="inc/profile.html"></div>
+</header>
+
+
+<div w3-include-html="inc/sidebar.html"></div>
+
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+<div w3-include-html="inc/filter-search.html"></div>
+<div class="content">
+
+  <table class="table table-striped dataTable no-footer" cellspacing="0" width="100%">
+    <thead>
+      <tr role="row">
+        <th class="sorting_asc" rowspan="1" colspan="1">Name</th>
+        <th class="sorting" rowspan="1" colspan="1">Owner</th>
+        <th class="sorting" rowspan="1" colspan="1">No.of Member</th>
+        <th class="sorting" rowspan="1" colspan="1">Created</th>
+        <th rowspan="1" colspan="1">Status</th>
+        <th rowspan="1" colspan="1">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="odd">
+        <td class="sorting_1">Airi Satou</td>
+        <td>Xuanbinh93@gmail.co</td>
+        <td>Tokyo</td>
+        <td>33</td>
+        <td>2008/11/28</td>
+        <td>
+          <ul>
+            <li>
+              <a href="#"><img src="images/ic-close.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
+            </li>
+            <li>
+              <a href="#" data-toggle="modal" data-target="#modal-reset-password"><img src="images/ic-lock.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Reset/Password"></a>
+            </li>
+            <li>
+              <a href="#" data-toggle="modal" data-target="#modal-edit-user"><img src="images/ic-edit.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/ic-enable.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Disable/Enable"></a>
+            </li>
+          </ul>
+        </td>
+      </tr>
+      <tr class="even">
+        <td class="sorting_1">Angelica Ramos</td>
+        <td>Chief Executive Officer (CEO)</td>
+        <td>London</td>
+        <td>47</td>
+        <td>2009/10/09</td>
+        <td>
+          <ul>
+            <li>
+              <a href="#"><img src="images/ic-close.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
+            </li>
+            <li>
+              <a href="#" data-toggle="modal" data-target="#modal-reset-password"><img src="images/ic-lock.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Reset/Password"></a>
+            </li>
+            <li>
+              <a href="#" data-toggle="modal" data-target="#modal-edit-user"><img src="images/ic-edit.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/ic-enable.png" alt="" data-toggle="tooltip" data-placement="bottom" title="Disable/Enable"></a>
+            </li>
+          </ul>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>

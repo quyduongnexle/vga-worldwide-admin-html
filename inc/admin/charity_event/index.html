@@ -1,0 +1,126 @@
+<header class="header">
+   <div class="header-block header-block-collapse hidden-lg-up">
+      <button class="collapse-btn" id="sidebar-collapse-btn">
+      <i class="fa fa-bars"></i>
+      </button>
+   </div>
+   <div class="header-block header-block-search hidden-sm-down">
+      <h2>Charity event</h2>
+   </div>
+   <div w3-include-html="inc/profile.html"></div>
+</header>
+
+
+<div w3-include-html="inc/sidebar.html"></div>
+
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+<div class="header-filter-input">
+   <div class="filter-search col-md-12">
+      <form>
+         <ul>
+            <li class="title">
+               Filter
+            </li>
+            <li>
+               <select class="form-control" id="filter">
+                  <option>All</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+               </select>
+            </li>
+            <li class="title">
+               Search
+            </li>
+            <li>
+               <input type="text" class="form-control" placeholder="Name, Location">
+            </li>
+            <li>
+               <span class="button" data-toggle="modal" data-target="#modal-add-charity">ADD</span>
+            </li>
+         </ul>
+      </form>
+   </div>
+</div>
+<article class="content">
+
+  <table class="table table-striped dataTable no-footer" cellspacing="0" width="100%">
+    <thead>
+      <tr role="row">
+        <th class="sorting_asc" rowspan="1" colspan="1">Charity Event</th>
+        <th rowspan="1" colspan="1">Images</th>
+        <th class="sorting" rowspan="1" colspan="1">Location</th>
+        <th rowspan="1" colspan="1">Date</th>
+        <th rowspan="1" colspan="1">Registration</th>
+        <th class="sorting" rowspan="1" colspan="1">Donate</th>
+        <th class="sorting" rowspan="1" colspan="1">Status</th>
+        <th rowspan="1" colspan="1">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="odd">
+        <td>Aiden Morrision</td>
+        <td><img src="images/photo.png" alt="" class="img-responsive"></td>
+        <td>Aiden Morrision Aiden Morrision</td>
+        <td>July 6-8</td>
+        <td>23</td>
+        <td>$7,000,000</td>
+        <td class="active">Acitve</td>
+        <td>
+          <ul>
+            <li>
+              <a href="#" data-toggle="modal" data-target="#modal-edit-charity"><img src="images/ic-edit.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/ic-close.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
+            </li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr class="odd">
+        <td>Aiden Morrision</td>
+        <td><img src="images/photo.png" alt="" class="img-responsive"></td>
+        <td>Aiden Morrision Aiden Morrision</td>
+        <td>July 6-8</td>
+        <td>23</td>
+        <td>$7,000,000</td>
+        <td class="active">Acitve</td>
+        <td>
+          <ul>
+            <li>
+              <a href="#" data-toggle="modal" data-target="#modal-edit-charity"><img src="images/ic-edit.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/ic-close.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
+            </li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr class="even">
+        <td>Aiden Morrision</td>
+        <td><img src="images/photo.png" alt="" class="img-responsive"></td>
+        <td>Aiden Morrision Aiden Morrision</td>
+        <td>July 6-8</td>
+        <td>23</td>
+        <td>$7,000,000</td>
+        <td class="active">Acitve</td>
+        <td>
+          <ul>
+            <li>
+              <a href="#" data-toggle="modal" data-target="#modal-edit-charity"><img src="images/ic-edit.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Edit"></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/ic-close.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Close"></a>
+            </li>
+          </ul>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+
+</article>

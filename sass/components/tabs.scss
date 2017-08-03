@@ -4,7 +4,7 @@ ul.wrap-tabs {
   display: inline-block;
   width: 100%;
   background: #E1E1E1;
-  padding: 13px 40px;
+  padding: 13px 20px;
   border-bottom: none;
   li {
     float: left;
@@ -34,6 +34,10 @@ ul.wrap-tabs {
       a {
         background: #35A211;
         color: white;
+        &:hover,&:focus,&:visited {
+          background: #35A211;
+          color: white;
+        }
       }
     }
   }
