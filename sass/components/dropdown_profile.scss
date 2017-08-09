@@ -1,91 +1,104 @@
-.profile-dropdown-menu {
-    left: auto;
-    right: 0;
-    min-width: 200px;
-    white-space: normal;
-    border: none;
-    border-radius: 0px;
-    padding: 0px;
-    font-size: 14px;
-    font-weight: 400px;
-    color: #4A4A4A;
-    background: #FCFCFC;
-    &:before {
-    position: absolute;
-    right: 10px;
-    bottom: 100%;
-    margin-right: -1px;
-    }
-    @media (max-width: 767px) {
-            margin-top: 8px;
-    }
-    &:after {
-        position: absolute;
-        right: 10px;
-        bottom: 100%;
-    }
-    ul {
-        li {
-            float: left;
+.nav-profile {
+  .language {
+      vertical-align: middle;
+      span {
+          float: right;
+          position: relative;
+          padding: 5px 0px 5px 5px;
+      }
+  }
+  .profile-dropdown-menu {
+      left: auto;
+      right: 0;
+      min-width: 200px;
+      white-space: normal;
+      border: none;
+      border-radius: 0px;
+      padding: 0px;
+      font-size: 14px;
+      font-weight: 400px;
+      color: #4A4A4A;
+      background: #FCFCFC;
+      &:before {
+      position: absolute;
+      right: 10px;
+      bottom: 100%;
+      margin-right: -1px;
+      }
+      @media (max-width: 767px) {
+              margin-top: 8px;
+      }
+      &:after {
+          position: absolute;
+          right: 10px;
+          bottom: 100%;
+      }
+      ul {
+          li {
+              float: left;
+              width: 100%;
+              a {
+                  display: inline-block;
+                  padding: 0px;
+                  color: #4A4A4A;
+                  font-weight: 300;
+                  &:hover {
+                    text-decoration: underline;
+                  }
+              }
+          }
+      }
+      .info {
+          ul {
+            display: inline-block;
             width: 100%;
-            a {
-                display: inline-block;
-                padding: 0px;
-                color: #4A4A4A;
-                font-weight: 300;
+            padding: 15px;
+            li {
+                &:first-child {
+                    width: 30%;
+                }
+                &:last-child {
+                    margin-top: 5px;
+                    line-height: 20px;
+                    font-weight: 300;
+                    width: 70%;
+                    span {
+                        color: #77cc50;
+                    }
+                    p {
+                        color: #ddd;
+                    }
+                }
+                  img {
+                      border-radius: 50%;
+                  }
             }
-        }
-    }
-    .info {
-        ul { 
+          }
+      }
+      .control {
+
+          ul {
+            display: inline-block;
+          width: 100%;
+          padding: 10px 20px;
+              border-top: 1px solid #f0f0f0;
+              border-bottom: 1px solid #f0f0f0;
+              padding: 10px 20px;
+              li {
+                  padding: 5px 0px
+              }
+          }
+      }
+      .logout {
           display: inline-block;
           width: 100%;
-          padding: 15px;
-          li {
-              &:first-child {
-                  width: 30%;
-              }
-              &:last-child {
-                  margin-top: 5px;
-                  line-height: 20px;
-                  font-weight: 300;
-                  width: 70%;
-                  span {
-                      color: #77cc50;
-                  }
-                  p {
-                      color: #ddd;
-                  }
-              }
-                img {
-                    border-radius: 50%;
-                }
-          } 
-        }
-    }
-    .control {
-      
-        ul {
-          display: inline-block;
-        width: 100%;
-        padding: 10px 20px;
-            border-top: 1px solid #f0f0f0;
-            border-bottom: 1px solid #f0f0f0;
-            padding: 10px 20px;
-            li {
-                padding: 5px 0px
-            }
-        }
-    }
-    .logout {
-        display: inline-block;
-        width: 100%;
-        padding: 10px 20px;
-        a {
-            display: inline-block;
-            padding: 0px;
-            color: #4A4A4A;
-            font-weight: 300;
-        }
-    }
+          padding: 10px 20px;
+          a {
+              display: inline-block;
+              padding: 0px;
+              color: #4A4A4A;
+              font-weight: 300;
+          }
+      }
+  }
 }

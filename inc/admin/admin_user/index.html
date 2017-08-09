@@ -14,38 +14,38 @@
 <div w3-include-html="inc/sidebar.html"></div>
 
 <div class="sidebar-overlay" id="sidebar-overlay"></div>
-<div class="header-filter-input">
-  <div class="filter-search col-md-12">
-    <form>
-      <ul>
-        <li class="title">
-          Filter
-        </li>
-        <li>
-          <select class="form-control" id="filter">
-                  <option>All</option>
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-               </select>
-        </li>
-        <li class="title">
-          Search
-        </li>
-        <li>
-          <input type="text" class="form-control" placeholder="Name, Location">
-        </li>
-        <li>
-          <span class="button" data-toggle="modal" data-target="#modal-add-user">ADD</span>
-        </li>
-      </ul>
-    </form>
-  </div>
-</div>
 
 <article class="content">
-
+  <div class="header-filter-input">
+    <div class="filter-search col-md-12">
+      <form>
+        <ul>
+          <li class="title">
+            Filter
+          </li>
+          <li>
+            <select class="form-control" id="filter">
+                    <option>All</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                 </select>
+          </li>
+          <li class="title">
+            Search
+          </li>
+          <li>
+            <input type="text" class="form-control" placeholder="Name, Location">
+          </li>
+          <li>
+            <span class="button" data-toggle="modal" data-target="#modal-add-user">ADD</span>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </div>
+  <div class="table-responsive-main">
   <table class="table table-striped dataTable no-footer" cellspacing="0" width="100%">
     <thead>
       <tr role="row">
@@ -63,7 +63,7 @@
       <tr class="odd">
         <td class="sorting_1">
           <ul class="name-images">
-            <li class="avatart">
+            <li class="avatar">
               <img src="images/name.png" alt="">
             </li>
             <li class="name">
@@ -137,5 +137,5 @@
       </tr>
     </tbody>
   </table>
-
+</div>
 </article>

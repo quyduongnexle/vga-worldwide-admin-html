@@ -35,6 +35,7 @@
             background: #35A211;
             text-decoration: none;
             color: white;
+            border-color: #ddd !important
           }
 
         }
@@ -50,6 +51,14 @@
           cursor: no-drop;
         }
       }
+    }
+  }
+}
+
+.pagination {
+  .active {
+    a {
+      border-color: #ddd !important;
     }
   }
 }

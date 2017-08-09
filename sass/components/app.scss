@@ -1,0 +1,40 @@
+.app {
+  position: relative;
+  width: 100%;
+  padding-left: 230px;
+  min-height: 100vh;
+  margin: 0 auto;
+  left: 0;
+  background-color: #F0F0F0;
+  -webkit-box-shadow: 0 0 3px #ccc;
+  box-shadow: 0 0 3px #ccc;
+  -webkit-transition: left 0.3s ease, padding-left 0.3s ease;
+  transition: left 0.3s ease, padding-left 0.3s ease;
+  overflow: hidden;
+}
+#app.sidebar-open {
+  left: 0;
+}
+.app .content {
+  padding: 0 20px 75px;
+}
+@media (max-width: 1199px) {
+  .app {
+    padding-left: 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .app .content {
+    padding: 0 35px 80px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .app .content {
+    padding: 0 20px 75px;
+  }
+}
+@media (max-width: 767px) {
+  .app .content {
+    padding: 0 20px 70px;
+  }
+}

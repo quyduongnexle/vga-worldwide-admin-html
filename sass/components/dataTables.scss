@@ -59,13 +59,11 @@ table.dataTable thead .sorting { background: url('../images/sort_both.png') no-r
 table.dataTable thead .sorting_asc { background: url('../images/sort_asc.png') no-repeat center right; }
 table.dataTable thead .sorting_desc { background: url('../images/sort_desc.png') no-repeat center right; }
 
-table.dataTable thead .sorting_asc_disabled { background: url('../images/sort_asc_disabled.png') no-repeat center right; }
-table.dataTable thead .sorting_desc_disabled { background: url('../images/sort_desc_disabled.png') no-repeat center right; }
 .table>tbody>tr>td, .table>tbody>tr>th, .table>thead>tr>td, .table>thead>tr>th {
 	border-top: 1px solid #e9edf0;
 	vertical-align: middle;
 }
-.table>tbody>tr>td ul.name-images li.avatart {
+.table>tbody>tr>td ul.name-images li.avatar {
 	width: 35px;
 	height: 35px;
 	position: absolute;
@@ -90,7 +88,7 @@ width: 100%;
 .table>tbody>tr>td ul.name-images li.name {
 	margin-left: 50px;
 }
-.table>tbody>tr>td ul.name-images li.avatart img {
+.table>tbody>tr>td ul.name-images li.avatar img {
 	width: 34px;
 	height: 34px;
 	border-radius: 50%;
@@ -100,7 +98,7 @@ width: 100%;
 	font-size: 12px;
     color: #4A4A4A;
     font-weight: 300;
-		padding: 20px 15px;
+		padding: 15px;
 }
 .table>tbody>tr>td ul li, .table>tbody>tr>th ul li {
 	float: left;
@@ -148,9 +146,6 @@ div.dataTables_scrollFoot table {
 	border-top: none;
 }
 
-
-
-
 /*
  * TableTools styles
  */
@@ -174,103 +169,15 @@ div.dataTables_scrollFoot table {
 	background-color: #017ebc;
 }
 
-table.DTTT_selectable tbody tr {
-	cursor: pointer;
+
+@media (max-width: 1023px) {
+	.table-responsive-main {
+		width: 100%;
+margin-bottom: 15px;
+overflow-y: hidden;
+-ms-overflow-style: -ms-autohiding-scrollbar;
+table.dataTable {
+	width: 1023px
 }
-
-div.DTTT .btn {
-	color: #333 !important;
-	font-size: 12px;
-}
-
-div.DTTT .btn:hover {
-	text-decoration: none !important;
-}
-
-ul.DTTT_dropdown.dropdown-menu {
-  z-index: 2003;
-}
-
-ul.DTTT_dropdown.dropdown-menu a {
-	color: #333 !important; /* needed only when demo_page.css is included */
-}
-
-ul.DTTT_dropdown.dropdown-menu li {
-	position: relative;
-}
-
-ul.DTTT_dropdown.dropdown-menu li:hover a {
-	background-color: #0088cc;
-	color: white !important;
-}
-
-div.DTTT_collection_background {
-	z-index: 2002;
-}
-
-/* TableTools information display */
-div.DTTT_print_info.modal {
-	height: 150px;
-	margin-top: -75px;
-	text-align: center;
-}
-
-div.DTTT_print_info h6 {
-	font-weight: normal;
-	font-size: 28px;
-	line-height: 28px;
-	margin: 1em;
-}
-
-div.DTTT_print_info p {
-	font-size: 14px;
-	line-height: 20px;
-}
-
-
-
-/*
- * FixedColumns styles
- */
-div.DTFC_LeftHeadWrapper table,
-div.DTFC_LeftFootWrapper table,
-div.DTFC_RightHeadWrapper table,
-div.DTFC_RightFootWrapper table,
-table.DTFC_Cloned tr.even {
-    background-color: white;
-    margin-bottom: 0;
-}
-
-div.DTFC_RightHeadWrapper table ,
-div.DTFC_LeftHeadWrapper table {
-    margin-bottom: 0 !important;
-    border-top-right-radius: 0 !important;
-    border-bottom-left-radius: 0 !important;
-    border-bottom-right-radius: 0 !important;
-}
-
-div.DTFC_RightHeadWrapper table thead tr:last-child th:first-child,
-div.DTFC_RightHeadWrapper table thead tr:last-child td:first-child,
-div.DTFC_LeftHeadWrapper table thead tr:last-child th:first-child,
-div.DTFC_LeftHeadWrapper table thead tr:last-child td:first-child {
-    border-bottom-left-radius: 0 !important;
-    border-bottom-right-radius: 0 !important;
-}
-
-div.DTFC_RightBodyWrapper table,
-div.DTFC_LeftBodyWrapper table {
-    border-top: none;
-    margin-bottom: 0 !important;
-}
-
-div.DTFC_RightBodyWrapper tbody tr:first-child th,
-div.DTFC_RightBodyWrapper tbody tr:first-child td,
-div.DTFC_LeftBodyWrapper tbody tr:first-child th,
-div.DTFC_LeftBodyWrapper tbody tr:first-child td {
-    border-top: none;
-}
-
-div.DTFC_RightFootWrapper table,
-div.DTFC_LeftFootWrapper table {
-    border-top: none;
+	}
 }

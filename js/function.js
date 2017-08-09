@@ -7,10 +7,11 @@ $(function () {
 w3.includeHTML();
 
 /* Add Menu */
-$(function () {
+$( document ).ready(function() {
 
 	$('#sidebar-collapse-btn').on('click', function(event){
 		event.preventDefault();
+    debugger;
 
 		$("#app").toggleclass("sidebar-open");
 	});

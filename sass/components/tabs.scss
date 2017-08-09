@@ -21,6 +21,7 @@ ul.wrap-tabs {
       font-size: 13px;
       display: inline-block;
       border-radius: 5px;
+      border: none !important;
       &:hover {
         background: #35A211;
         text-decoration: none;
@@ -38,6 +39,33 @@ ul.wrap-tabs {
           background: #35A211;
           color: white;
         }
+      }
+    }
+  }
+  li.save,
+  li.back {
+    a {
+      i {
+        margin-right: 5px;
+      }
+    }
+  }
+  li.save {
+    a {
+      background: #35A211;
+      &:hover {
+        background: #30930F;
+      }
+    }
+  }
+  li.back {
+    float: right;
+    margin-right: 0px;
+    a {
+      margin-right: 0px;
+      background: #2E3E4E;
+      &:active, &:focus, &:hover {
+        background: #35A211
       }
     }
   }

@@ -1,0 +1,62 @@
+#charity-event-detail {
+  .header-title {
+    background: #F0F0F0;
+    padding: 20px 0px;
+    display: inline-block;
+    width: 100%;
+
+    .text {
+      padding: 0px;
+      h3 {
+        color: #000000;
+        font-size: 22px;
+        font-weight: 300;
+        margin-bottom: 5px;
+      }
+
+      span {
+        font-size: 16px;
+        color: #444444;
+
+        img {
+          position: relative;
+          top: 3px;
+          margin-right: 5px;
+        }
+      }
+    }
+
+    .price {
+      padding: 0px;
+      ul {
+        display: inline-block;
+        float: right;
+
+        li {
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+
+          &.text {
+            background: #35A211;
+            font-size: 18px;
+            color: white;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 5px 5px 0 0;
+          }
+
+          &.number {
+            background: #2D3D4D;
+            font-weight: 300;
+            font-size: 22px;
+            color: white;
+            line-height: 50px;
+            height: 50px;
+            border-radius: 0 0 5px 5px;
+          }
+        }
+      }
+    }
+  }
+}

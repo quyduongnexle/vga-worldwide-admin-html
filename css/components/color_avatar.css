@@ -1,0 +1,38 @@
+.table > tbody > tr:nth-child(10n + #35A211) > td ul.name-images li.avatart span {
+  background-color: #35A211; }
+
+.table > tbody > tr:nth-child(10n + #F1C40F) > td ul.name-images li.avatart span {
+  background-color: #F1C40F; }
+
+.table > tbody > tr:nth-child(10n + #9B59B6) > td ul.name-images li.avatart span {
+  background-color: #9B59B6; }
+
+.table > tbody > tr:nth-child(10n + #34495E) > td ul.name-images li.avatart span {
+  background-color: #34495E; }
+
+.table > tbody > tr:nth-child(10n + #1ABC9C) > td ul.name-images li.avatart span {
+  background-color: #1ABC9C; }
+
+.table > tbody > tr:nth-child(10n + #E67E22) > td ul.name-images li.avatart span {
+  background-color: #E67E22; }
+
+.table > tbody > tr:nth-child(10n + #7FFF00) > td ul.name-images li.avatart span {
+  background-color: #7FFF00; }
+
+.table > tbody > tr:nth-child(10n + #00008B) > td ul.name-images li.avatart span {
+  background-color: #00008B; }
+
+.table > tbody > tr:nth-child(10n + #CD5C5C) > td ul.name-images li.avatart span {
+  background-color: #CD5C5C; }
+
+.table > tbody > tr:nth-child(10n + #800000) > td ul.name-images li.avatart span {
+  background-color: #800000; }
+
+.table > tbody > tr > td ul.name-images li.avatart span {
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  line-height: 35px; }

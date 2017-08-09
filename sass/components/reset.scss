@@ -141,7 +141,10 @@ a:focus {
   outline: none !important;
   outline: none !important;
 }
-
+a:hover,
+button:hover {
+  cursor: pointer;
+}
 a:active {
   outline: none !important;
 }

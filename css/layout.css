@@ -1907,28 +1907,6 @@ span a {
     .sidebar .nav > li > ul > li.active a {
       color: #ffffff; }
 
-.sidebar-overlay {
-  position: absolute;
-  display: none;
-  left: 200vw;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 5;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
-  z-index: 15; }
-  @media (max-width: 991px) {
-    .sidebar-overlay {
-      display: block; } }
-  @media (max-width: 767px) {
-    .sidebar-overlay {
-      background-color: rgba(0, 0, 0, 0.7); } }
-  @media (max-width: 991px) {
-    .sidebar-open .sidebar-overlay {
-      left: 0;
-      opacity: 1; } }
 
 .dashboard-page #dashboard-downloads-chart,
 .dashboard-page #dashboard-visits-chart {

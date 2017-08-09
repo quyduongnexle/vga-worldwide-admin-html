@@ -6,6 +6,7 @@
     width: 100%;
 
     .text {
+      padding: 0px 20px;
       h3 {
         color: #000000;
         font-size: 22px;
@@ -26,6 +27,7 @@
     }
 
     .price {
+      padding: 0px 20px;
       ul {
         display: inline-block;
         float: right;
@@ -231,6 +233,7 @@
           }
         }
       }
+
     }
   }
 

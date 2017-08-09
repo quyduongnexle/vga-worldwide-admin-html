@@ -10,12 +10,12 @@
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   z-index: 15;
-  @media (max-width: 991px) {
+  @media (max-width: 1199px) {
     display: block;
     background-color: rgba(0, 0, 0, 0.7);
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .sidebar-open .sidebar-overlay {
     left: 0;
     opacity: 1;

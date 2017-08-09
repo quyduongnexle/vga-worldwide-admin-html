@@ -1,0 +1,39 @@
+#charity-event-detail .header-title {
+  background: #F0F0F0;
+  padding: 20px 0px;
+  display: inline-block;
+  width: 100%; }
+  #charity-event-detail .header-title .text h3 {
+    color: #000000;
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 5px; }
+  #charity-event-detail .header-title .text span {
+    font-size: 16px;
+    color: #444444; }
+    #charity-event-detail .header-title .text span img {
+      position: relative;
+      top: 3px;
+      margin-right: 5px; }
+  #charity-event-detail .header-title .price ul {
+    display: inline-block;
+    float: right; }
+    #charity-event-detail .header-title .price ul li {
+      display: inline-block;
+      width: 100%;
+      text-align: center; }
+      #charity-event-detail .header-title .price ul li.text {
+        background: #35A211;
+        font-size: 18px;
+        color: white;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 5px 5px 0 0; }
+      #charity-event-detail .header-title .price ul li.number {
+        background: #2D3D4D;
+        font-weight: 300;
+        font-size: 22px;
+        color: white;
+        line-height: 50px;
+        height: 50px;
+        border-radius: 0 0 5px 5px; }

@@ -16,13 +16,11 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    @media (max-width: 991px) {
-      left: 0;
-    }
-    @media (max-width: 767px) {
+    @media (max-width: 1199px) {
       left: 0;
       height: 50px;
     }
+
     h2 {
         font-size: 18px;
         font-weight: 300px;
@@ -34,11 +32,7 @@
       position: fixed;
   }
 }
-@media (max-width: 767px) {
-    .header .header-block {
-        padding: 5px;
-    }
-}
+
 .header .header-block-buttons {
     text-align: center;
     margin-left: auto;
@@ -65,12 +59,9 @@
 .header .header-block-collapse {
     padding-right: 5px;
     margin-left: 10px;
+    display: none;
 }
-@media (max-width: 767px) {
-    .header .header-block-collapse {
-        width: 155px;
-    }
-}
+
 .header .header-block-collapse .collapse-btn {
     background: none;
     border: none;

@@ -1,0 +1,16 @@
+$arraycolor: ( "1": #35A211, "2": #F1C40F, "3": #9B59B6, "4": #34495E, "5": #1ABC9C, "6": #E67E22, "7": #7FFF00, "8": #00008B, "9": #CD5C5C, "10": #800000 );
+@each $init, $color in $arraycolor {
+  .table > tbody > tr:nth-child(10n+#{$init}) > td ul.name-images li.avatar span {
+    background-color: #{$color};
+  }
+}
+
+.table > tbody > tr > td ul.name-images li.avatar span {
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  line-height: 35px;
+}

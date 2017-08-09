@@ -61,6 +61,22 @@
             }
           }
         }
+        .value {
+          button {
+            &:hover {
+              background: none;
+            }
+          }
+          .react-tel-input {
+            .selected-flag {
+              height: 35px;
+            }
+          }
+
+          .input-group-addon {
+            padding: 0px 0.75rem;
+          }
+        }
       }
 
       textarea {
@@ -99,6 +115,11 @@
       .value {
         width: 470px;
         float: left;
+        ul.dropdown-menu {
+          li {
+            width: 100%;
+          }
+        }
       }
       .imgs {
         padding: 0px 7.5px;
@@ -145,7 +166,6 @@
         }
       }
       ul {
-        display: inline-block;
         width: 100%;
         li {
           width: 50%;
