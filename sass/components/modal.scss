@@ -13,6 +13,7 @@
       background: #2E3E4E;
       height: 40px;
       line-height: 40px;
+
       h4 {
         font-weight: 400;
         font-size: 15px;
@@ -30,21 +31,25 @@
 
     .modal-body {
       padding: 5px 15px 0;
+
       .alert {
         text-align: left;
         font-size: 14px;
         padding: 15px;
         font-weight: 300;
       }
+
       .form-group {
         margin: 15px 0 0;
         display: inline-block;
         width: 100%;
+
         ul {
           &.lists-member {
             li {
               float: left;
               margin-right: 10px;
+
               a {
                 background: #35A211;
                 color: white;
@@ -53,6 +58,7 @@
                 padding: 5px 8px;
                 display: inline-block;
                 margin-top: 10px;
+
                 &:hover {
                   text-decoration: none;
                   background: #30930F;
@@ -61,12 +67,14 @@
             }
           }
         }
+
         .value {
           button {
             &:hover {
               background: none;
             }
           }
+
           .react-tel-input {
             .selected-flag {
               height: 35px;
@@ -74,7 +82,7 @@
           }
 
           .input-group-addon {
-            padding: 0px 0.75rem;
+            padding: 0 0.75rem;
           }
         }
       }
@@ -89,7 +97,7 @@
         font-weight: 400;
         height: 36px;
         line-height: 36px;
-        padding-right: 0px;
+        padding-right: 0;
       }
 
       .form-control {
@@ -105,28 +113,62 @@
       border: none;
     }
   }
+
   &.lg {
     width: 760px !important;
+
     .modal-content {
-      .text {
-        width: 100px;
-        float: left;
+      .btn-group {
+        ul.dropdown-menu {
+          top: 35px;
+        }
+        ul.lists-member {
+          li {
+            width: auto;
+            a {
+              img {
+                margin-left: 10px;
+              }
+            }
+          }
+        }
       }
-      .value {
-        width: 470px;
+      .text {
+        width: 120px;
         float: left;
+        .dropdown-menu {
+          position: absolute;
+          top: 35px;
+        }
+      }
+
+      .value {
+        width: 490px;
+        float: left;
+
         ul.dropdown-menu {
           li {
             width: 100%;
           }
         }
       }
+
       .imgs {
-        padding: 0px 7.5px;
+        padding: 0 7.5px;
+
         ul {
           li {
             position: relative;
             padding: 7.5px;
+            width: 180px;
+
+            img {
+              width: 180px;
+              height: 120px;
+              object-fit: cover;
+              background: white;
+            }
+
             .close-photo {
               background-color: rgba(0, 0, 0, 0.3);
               position: absolute;
@@ -135,14 +177,16 @@
               color: white;
               display: none;
             }
+
             .active-text {
               position: absolute;
-              left: 0px;
-              top: 0px;
+              left: 0;
+              top: 0;
               height: 100%;
               width: 100%;
               padding: 7.5px;
               text-align: center;
+
               p {
                 display: flex;
                 flex-direction: column;
@@ -153,6 +197,7 @@
                 color: white;
               }
             }
+
             &:hover {
               .close-photo {
                 display: block;
@@ -165,8 +210,10 @@
           }
         }
       }
+
       ul {
         width: 100%;
+
         li {
           width: 50%;
           float: left;

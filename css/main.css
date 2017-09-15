@@ -318,8 +318,8 @@ table.dataTable thead {
 
 table.dataTable thead .sorting,
 table.dataTable thead .sorting_asc,
-table.dataTable thead .sorting_desc,
 table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc,
 table.dataTable thead .sorting_desc_disabled {
   cursor: pointer;
 }
@@ -336,7 +336,10 @@ table.dataTable thead .sorting_desc {
   background: url("../images/sort_desc.png") no-repeat center right;
 }
 
-.table > tbody > tr > td, .table > tbody > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th {
   border-top: 1px solid #e9edf0;
   vertical-align: middle;
 }
@@ -353,8 +356,8 @@ table.dataTable thead .sorting_desc {
   color: #35A211;
 }
 
-.table > tbody > tr > td.inactive,
-.table > tbody > tr > td.expired {
+.table > tbody > tr > td.expired,
+.table > tbody > tr > td.inactive {
   color: red;
 }
 
@@ -378,19 +381,44 @@ table.dataTable thead .sorting_desc {
   border-radius: 50%;
 }
 
-.table > tbody > tr > td, .table > tbody > tr > th {
+.table > tbody > tr > td.thumbnails {
+  width: 180px;
+}
+
+.table > tbody > tr > td.lists-action ul {
+  display: table;
+  width: 100px;
+}
+
+.table > tbody > tr > td.lists-action ul li {
+  display: table-cell;
+  float: initial !important;
+  text-align: center;
+}
+
+.table > tbody > tr > td.thumbnails img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  background: white;
+}
+
+.table > tbody > tr > td,
+.table > tbody > tr > th {
   font-size: 12px;
   color: #4A4A4A;
   font-weight: 300;
   padding: 15px;
 }
 
-.table > tbody > tr > td ul li, .table > tbody > tr > th ul li {
+.table > tbody > tr > td ul li,
+.table > tbody > tr > th ul li {
   float: left;
   margin-right: 10px;
 }
 
-.table > thead > tr > td, .table > thead > tr > th {
+.table > thead > tr > td,
+.table > thead > tr > th {
   font-size: 12px;
   font-weight: 500;
   padding: 20px 15px;
@@ -412,8 +440,8 @@ div.dataTables_scrollHead table {
   border-bottom-right-radius: 0;
 }
 
-div.dataTables_scrollHead table thead tr:last-child th:first-child,
-div.dataTables_scrollHead table thead tr:last-child td:first-child {
+div.dataTables_scrollHead table thead tr:last-child td:first-child,
+div.dataTables_scrollHead table thead tr:last-child th:first-child {
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
 }
@@ -424,8 +452,8 @@ div.dataTables_scrollBody table {
   margin-bottom: 0 !important;
 }
 
-div.dataTables_scrollBody tbody tr:first-child th,
-div.dataTables_scrollBody tbody tr:first-child td {
+div.dataTables_scrollBody tbody tr:first-child td,
+div.dataTables_scrollBody tbody tr:first-child th {
   border-top: none;
 }
 
@@ -548,7 +576,7 @@ div.dataTables_scrollFoot table {
 }
 
 .modal-dialog .modal-content .modal-body .form-group .value .input-group-addon {
-  padding: 0px 0.75rem;
+  padding: 0 0.75rem;
 }
 
 .modal-dialog .modal-content .modal-body textarea {
@@ -561,7 +589,7 @@ div.dataTables_scrollFoot table {
   font-weight: 400;
   height: 36px;
   line-height: 36px;
-  padding-right: 0px;
+  padding-right: 0;
 }
 
 .modal-dialog .modal-content .modal-body .form-control {
@@ -580,13 +608,30 @@ div.dataTables_scrollFoot table {
   width: 760px !important;
 }
 
+.modal-dialog.lg .modal-content .btn-group ul.dropdown-menu {
+  top: 35px;
+}
+
+.modal-dialog.lg .modal-content .btn-group ul.lists-member li {
+  width: auto;
+}
+
+.modal-dialog.lg .modal-content .btn-group ul.lists-member li a img {
+  margin-left: 10px;
+}
+
 .modal-dialog.lg .modal-content .text {
-  width: 100px;
+  width: 120px;
   float: left;
 }
 
+.modal-dialog.lg .modal-content .text .dropdown-menu {
+  position: absolute;
+  top: 35px;
+}
+
 .modal-dialog.lg .modal-content .value {
-  width: 470px;
+  width: 490px;
   float: left;
 }
 
@@ -595,12 +640,20 @@ div.dataTables_scrollFoot table {
 }
 
 .modal-dialog.lg .modal-content .imgs {
-  padding: 0px 7.5px;
+  padding: 0 7.5px;
 }
 
 .modal-dialog.lg .modal-content .imgs ul li {
   position: relative;
   padding: 7.5px;
+  width: 180px;
+}
+
+.modal-dialog.lg .modal-content .imgs ul li img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  background: white;
 }
 
 .modal-dialog.lg .modal-content .imgs ul li .close-photo {
@@ -614,8 +667,8 @@ div.dataTables_scrollFoot table {
 
 .modal-dialog.lg .modal-content .imgs ul li .active-text {
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   height: 100%;
   width: 100%;
   padding: 7.5px;
@@ -980,8 +1033,8 @@ button.cancel:hover, .button.cancel:hover {
   border-radius: 0.2rem;
 }
 
-.header .header-block-buttons .btn.header-btn:hover,
-.header .header-block-buttons .btn.header-btn:focus {
+.header .header-block-buttons .btn.header-btn:focus,
+.header .header-block-buttons .btn.header-btn:hover {
   border: 1px solid #3a4651;
   color: #3a4651;
 }
@@ -1008,9 +1061,7 @@ button.cancel:hover, .button.cancel:hover {
   line-height: 40px;
   border-radius: 0;
   outline: none;
-  padding: 0;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0 10px;
   vertical-align: initial;
 }
 
@@ -1056,7 +1107,7 @@ button.cancel:hover, .button.cancel:hover {
 }
 
 .header .header-block-nav > ul > li > a {
-  padding: 0 5px 0px 15px;
+  padding: 0 5px 0 15px;
   color: #4f5f6f;
 }
 
@@ -1130,6 +1181,13 @@ button.cancel:hover, .button.cancel:hover {
   background-position: center;
   background-size: cover;
   vertical-align: middle;
+  border-radius: 50%;
+}
+
+.header .header-block-nav .profile .img img {
+  max-width: 100%;
+  border-radius: 50%;
+  height: 100%;
 }
 
 .header .header-block-nav > ul > li > a sup {
@@ -1142,7 +1200,7 @@ button.cancel:hover, .button.cancel:hover {
   height: 20px;
   line-height: 20px;
   text-align: center;
-  top: 0px;
+  top: 0;
   right: 2px;
 }
 
@@ -1243,18 +1301,6 @@ button.cancel:hover, .button.cancel:hover {
 
 .filter-search .datetimefield .input-group-addon {
   padding: 0 0.75rem;
-}
-
-.filter-search .datetimefield .bootstrap-datetimepicker-widget {
-  left: 0 !important;
-  width: 230px;
-  padding-left: 15px;
-}
-
-.filter-search .datetimefield .bootstrap-datetimepicker-widget ul li {
-  float: initial;
-  height: auto;
-  line-height: inherit;
 }
 
 .filter-search .search .btn-group ul {
@@ -1358,11 +1404,15 @@ button.cancel:hover, .button.cancel:hover {
   float: left;
   width: 100%;
   height: auto;
-  margin: 0px;
+  margin: 0;
 }
 
 .filter-search ul li .btn-group .dropdown-menu li a {
   padding: 5px 15px;
+}
+
+.filter-search ul li .btn-group .dropdown-menu.text-status {
+  font-size: 12px;
 }
 
 .filter-search ul li .btn-group button {
@@ -1372,8 +1422,80 @@ button.cancel:hover, .button.cancel:hover {
   border: 1px solid #ccc;
 }
 
+.filter-search ul li .btn-group button.text-status {
+  font-size: 12px;
+}
+
 .filter-search ul li .btn-group.open .dropdown-menu {
   display: block;
+}
+
+.bootstrap-datetimepicker-widget {
+  left: 0 !important;
+  width: 230px;
+}
+
+.bootstrap-datetimepicker-widget .datepicker-days {
+  position: relative;
+  left: -15px;
+}
+
+.bootstrap-datetimepicker-widget ul li {
+  float: initial;
+  width: auto !important;
+  height: auto;
+  line-height: inherit;
+}
+
+.bootstrap-datetimepicker-widget table tbody td .month,
+.bootstrap-datetimepicker-widget table tbody td .year {
+  display: inline-block;
+  width: 20%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.bootstrap-datetimepicker-widget table tbody td .month:hover,
+.bootstrap-datetimepicker-widget table tbody td .year:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.bootstrap-datetimepicker-widget table thead tr .next,
+.bootstrap-datetimepicker-widget table thead tr .prev,
+.bootstrap-datetimepicker-widget table thead tr .switch {
+  text-align: center;
+}
+
+.bootstrap-datetimepicker-widget table thead .next span,
+.bootstrap-datetimepicker-widget table thead .prev span {
+  font-size: 9px;
+  line-height: 13px;
+  position: relative;
+  top: -2px;
+}
+
+.modal-content .modal-body .form-group .datepicker-days {
+  position: relative;
+  left: 0;
+}
+
+.modal-content .modal-body .form-group .bootstrap-datetimepicker-widget {
+  top: 50px !important;
+  left: 15px !important;
+  position: relative;
+}
+
+.modal-content .modal-body .form-group .bootstrap-datetimepicker-widget .datepicker-days {
+  left: 15px;
+}
+
+.icon-caret-status {
+  position: absolute;
+  right: 15px;
+  top: 16px;
+  color: #c5bfbf;
 }
 
 .sidebar {
@@ -1606,7 +1728,7 @@ ul.wrap-tabs li.back a:active, ul.wrap-tabs li.back a:focus, ul.wrap-tabs li.bac
 .nav-profile .language span {
   float: right;
   position: relative;
-  padding: 5px 0px 5px 5px;
+  padding: 5px 0 5px 5px;
 }
 
 .nav-profile .profile-dropdown-menu {
@@ -1615,8 +1737,8 @@ ul.wrap-tabs li.back a:active, ul.wrap-tabs li.back a:focus, ul.wrap-tabs li.bac
   min-width: 200px;
   white-space: normal;
   border: none;
-  border-radius: 0px;
-  padding: 0px;
+  border-radius: 0;
+  padding: 0;
   font-size: 14px;
   font-weight: 400px;
   color: #4A4A4A;
@@ -1649,7 +1771,7 @@ ul.wrap-tabs li.back a:active, ul.wrap-tabs li.back a:focus, ul.wrap-tabs li.bac
 
 .nav-profile .profile-dropdown-menu ul li a {
   display: inline-block;
-  padding: 0px;
+  padding: 0;
   color: #4A4A4A;
   font-weight: 300;
 }
@@ -1669,7 +1791,7 @@ ul.wrap-tabs li.back a:active, ul.wrap-tabs li.back a:focus, ul.wrap-tabs li.bac
 }
 
 .nav-profile .profile-dropdown-menu .info ul li:last-child {
-  margin-top: 5px;
+  margin-top: 0;
   line-height: 20px;
   font-weight: 300;
   width: 70%;
@@ -1685,6 +1807,8 @@ ul.wrap-tabs li.back a:active, ul.wrap-tabs li.back a:focus, ul.wrap-tabs li.bac
 
 .nav-profile .profile-dropdown-menu .info ul li img {
   border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 .nav-profile .profile-dropdown-menu .control ul {
@@ -1697,7 +1821,7 @@ ul.wrap-tabs li.back a:active, ul.wrap-tabs li.back a:focus, ul.wrap-tabs li.bac
 }
 
 .nav-profile .profile-dropdown-menu .control ul li {
-  padding: 5px 0px;
+  padding: 5px 0;
 }
 
 .nav-profile .profile-dropdown-menu .logout {
@@ -1708,7 +1832,7 @@ ul.wrap-tabs li.back a:active, ul.wrap-tabs li.back a:focus, ul.wrap-tabs li.bac
 
 .nav-profile .profile-dropdown-menu .logout a {
   display: inline-block;
-  padding: 0px;
+  padding: 0;
   color: #4A4A4A;
   font-weight: 300;
 }
@@ -2360,25 +2484,29 @@ ul.wrap-tabs li.back a:active, ul.wrap-tabs li.back a:focus, ul.wrap-tabs li.bac
   border-radius: 0 0 5px 5px;
 }
 
-#media .tab-content .tab-pane {
-  padding: 20px 20px;
+#media .tab-content #media-post {
+  padding: 20px;
 }
 
-#media .tab-content #media-main form {
+#media .tab-content #media-main .wrap-form {
+  padding: 20px;
+}
+
+#media .tab-content #media-main .wrap-form form {
   display: inline-block;
   width: 100%;
   border: 1px solid #9B9B9B;
   padding: 10px 0;
 }
 
-#media .tab-content #media-main form .form-group {
+#media .tab-content #media-main .wrap-form form .form-group {
   padding: 0;
   margin: 10px 0;
   width: 46%;
   float: left;
 }
 
-#media .tab-content #media-main form .btn-add {
+#media .tab-content #media-main .wrap-form form .btn-add {
   float: right;
   width: 8%;
   margin: 10px 0;
@@ -2387,7 +2515,7 @@ ul.wrap-tabs li.back a:active, ul.wrap-tabs li.back a:focus, ul.wrap-tabs li.bac
   text-align: right;
 }
 
-#media .tab-content #media-main form .text {
+#media .tab-content #media-main .wrap-form form .text {
   color: #4A4A4A;
   font-size: 12px;
   font-weight: 400;
@@ -2396,11 +2524,11 @@ ul.wrap-tabs li.back a:active, ul.wrap-tabs li.back a:focus, ul.wrap-tabs li.bac
   padding-right: 0;
 }
 
-#media .tab-content #media-main form .value {
+#media .tab-content #media-main .wrap-form form .value {
   position: relative;
 }
 
-#media .tab-content #media-main form .value .form-control {
+#media .tab-content #media-main .wrap-form form .value .form-control {
   height: 36px;
   box-shadow: none;
   font-size: 13px;
@@ -2408,10 +2536,57 @@ ul.wrap-tabs li.back a:active, ul.wrap-tabs li.back a:focus, ul.wrap-tabs li.bac
   border: 1px solid #E4E6E8;
 }
 
-#media .tab-content #media-main form .value span {
+#media .tab-content #media-main .wrap-form form .value span {
   position: absolute;
   right: 25px;
   top: 10px;
+}
+
+#media .tab-content #media-main .wrap-images {
+  padding: 0 10px;
+}
+
+#media .tab-content #media-main .wrap-images ul li {
+  position: relative;
+  padding: 7.5px;
+  float: left;
+}
+
+#media .tab-content #media-main .wrap-images ul li .close-photo {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  color: white;
+  display: none;
+}
+
+#media .tab-content #media-main .wrap-images ul li .active-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding: 7.5px;
+  text-align: center;
+}
+
+#media .tab-content #media-main .wrap-images ul li .active-text p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  color: white;
+}
+
+#media .tab-content #media-main .wrap-images ul li:hover .close-photo {
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
 }
 
 #setting .main {
@@ -2467,7 +2642,7 @@ ul.wrap-tabs li.back a:active, ul.wrap-tabs li.back a:focus, ul.wrap-tabs li.bac
 
 #setting .main #member .wrap-list li.box .table {
   display: inline-block;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 #setting .main #member .wrap-list li.box .table .title {
@@ -2494,6 +2669,11 @@ ul.wrap-tabs li.back a:active, ul.wrap-tabs li.back a:focus, ul.wrap-tabs li.bac
 
 #setting .main #member .wrap-list li.box .table .title span a {
   margin-left: 5px;
+}
+
+#setting .main #member .wrap-list li.box .table .title span a i.save {
+  color: #444444;
+  margin-right: 5px;
 }
 
 #setting .main #member .wrap-list li.box .table .input {
@@ -2547,6 +2727,10 @@ ul.wrap-tabs li.back a:active, ul.wrap-tabs li.back a:focus, ul.wrap-tabs li.bac
   font-size: 30px;
 }
 
+#setting .main #member .add:hover {
+  cursor: pointer;
+}
+
 #setting .main #subscription {
   padding: 10px;
 }
@@ -2585,7 +2769,7 @@ ul.wrap-tabs li.back a:active, ul.wrap-tabs li.back a:focus, ul.wrap-tabs li.bac
 
 @media (max-width: 991px) {
   #setting .main #subscription form .form-group .lengthy {
-    margin-top: 0px;
+    margin-top: 0;
   }
 }
 
@@ -2659,20 +2843,27 @@ ul.wrap-tabs li.back a:active, ul.wrap-tabs li.back a:focus, ul.wrap-tabs li.bac
 
 #setting .main #photoslider .banner img {
   display: inline-block;
+  width: 100%;
 }
 
 #setting .main #photoslider .photos {
-  padding: 0px 7.5px;
+  padding: 0 7.5px;
 }
 
-#setting .main #photoslider .photos ul li {
+#setting .main #photoslider .photos ul.wrap-photos {
+  display: inline-block;
+  width: 100%;
+  padding: 0 7.5px;
+}
+
+#setting .main #photoslider .photos ul.wrap-photos li {
   position: relative;
   padding: 7.5px;
   width: 25%;
   float: left;
 }
 
-#setting .main #photoslider .photos ul li .close-photo {
+#setting .main #photoslider .photos ul.wrap-photos li .close-photo {
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 10px;
@@ -2681,17 +2872,17 @@ ul.wrap-tabs li.back a:active, ul.wrap-tabs li.back a:focus, ul.wrap-tabs li.bac
   display: none;
 }
 
-#setting .main #photoslider .photos ul li .active-text {
+#setting .main #photoslider .photos ul.wrap-photos li .active-text {
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   height: 100%;
   width: 100%;
   padding: 7.5px;
   text-align: center;
 }
 
-#setting .main #photoslider .photos ul li .active-text p {
+#setting .main #photoslider .photos ul.wrap-photos li .active-text p {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2701,7 +2892,7 @@ ul.wrap-tabs li.back a:active, ul.wrap-tabs li.back a:focus, ul.wrap-tabs li.bac
   color: white;
 }
 
-#setting .main #photoslider .photos ul li:hover .close-photo {
+#setting .main #photoslider .photos ul.wrap-photos li:hover .close-photo {
   display: block;
   width: 30px;
   height: 30px;
@@ -2710,9 +2901,13 @@ ul.wrap-tabs li.back a:active, ul.wrap-tabs li.back a:focus, ul.wrap-tabs li.bac
 }
 
 @media (min-width: 1299px) {
-  #setting .main #photoslider .photos ul li {
+  #setting .main #photoslider .photos ul.wrap-photos li {
     width: 20%;
   }
+}
+
+#setting .main #photoslider .photos ul.wrap-photos li img {
+  width: 100%;
 }
 
 #report .nav-tabs {
